@@ -1,0 +1,248 @@
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLogos {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    min-height: auto;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    position: relative;
+    overflow-x: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    z-index: -9999;
+}
+
+/* Left and right blurry edges */
+/* body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+} */
+
+/* body::before {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgba(248, 249, 250, 0.95),
+        transparent
+    );
+}
+
+body::after {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        rgba(248, 249, 250, 0.95),
+        transparent
+    );
+} */
+
+/* Container to hold blocks - full width */
+.blocks-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0 !important;
+    overflow: hidden;
+    padding: 0 0 0 0 !important;
+    margin: 0 !important;
+    position: relative;
+    z-index: -99;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .blocks-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+header {
+    z-index: 9999 !important;
+}
+
+.content-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 3;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+/* Blocks */
+.block {
+    aspect-ratio: 0.6/0.6;
+    border: 1px solid rgba(38, 38, 46, 0.02);
+    /* background: rgba(41, 39, 39, 0.02); */
+    background-color: #f7f8fa;
+    backdrop-filter: blur(2px);
+    border-radius: 0 !important;
+    transition: transform 0.3s ease;
+}
+
+/* Blue shadow gradient images positioning */
+.hero-bg-left {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 600px;
+    height: 100%;
+    background: url("/images/shadow-left.png") no-repeat left top;
+    background-size: contain;
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-bg-right {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    width: 600px;
+    height: 100%;
+    background: url("/images/shadow-right.png") no-repeat right top;
+    background-size: contain;
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.testimoniol1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: url("/images/Testimonial1.png") no-repeat right top;
+    background-size: contain;
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.testimoniol2 {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: url("/images/Testimonial2.png") no-repeat right top;
+    background-size: contain;
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.testimoniol3 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: url("/images/Testimonial3.png") no-repeat right top;
+    background-size: contain;
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.animate-scroll-left {
+    animation: scroll-left 25s linear infinite;
+}
+
+.animate-scroll-right {
+    animation: scroll-right 25s linear infinite;
+}
+
+/* Pause on hover */
+.animate-scroll-left:hover,
+.animate-scroll-right:hover {
+    animation-play-state: paused;
+}
+
+.logo-track {
+    display: flex;
+    gap: 6rem;
+    width: max-content;
+    animation: moveLogos 25s linear infinite;
+    position: relative;
+}
+
+.logo-track::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+}
+
+/* .laptop {
+    width: 100vw;
+    background: rgba(233, 240, 243, 0.95);
+    border-radius: 25px !important;
+    padding: 0 !important;
+    margin: 0 auto;
+}
+
+.laptop::before {
+    left: 500px;
+    background: linear-gradient(
+        to right,
+        rgba(248, 249, 250, 0.95),
+        transparent
+    );
+}
+
+.laptop::after {
+    right: 500px;
+    background: linear-gradient(
+        to left,
+        rgba(248, 249, 250, 0.95),
+        transparent
+    );
+} */
