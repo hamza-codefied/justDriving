@@ -26,6 +26,54 @@
     }
 }
 
+/* --- Entry Animations --- */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* --- Floating Animation (continuous) --- */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.02);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,49 +81,44 @@
 }
 
 body {
+    width: 100vw;
     height: auto;
-    min-height: auto;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-    position: relative;
+    min-height: 100vh;
     overflow-x: hidden;
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100vw !important;
-    z-index: -9999;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f8fa;
+    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Left and right blurry edges */
-/* body::before,
-body::after {
+#mockupVideo::before,
+#mockupVideo::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 120px;
-    height: 100%;
+    height: auto;
     pointer-events: none;
     z-index: 10;
-} */
+}
 
-/* body::before {
+#mockupVideo::before {
     left: 0;
     background: linear-gradient(
         to right,
-        rgba(248, 249, 250, 0.95),
+        rgba(17, 106, 194, 0.95),
         transparent
     );
 }
 
-body::after {
+#mockupVideo::after {
     right: 0;
-    background: linear-gradient(
-        to left,
-        rgba(248, 249, 250, 0.95),
-        transparent
-    );
-} */
+    background: linear-gradient(to left, rgba(4, 94, 183, 0.95), transparent);
+}
 
 /* Container to hold blocks - full width */
-.blocks-container {
+/* .blocks-container {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -83,16 +126,21 @@ body::after {
     overflow: hidden;
     padding: 0 0 0 0 !important;
     margin: 0 !important;
-    position: relative;
-    z-index: -99;
+    position: absolute;
+    z-index: 2;
     height: 100%;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* .blocks-container::after {
+    right: 0;
+    background: linear-gradient(to top, #f7f8fa, transparent, #f7f8fa);
+} */
+
+/* @media screen and (max-width: 768px) {
     .blocks-container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 header {
     z-index: 9999 !important;
@@ -104,24 +152,24 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    padding: 0 !important;
-    margin: 0 !important;
-    z-index: 3;
-    top: 0 !important;
-    left: 0 !important;
+    /* position: absolute; */
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    z-index: 1;
+    position: relative;
+    background: transparent;
 }
 
 /* Blocks */
-.block {
+/* .block {
     aspect-ratio: 0.6/0.6;
     border: 1px solid rgba(38, 38, 46, 0.02);
-    /* background: rgba(41, 39, 39, 0.02); */
     background-color: #f7f8fa;
     backdrop-filter: blur(2px);
     border-radius: 0 !important;
     transition: transform 0.3s ease;
-}
+} */
 
 /* Blue shadow gradient images positioning */
 .hero-bg-left {
@@ -150,6 +198,7 @@ header {
     pointer-events: none;
 }
 
+/* --- Testimonial 1 --- */
 .testimoniol1 {
     position: absolute;
     top: 0;
@@ -158,11 +207,14 @@ header {
     height: 100%;
     background: url("/images/Testimonial1.png") no-repeat right top;
     background-size: contain;
-    opacity: 1;
+    opacity: 0;
     z-index: -1;
     pointer-events: none;
+    animation: slideInRight 1s ease-out 0.2s forwards,
+        floatUpDown 4s ease-in-out 1.5s infinite;
 }
 
+/* --- Testimonial 2 --- */
 .testimoniol2 {
     position: absolute;
     top: 15%;
@@ -171,11 +223,14 @@ header {
     height: 100%;
     background: url("/images/Testimonial2.png") no-repeat right top;
     background-size: contain;
-    opacity: 1;
+    opacity: 0;
     z-index: 1;
     pointer-events: none;
+    animation: slideInRight 1.2s ease-out 0.5s forwards,
+        floatUpDown 5s ease-in-out 1.7s infinite;
 }
 
+/* --- Testimonial 3 --- */
 .testimoniol3 {
     position: absolute;
     top: 25%;
@@ -184,9 +239,11 @@ header {
     height: 100%;
     background: url("/images/Testimonial3.png") no-repeat right top;
     background-size: contain;
-    opacity: 1;
-    z-index: -1;
+    opacity: 0;
+    z-index: 1;
     pointer-events: none;
+    animation: slideInLeft 1.2s ease-out 0.8s forwards,
+        floatUpDown 6s ease-in-out 2s infinite;
 }
 
 .animate-scroll-left {
@@ -221,28 +278,17 @@ header {
     background: inherit;
 }
 
-/* .laptop {
-    width: 100vw;
-    background: rgba(233, 240, 243, 0.95);
-    border-radius: 25px !important;
-    padding: 0 !important;
-    margin: 0 auto;
+.faq-answer {
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s ease-in-out;
 }
 
-.laptop::before {
-    left: 500px;
-    background: linear-gradient(
-        to right,
-        rgba(248, 249, 250, 0.95),
-        transparent
-    );
+.icon svg {
+    transition: transform 0.3s ease;
+    transform-origin: center;
 }
 
-.laptop::after {
-    right: 500px;
-    background: linear-gradient(
-        to left,
-        rgba(248, 249, 250, 0.95),
-        transparent
-    );
-} */
+/* When FAQ is open, rotate + icon to look like a cross */
+.faq-question.open .icon svg {
+    transform: rotate(45deg);
+}
