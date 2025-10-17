@@ -11,6 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Splide CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
@@ -28,9 +31,8 @@
         <header
             class="bg-[#1E1E1E] text-white py-3 pl-6 pr-3 flex items-center justify-between rounded-xl w-[90vw] md:w-[80vw] xl:w-[50vw] mx-auto mt-4 shadow-md relative z-10">
             <!-- Logo -->
-            <div class="flex items-center space-x-1 text-lg font-semibold">
-                <span class="text-white">JUST</span>
-                <span class="text-[#3673EF]">DRIVING</span>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo" class="h-7 w-auto object-contain" />
             </div>
 
             <!-- Hamburger button (mobile only) -->

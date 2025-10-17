@@ -20,57 +20,21 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }
 }
 
-/* --- Entry Animations --- */
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(150px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-150px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* --- Floating Animation (continuous) --- */
+/* NEW: Up-down float animation */
 @keyframes floatUpDown {
     0% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
     100% {
         transform: translateY(0);
-    }
-}
-
-@keyframes floatUpDown {
-    0% {
-        transform: translateY(0) scale(1);
-    }
-    50% {
-        transform: translateY(-10px) scale(1.02);
-    }
-    100% {
-        transform: translateY(0) scale(1);
     }
 }
 
@@ -91,56 +55,28 @@ body {
     font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Left and right blurry edges */
-#mockupVideo::before,
-#mockupVideo::after {
+/* Optional blurry edges (commented out)
+body::before,
+body::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 120px;
-    height: auto;
+    height: 100%;
     pointer-events: none;
     z-index: 10;
 }
 
-#mockupVideo::before {
+body::before {
     left: 0;
-    background: linear-gradient(
-        to right,
-        rgba(17, 106, 194, 0.95),
-        transparent
-    );
+    background: linear-gradient(to right, rgba(248, 249, 250, 0.95), transparent);
 }
 
-#mockupVideo::after {
+body::after {
     right: 0;
-    background: linear-gradient(to left, rgba(4, 94, 183, 0.95), transparent);
+    background: linear-gradient(to left, rgba(248, 249, 250, 0.95), transparent);
 }
-
-/* Container to hold blocks - full width */
-/* .blocks-container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 0 !important;
-    overflow: hidden;
-    padding: 0 0 0 0 !important;
-    margin: 0 !important;
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-} */
-
-/* .blocks-container::after {
-    right: 0;
-    background: linear-gradient(to top, #f7f8fa, transparent, #f7f8fa);
-} */
-
-/* @media screen and (max-width: 768px) {
-    .blocks-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
+*/
 
 header {
     z-index: 9999 !important;
@@ -152,26 +88,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
     padding: 0;
     margin: 0;
     background: transparent;
     z-index: 1;
     position: relative;
-    background: transparent;
 }
 
-/* Blocks */
-/* .block {
-    aspect-ratio: 0.6/0.6;
-    border: 1px solid rgba(38, 38, 46, 0.02);
-    background-color: #f7f8fa;
-    backdrop-filter: blur(2px);
-    border-radius: 0 !important;
-    transition: transform 0.3s ease;
-} */
-
-/* Blue shadow gradient images positioning */
+/* ===== Hero Blue Shadow Backgrounds ===== */
 .hero-bg-left {
     position: absolute;
     top: -5%;
@@ -198,54 +122,78 @@ header {
     pointer-events: none;
 }
 
-/* --- Testimonial 1 --- */
-.testimoniol1 {
+/* ===== Testimonial Elements ===== */
+
+/* Common base styles */
+.testimoniol1,
+.testimoniol2,
+.testimoniol3 {
     position: absolute;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+/* Testimonial 1: No animation (static or horizontal if added) */
+.testimoniol1 {
     top: 0;
     right: 0;
     width: 100px;
-    height: 100%;
-    background: url("/images/Testimonial1.png") no-repeat right top;
-    background-size: contain;
-    opacity: 0;
-    z-index: -1;
-    pointer-events: none;
-    animation: slideInRight 1s ease-out 0.2s forwards,
-        floatUpDown 4s ease-in-out 1.5s infinite;
+    background-image: url("/images/Testimonial1.png");
+    /* Optional: Uncomment below if you want horizontal animation */
+    /* animation: scroll-left 30s linear infinite; */
 }
 
-/* --- Testimonial 2 --- */
+/* Testimonial 2: Up-down animation */
 .testimoniol2 {
-    position: absolute;
     top: 15%;
     right: 0;
     width: 250px;
-    height: 100%;
-    background: url("/images/Testimonial2.png") no-repeat right top;
-    background-size: contain;
-    opacity: 0;
-    z-index: 1;
-    pointer-events: none;
-    animation: slideInRight 1.2s ease-out 0.5s forwards,
-        floatUpDown 5s ease-in-out 1.7s infinite;
+    background-image: url("/images/Testimonial2.png");
+    animation: floatUpDown 4s ease-in-out infinite;
+    animation-delay: 0.5s;
 }
 
-/* --- Testimonial 3 --- */
+/* Testimonial 3: Up-down animation */
 .testimoniol3 {
-    position: absolute;
     top: 25%;
     left: 0;
     width: 250px;
-    height: 100%;
-    background: url("/images/Testimonial3.png") no-repeat right top;
-    background-size: contain;
-    opacity: 0;
-    z-index: 1;
-    pointer-events: none;
-    animation: slideInLeft 1.2s ease-out 0.8s forwards,
-        floatUpDown 6s ease-in-out 2s infinite;
+    background-image: url("/images/Testimonial3.png");
+    animation: floatUpDown 4s ease-in-out infinite;
+    animation-delay: 1s;
 }
 
+/* ===== Hover Effects ===== */
+.testimoniol1:hover {
+    transform: scale(1) rotate(-2deg);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+    transform-origin: top right;
+    animation-play-state: paused;
+}
+
+.testimoniol2:hover {
+    transform: scale(1) rotate(2deg);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+    transform-origin: center right;
+    animation-play-state: paused;
+}
+
+.testimoniol3:hover {
+    transform: scale(1) rotate(-3deg);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+    transform-origin: center left;
+    animation-play-state: paused;
+}
+
+/* ===== Logo Animation Section ===== */
 .animate-scroll-left {
     animation: scroll-left 25s linear infinite;
 }
@@ -276,19 +224,4 @@ header {
     width: 100%;
     height: 100%;
     background: inherit;
-}
-
-.faq-answer {
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.4s ease-in-out;
-}
-
-.icon svg {
-    transition: transform 0.3s ease;
-    transform-origin: center;
-}
-
-/* When FAQ is open, rotate + icon to look like a cross */
-.faq-question.open .icon svg {
-    transform: rotate(45deg);
 }
