@@ -140,42 +140,58 @@ header {
 
 /* Testimonial 1: No animation (static or horizontal if added) */
 .testimoniol1 {
+    position: absolute; /* ensure positioned element */
     top: 0;
-    right: 0;
-    width: 100px;
+    right: -5%;
+    width: 200px;
     background-image: url("/images/Testimonial1.png");
-    /* Optional: Uncomment below if you want horizontal animation */
-    /* animation: scroll-left 30s linear infinite; */
+    transition: right 0.4s ease-in-out; /* smooth animation */
+}
+
+.testimoniol1:hover {
+    right: 0%;
 }
 
 /* Testimonial 2: Up-down animation */
 .testimoniol2 {
-    top: 15%;
-    right: 0;
-    width: 250px;
+    position: absolute;
+    top: 17%;
+    right: -5%;
+    width: 400px;
     background-image: url("/images/Testimonial2.png");
     animation: floatUpDown 4s ease-in-out infinite;
     animation-delay: 0.5s;
+    transition: right 0.4s ease-in-out; /* smooth animation */
+}
+
+.testimoniol2:hover {
+    right: 0%;
 }
 
 /* Testimonial 3: Up-down animation */
 .testimoniol3 {
+    position: absolute;
     top: 25%;
-    left: 0;
-    width: 250px;
+    left: -5%;
+    width: 350px;
     background-image: url("/images/Testimonial3.png");
     animation: floatUpDown 4s ease-in-out infinite;
     animation-delay: 1s;
+    transition: left 0.4s ease-in-out; /* smooth animation */
+}
+
+.testimoniol3:hover {
+    left: 0%;
 }
 
 /* ===== Hover Effects ===== */
-.testimoniol1:hover {
+/* .testimoniol1:hover {
     transform: scale(1) rotate(-2deg);
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
     z-index: 10;
     transform-origin: top right;
     animation-play-state: paused;
-}
+} */
 
 .testimoniol2:hover {
     transform: scale(1) rotate(2deg);
