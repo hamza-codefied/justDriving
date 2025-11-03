@@ -30,9 +30,10 @@
                 class="absolute hidden group-hover:block bg-white text-gray-800 mt-[1px] py-2 rounded-lg shadow-lg w-60 z-10">
                 <a href="{{ route('administration') }}" class="block px-4 py-2 hover:bg-gray-100">Online administration
                     system</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Online undervisning system</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Online booking system</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Online økonomisystem</a>
+                <a href="{{ route('undervisning') }}" class="block px-4 py-2 hover:bg-gray-100">Online undervisning
+                    system</a>
+                <a href="{{ route('booking') }}" class="block px-4 py-2 hover:bg-gray-100">Online booking system</a>
+                <a href="{{ route('okonomi') }}" class="block px-4 py-2 hover:bg-gray-100">Online økonomisystem</a>
             </div>
         </div>
 
@@ -60,9 +61,12 @@
         <details class="group">
             <summary class="cursor-pointer hover:text-blue-400 transition list-none">Systemet</summary>
             <div class="mt-2 space-y-2">
-                <a href="#" class="block hover:text-blue-400 transition">Feature 1</a>
-                <a href="#" class="block hover:text-blue-400 transition">Feature 2</a>
-                <a href="#" class="block hover:text-blue-400 transition">Feature 3</a>
+                <a href="{{ route('administration') }}" class="block px-4 py-2 hover:bg-gray-800">Online administration
+                    system</a>
+                <a href="{{ route('undervisning') }}" class="block px-4 py-2 hover:bg-gray-800">Online undervisning
+                    system</a>
+                <a href="{{ route('booking') }}" class="block px-4 py-2 hover:bg-gray-800">Online booking system</a>
+                <a href="{{ route('okonomi') }}" class="block px-4 py-2 hover:bg-gray-800">Online økonomisystem</a>
             </div>
         </details>
 
