@@ -21,3 +21,15 @@ Route::get('/booking-system', function () {
 Route::get('/okonomi-system', function () {
     return view('okonomi');
 })->name('okonomi');
+
+Route::get('/om-just-driving', function () {
+    return view('omjustdriving');
+})->name('omjustdriving');
+
+Route::get('/kontakt-os', function () {
+    return view('kontakt');
+})->name('kontakt');
+
+Route::get('/priser', function () {
+    return view('priser');
+})->name('priser');

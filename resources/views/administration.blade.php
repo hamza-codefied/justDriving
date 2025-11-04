@@ -55,14 +55,14 @@
         </section>
 
         <!-- Info Section -->
-        <section id="info-section"
+        <section id="holdadministration"
             class="w-full text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
 
             <!-- Left Column (Image) -->
             <div
                 class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
                 <img src="{{ asset('images/admin-system.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] rounded-2xl shadow-lg object-cover">
+                    class="w-full max-w-[450px]">
             </div>
 
             <!-- Right Column (Text Content) -->
@@ -146,12 +146,29 @@
                 <!-- Card Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
-                        <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-start hover:shadow-xl transition duration-300 opacity-0 translate-y-10 animate-on-scroll"
+                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
+                                                                 hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
+
+                            <!-- Glow effect -->
+                            <div
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
+                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                            </div>
+
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4">
-                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2">{{ $feature['title'] }}</h3>
-                            <p class="text-[#858599] text-start text-sm">{{ $feature['desc'] }}</p>
+                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+
+                            <h3
+                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
+                                {{ $feature['title'] }}
+                            </h3>
+
+                            <p
+                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
+                                {{ $feature['desc'] }}
+                            </p>
                         </div>
                     @endforeach
                 </div>
@@ -159,7 +176,7 @@
         </section>
 
         <!-- Info Section2 -->
-        <section id="info-section2"
+        <section id="afdelinger"
             class="w-full bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
             <!-- Left Column (Text) -->
             <div
@@ -199,8 +216,7 @@
             <!-- Right Column (Image) -->
             <div
                 class="w-full md:w-1/2 flex justify-end opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/feature2.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] rounded-2xl shadow-lg object-cover">
+                <img src="{{ asset('images/feature2.png') }}" alt="Administration System" class="w-full max-w-[450px]">
             </div>
         </section>
 
@@ -224,27 +240,44 @@
                             'title' => 'Elever og hold',
                             'desc' => 'Elever knyttes direkte til deres kørelærer, hvorved de tildeles den rigtige afdeling. Ønsker du bedre overblik kan du inddele hold i afdelinger.',
                         ],
-
                     ];
                 @endphp
 
                 <!-- Card Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
-                        <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-start hover:shadow-xl transition duration-300 opacity-0 translate-y-10 animate-on-scroll"
+                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
+                                                        hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
+
+                            <!-- Glow effect -->
+                            <div
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
+                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                            </div>
+
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4">
-                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2">{{ $feature['title'] }}</h3>
-                            <p class="text-[#858599] text-start text-sm">{{ $feature['desc'] }}</p>
+                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+
+                            <h3
+                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
+                                {{ $feature['title'] }}
+                            </h3>
+
+                            <p
+                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
+                                {{ $feature['desc'] }}
+                            </p>
                         </div>
                     @endforeach
                 </div>
             </div>
         </section>
 
+
         <!-- Info Section3 -->
-        <section id="info-section3"
+        <section id="Gå-aldrig"
             class="w-full text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
             <!-- Left Column (image) -->
             <div
@@ -311,24 +344,40 @@
                             'title' => 'Køreskole data',
                             'desc' => 'Komplet oversigt over køreskolens grunddata, aftaler, elever og kørelærer og meget mere.',
                         ],
-
                     ];
                 @endphp
 
                 <!-- Card Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
-                        <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-start hover:shadow-xl transition duration-300 opacity-0 translate-y-10 animate-on-scroll"
+                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
+                                                hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
+
+                            <!-- Glow effect -->
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
+                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                            </div>
+
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4">
-                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2">{{ $feature['title'] }}</h3>
-                            <p class="text-[#858599] text-start text-sm">{{ $feature['desc'] }}</p>
+                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+
+                            <h3
+                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
+                                {{ $feature['title'] }}
+                            </h3>
+
+                            <p
+                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
+                                {{ $feature['desc'] }}
+                            </p>
                         </div>
                     @endforeach
                 </div>
             </div>
         </section>
+
 
         <!--SMS Notificationer-->
         <section id="SMS-Notificationer"
