@@ -23,8 +23,8 @@ Route::get('/okonomi-system', function () {
 })->name('okonomi');
 
 Route::get('/om-just-driving', function () {
-    return view('omjustdriving');
-})->name('omjustdriving');
+    return view('omJustDriving');
+})->name('omJustDriving');
 
 Route::get('/kontakt-os', function () {
     return view('kontakt');
