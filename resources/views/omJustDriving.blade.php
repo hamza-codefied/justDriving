@@ -44,7 +44,7 @@
                     class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
                     prøv gratis nu
                 </a>
-                <a href="#"
+                <a href="{{ route('priser') }}"
                     class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
                     Se Vores Priser
                 </a>
@@ -78,7 +78,7 @@
                     komplet system, der samler det hele – kalender, fakturering og undervisning. Vi udvikler løbende, så
                     du altid er på forkant med fremtidens behov.
                 </p>
-                <a href="#"
+                <a href="{{ route('kontakt') }}"
                     class="inline-block bg-[#3384FF] text-white px-16 py-3 rounded-xl text-sm font-semibold shadow-md hover:bg-[#2563EB] transition">
                     Kontakt Os
                 </a>

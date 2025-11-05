@@ -9,9 +9,13 @@
                         class="h-7 w-auto object-contain" />
                 </div>
                 <p class="text-sm text-[#777777] mt-2 mb-4">
-                    Du får et bedre overblik, mindre spildtid og større omsætning med Just-drivings
-                    komplette
-                    online administrationssystem.
+                    Du får et bedre overblik, mindre spildtid og større omsætning med Just-drivings komplette online
+                    administrationssystem.
+                    Just Driving ApS
+                    CVR: 28848161
+                    Adresse: Trykkeriet, Kvarmløsevej 36, 4340 Tølløse
+                    Telefon: +45 42424276
+                    E-mail: support@just-driving.dk
                 </p>
             </div>
 
@@ -26,13 +30,13 @@
         <div>
             <h3 class="font-semibold mb-3">Virksomheden</h3>
             <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:text-[#3673EF] transition">Privatlivs- og Cookie politik</a>
-                </li>
-                <li><a href="#" class="hover:text-[#3673EF] transition">Handelsbetingelser</a></li>
-                <li><a href="#" class="hover:text-[#3673EF] transition">Om os</a></li>
-                <li><a href="#" class="hover:text-[#3673EF] transition">Priser</a></li>
-                <li><a href="#" class="hover:text-[#3673EF] transition">Karriere</a></li>
-                <li><a href="#" class="hover:text-[#3673EF] transition">Kontakt</a></li>
+                <!-- <li><a href="#" class="hover:text-[#3673EF] transition">Privatlivs- og Cookie politik</a>
+                </li> -->
+                <!-- <li><a href="#" class="hover:text-[#3673EF] transition">Handelsbetingelser</a></li> -->
+                <li><a href="{{ route('omJustDriving') }}" class="hover:text-[#3673EF] transition">Om os</a></li>
+                <li><a href="{{ route('priser') }}" class="hover:text-[#3673EF] transition">Priser</a></li>
+                <!-- <li><a href="#" class="hover:text-[#3673EF] transition">Karriere</a></li> -->
+                <li><a href="{{ route('kontakt') }}" class="hover:text-[#3673EF] transition">Kontakt</a></li>
             </ul>
         </div>
 

@@ -45,7 +45,7 @@
                     class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
                     prøv gratis nu
                 </a>
-                <a href="#"
+                <a href="{{ route('priser') }}"
                     class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
                     Se Vores Priser
                 </a>
@@ -147,14 +147,14 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                 hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                         hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
 
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -247,14 +247,14 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                        hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
 
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -351,13 +351,14 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                        hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
 
                             <!-- Glow effect -->
-                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                            <div
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
+                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
