@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <a href="{{ route('omjustdriving') }}" class="hover:text-blue-400 transition">Om Os</a>
+        <a href="{{ route('omJustDriving') }}" class="hover:text-blue-400 transition">Om Os</a>
         <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
     </nav>
 
@@ -129,7 +129,7 @@
             </div>
         </details>
 
-        <a href="{{ route('omjustdriving') }}" class="hover:text-blue-400 transition">Om Os</a>
+        <a href="{{ route('omJustDriving') }}" class="hover:text-blue-400 transition">Om Os</a>
         <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
 
         <a href="{{ route('kontakt') }}"
