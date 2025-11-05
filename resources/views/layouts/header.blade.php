@@ -1,6 +1,7 @@
 <!-- Header -->
 <header
     class="bg-[#1E1E1E] text-white py-3 pl-6 pr-3 flex items-center justify-between rounded-xl w-[90vw] md:w-[80vw] xl:w-[50vw] mx-auto mt-4 shadow-md relative z-50">
+
     <!-- Logo -->
     <div href="{{ route('home') }}" class="flex items-center">
         <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo" class="h-7 w-auto object-contain" />
@@ -18,10 +19,11 @@
     <nav class="hidden md:flex items-center space-x-6 text-sm">
         <a href="{{ route('home') }}" class="hover:text-blue-400 transition">Forside</a>
 
-        <!-- Dropdown -->
-        <div class="group relative">
+        <!-- Dropdown (now click-based) -->
+        <div class="relative">
             <!-- Trigger -->
-            <button class="flex items-center space-x-1 hover:text-blue-400 transition">
+            <button id="megaMenuBtn"
+                class="flex items-center space-x-1 hover:text-blue-400 transition focus:outline-none">
                 <span>Funktioner</span>
                 <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -29,10 +31,10 @@
             </button>
 
             <!-- Full-width mega menu -->
-            <div class="absolute left-1/2 top-full w-[50vw] -translate-x-1/2 mt-3 bg-[#1E1E1E] border-t border-gray-400 rounded-b-2xl text-white shadow-2xl z-40
- opacity-0 translate-y-3 pointer-events-none scale-95 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
- group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-hover:scale-100
- group-hover:delay-100" style="transition-delay: 0.25s;">
+            <div id="megaMenu"
+                class="absolute left-1/2 top-full w-[50vw] -translate-x-1/2 mt-3 bg-[#1E1E1E] border-t border-gray-400 rounded-b-2xl text-white shadow-2xl z-40
+                opacity-0 translate-y-3 pointer-events-none scale-95 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                style="transition-delay: 0.25s;">
                 <div class="grid grid-cols-2 gap-8 px-10 py-8">
 
                     <!-- Column 1 -->
@@ -98,25 +100,19 @@
         <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
     </nav>
 
-
-
     <!-- Contact Button (desktop only) -->
     <a href="{{ route('kontakt') }}" class="hidden md:inline-block relative overflow-hidden text-white px-5 py-2 text-sm font-medium rounded-lg
          transition-all duration-300 bg-[#3384FF] hover:bg-[#2563EB] hover:scale-105 group shadow-md">
         <span class="relative z-10">Kontakt</span>
-
-        <!-- Glowing background animation -->
         <span class="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 
                opacity-0 group-hover:opacity-100 blur-sm transition duration-500"></span>
     </a>
-
 
     <!-- Mobile Menu -->
     <div
         class="absolute peer-checked:flex hidden flex-col bg-[#1E1E1E] w-full left-0 top-full mt-2 rounded-xl py-4 space-y-3 text-center shadow-lg md:hidden">
         <a href="#" class="hover:text-blue-400 transition">Forside</a>
 
-        <!-- Systemet (Dropdown simplified for mobile) -->
         <details class="group">
             <summary class="cursor-pointer hover:text-blue-400 transition list-none">Funktioner</summary>
             <div class="mt-2 space-y-2">
@@ -138,3 +134,32 @@
         </a>
     </div>
 </header>
+
+<!-- Script for click-to-toggle mega menu -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('megaMenuBtn');
+        const menu = document.getElementById('megaMenu');
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = menu.classList.contains('opacity-100');
+
+            if (isOpen) {
+                menu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
+                menu.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
+            } else {
+                menu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
+                menu.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
+            }
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
+                menu.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
+            }
+        });
+    });
+</script>
