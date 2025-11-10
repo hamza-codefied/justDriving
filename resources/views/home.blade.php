@@ -21,13 +21,17 @@
 </head>
 
 <body>
-    <div id="contentContainer" class="content-container">
 
+    <div class="content-container">
         <!-- Hero Backgrounds -->
         <div class="hidden md:block hero-bg-right"></div>
-        <div class="hidden md:blockhero-bg-left"></div>
+        <div class="hidden md:block hero-bg-left"></div>
 
         @include('layouts.header')
+
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
+        </div>
 
         <!-- Hero Section -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
@@ -84,7 +88,7 @@
         </section>
 
         <!-- Client Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden bg-[#f7f8fa] py-1 sm:py-5">
+        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden bg-transparent py-1 sm:py-5">
             <div class="relative py-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/client-background.png') }}'); background-size: cover; background-position: center;">
                 <div id="clientSlider" class="splide w-full" aria-label="Client Logos">
@@ -450,6 +454,7 @@
         <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
         </section>
     </div>
+
     <script type="text/javascript" src="/js/script.js"></script>
     <!-- Splide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -479,11 +484,6 @@
             });
         });
     </script>
-
-
-
-
-
 </body>
 
 </html>

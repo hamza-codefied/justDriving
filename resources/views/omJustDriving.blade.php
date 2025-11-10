@@ -18,11 +18,15 @@
 </head>
 
 <body>
-    <div id="contentContainer" class="content-container">
+    <div class="content-container">
         <!-- Hero Backgrounds -->
         <div class="hidden md:block hero-bg-right"></div>
-        <div class="hidden md:blockhero-bg-left"></div>
+        <div class="hidden md:block hero-bg-left"></div>
         @include('layouts.header')
+
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
+        </div>
 
         <!-- Hero Section -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
@@ -53,7 +57,7 @@
 
         <!-- About Video Section -->
         <section
-            class="w-full mx-auto mt-20 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
+            class="max-w-full 2xl:max-w-7xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
 
             <!-- Left: Video -->
             <div class="w-full md:w-1/2 relative group">
@@ -87,7 +91,7 @@
 
         <!-- info Section -->
         <section
-            class="w-full max-w-full mx-auto mt-10 px-4 sm:px-6 text-start animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
+            class="max-w-full 2xl:max-w-7xl mx-auto mt-10 px-4 sm:px-6 text-start animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Her mangler ikke noget
             </h2>
@@ -104,7 +108,7 @@
 
         <!-- Dynamic Info Cards Section -->
         <section
-            class="w-full mx-auto mt-20 px-4 sm:px-6 lg:px-8 text-center animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
+            class="max-w-full 2xl:max-w-7xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 text-center animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
 
             <!-- Heading -->
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">

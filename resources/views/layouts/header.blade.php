@@ -20,10 +20,10 @@
         <a href="{{ route('home') }}" class="hover:text-blue-400 transition">Forside</a>
 
         <!-- Dropdown (now click-based) -->
-        <div class="relative">
+        <!-- Dropdown (hover-based and flicker-free with faster animation) -->
+        <div class="relative group">
             <!-- Trigger -->
-            <button id="megaMenuBtn"
-                class="flex items-center space-x-1 hover:text-blue-400 transition focus:outline-none">
+            <button class="flex items-center space-x-1 hover:text-blue-400 transition focus:outline-none">
                 <span>Funktioner</span>
                 <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -31,10 +31,11 @@
             </button>
 
             <!-- Full-width mega menu -->
-            <div id="megaMenu"
-                class="absolute left-1/2 top-full w-[50vw] -translate-x-1/2 mt-3 bg-[#1E1E1E] border-t border-gray-400 rounded-b-2xl text-white shadow-2xl z-40
-                opacity-0 translate-y-3 pointer-events-none scale-95 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
-                style="transition-delay: 0.25s;">
+            <div class="absolute left-1/2 top-full w-[50vw] -translate-x-1/2 mt-2 bg-white text-black border-t border-gray-400 rounded-b-2xl shadow-2xl z-40
+        opacity-0 translate-y-2 pointer-events-none scale-95 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]
+        group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-hover:scale-100
+        hover:opacity-100 hover:translate-y-0 hover:pointer-events-auto hover:scale-100">
+
                 <div class="grid grid-cols-2 gap-8 px-10 py-8">
 
                     <!-- Column 1 -->
@@ -83,7 +84,7 @@
                     <!-- Column 4 -->
                     <div>
                         <h3 class="font-bold text-[#248ec1] mb-3 border-b pb-1">
-                            <a href="{{ route('okonomi') }}">Online Okonomisystem</a>
+                            <a href="{{ route('okonomi') }}">Online Økonomisystem</a>
                         </h3>
                         <ul class="space-y-2 text-sm">
                             <li><a href="{{ route('okonomi') }}#betalinger"
@@ -95,6 +96,7 @@
                 </div>
             </div>
         </div>
+
 
         <a href="{{ route('omJustDriving') }}" class="hover:text-blue-400 transition">Om Os</a>
         <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
@@ -134,32 +136,3 @@
         </a>
     </div>
 </header>
-
-<!-- Script for click-to-toggle mega menu -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('megaMenuBtn');
-        const menu = document.getElementById('megaMenu');
-
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isOpen = menu.classList.contains('opacity-100');
-
-            if (isOpen) {
-                menu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
-                menu.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
-            } else {
-                menu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
-                menu.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
-            }
-        });
-
-        // Close when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!btn.contains(e.target) && !menu.contains(e.target)) {
-                menu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto', 'scale-100');
-                menu.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none', 'scale-95');
-            }
-        });
-    });
-</script>

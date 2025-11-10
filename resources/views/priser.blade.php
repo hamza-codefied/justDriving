@@ -18,13 +18,17 @@
 </head>
 
 <body>
-    <div id="contentContainer" class="content-container">
+    <div class="content-container">
 
         <!-- Hero Backgrounds -->
         <div class="hidden md:block hero-bg-right"></div>
-        <div class="hidden md:blockhero-bg-left"></div>
+        <div class="hidden md:block hero-bg-left"></div>
 
         @include('layouts.header')
+
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
+        </div>
 
         <!-- Hero Section -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">

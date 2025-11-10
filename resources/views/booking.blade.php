@@ -18,13 +18,17 @@
 </head>
 
 <body>
-    <div id="contentContainer" class="content-container">
+    <div class="content-container">
 
         <!-- Hero Backgrounds -->
         <div class="hidden md:block hero-bg-right"></div>
-        <div class="hidden md:blockhero-bg-left"></div>
+        <div class="hidden md:block hero-bg-left"></div>
 
         @include('layouts.header')
+
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
+        </div>
 
         <!-- Hero Section -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
@@ -56,7 +60,7 @@
 
         <!-- Info Section -->
         <section id="overview"
-            class="w-full text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
 
             <!-- Left Column (Image) -->
             <div
@@ -108,7 +112,8 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features-section" class="w-full py-16 px-6 md:px-10 lg:px-20 overflow-hidden">
+        <section id="features-section"
+            class="max-w-full 2xl:max-w-7xl mx-auto py-16 px-6 md:px-10 lg:px-20 overflow-hidden">
             <div class="max-w-full mx-auto text-center">
                 @php
                     $features = [
@@ -135,13 +140,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                           hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                            transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                                                                   hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
                                 class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
