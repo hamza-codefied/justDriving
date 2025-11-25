@@ -43,15 +43,16 @@
             </div>
 
             <!-- Title -->
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight text-gray-900 relative z-10">
-                Alt-i-en <span class="text-[#3384FF]">cloudplatform</span> til<br />
-                køreskoler
+            <h1
+                class="max-w-6xl mx-auto text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-gray-900 relative z-10">
+                <span class="text-[#3384FF]">Just Driving</span> – Dit komplette digitale system til din køreskole
             </h1>
 
             <!-- Subtitle -->
-            <p class="max-w-2xl mx-auto px-3 sm:px-0 mt-6 text-[#AFAFAF] text-lg relative z-10">
-                Gør booking, betaling, lektionsplaner og elevhåndtering nemt – alt samlet ét sted.
-                Perfekt til både enkeltmandskøreskoler og større teams med flere instruktører.
+            <p class="max-w-3xl mx-auto px-3 sm:px-0 mt-6 text-[#AFAFAF] text-lg relative z-10">
+                Gør hverdagen lettere med Danmarks mest intuitive alt-i-ét platform til køreskoler. Undervisning,
+                booking, betaling, fakturering, administration og elevstyring – samlet i ét professionelt system, der
+                fungerer både på computer og mobil-app.
             </p>
 
             <div class="testimoniol2 hidden lg:block"></div>
@@ -110,38 +111,38 @@
             $features = [
                 [
                     'id' => 1,
-                    'title' => 'Smart bookingsystem',
-                    'description' => 'Læs mere om hvordan smart automatiske planlægning og booking hjælper med at spare tid.',
+                    'title' => 'Administration & Overblik',
+                    'description' => 'Ét samlet system til elever, kørelærere, hold, afdelinger og løn – alt opdateres i realtid.',
                     'icon' => asset('images/smart.png'),
                 ],
                 [
                     'id' => 2,
-                    'title' => 'Online betalinger',
-                    'description' => 'Integrering af sikre og automatiske betalinger – let og problemfrit.',
+                    'title' => 'Online Undervisning & Lektionsplan',
+                    'description' => 'Digital teori (flere sprog), lektionsplan, logbog, underskrifter og automatisk adgang til e-teori.dk.',
                     'icon' => asset('images/online.png'),
                 ],
                 [
                     'id' => 3,
-                    'title' => 'Automatisk fakturering',
-                    'description' => 'Automatiske fakturaer og hurtig opsummering af kørselsdata.',
+                    'title' => 'Booking & Kommunikation',
+                    'description' => 'Bookingkalender med elev-selvbooking, automatiske SMS/e-mails og app til både elever og kørelærere.',
                     'icon' => asset('images/automatisk.png'),
                 ],
                 [
                     'id' => 4,
-                    'title' => 'Lektionsplaner',
-                    'description' => 'Skab og del lektionsplaner med eleverne på en nem måde.',
+                    'title' => 'Betaling & Fakturering',
+                    'description' => 'Fuldt økonomisystem med faktura, betaling, Gonpay-integration og ét-klik betaling via QR eller link.',
                     'icon' => asset('images/digitale.png'),
                 ],
                 [
                     'id' => 5,
-                    'title' => 'Instruktørdashboard',
-                    'description' => 'Få et overblik over dine elever og deres fremskridt.',
+                    'title' => 'Integrationer & Synlighed',
+                    'description' => 'API til din egen hjemmeside og automatisk synlighed på findkoreskole.dk.',
                     'icon' => asset('images/dashboard.png'),
                 ],
                 [
                     'id' => 6,
-                    'title' => 'GDPR- og cloud-sikkerhed',
-                    'description' => 'Sikrer dine data med GDPR-kompatible og cloud-baseret sikkerhed.',
+                    'title' => 'Drift & Datasikkerhed',
+                    'description' => 'Multibrugeropsætning, hosting i Danmark og fuld GDPR-sikkerhed.',
                     'icon' => asset('images/gdpr.png'),
                 ],
             ];
@@ -156,18 +157,15 @@
             </div>
 
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
-                Alt, hvad du <span class="text-[#3384FF]"> behøver</span> for at drive din køreskole
-                køreskoler
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 relative z-10">
+                Alt din køreskole <span class="text-[#3384FF]"> behøver</span> , samlet ét sted
             </h1>
 
             <!-- Subtitle -->
-            <p class="max-w-5xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Just Driving samler alle vigtige værktøjer – booking, betaling, lektionsplaner og mere – i én smart
-                og
-                brugervenlig platform. Spar tid, minimer administrationsarbejdet og fokuser på det, der virkelig
-                betyder
-                noget: undervisningen.
+            <p class="max-w-4xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
+                Med Just Driving får du et moderne, driftssikkert system, som giver overblik og sparer tid. Alt er
+                digitalt, automatisk og bygget til danske køreskolers behov. Du får bl.a.:
             </p>
 
             <!-- Cards Grid -->
@@ -185,8 +183,8 @@
                         </div>
 
                         <!-- Text Section -->
-                        <div class="flex flex-col my-3 pl-5 gap-1 items-start transition-all duration-300">
-                            <h3 class="text-lg font-semibold text-gray-900">{{ $feature['title'] }}</h3>
+                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
+                            <h3 class="text-lg text-start font-semibold text-gray-900">{{ $feature['title'] }}</h3>
                             <p class="text-[#AFAFAF] text-start w-[90%] text-sm">{{ $feature['description'] }}</p>
                             <div
                                 class="flex items-center justify-center cursor-pointer gap-2 hover:translate-x-1 transition-transform duration-300">
@@ -202,8 +200,31 @@
 
         </section>
 
-
         <!-- Section 3 -->
+        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1
+                class="max-w-6xl mx-auto text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+                Med Just Driving får du ro i maven og tid til det vigtigste: at undervise dine elever og drive din
+                forretning.
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
+                Klar til at tage din køreskole til næste niveau?
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-4 relative z-10">
+                <a href="#"
+                    class="inline-flex items-center bg-[#3384FF] text-sm text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-[#2563EB] transition">
+                    Prøv Just Driving gratis
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Section 4 -->
         <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
             <div
@@ -213,13 +234,16 @@
 
             <!-- Title -->
             <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
-                Administrér din <span class="text-[#3384FF]"> køreskole</span> i 3 enkle trin
+                Online administrationssystem – Ét system, fuldt overblik
             </h1>
 
             <!-- Subtitle -->
             <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Fra elevbooking til betalinger og lektionssporing – alt er strømlinet og automatiseret.
+                Slut med at bruge flere løsninger samtidig. Just Driving samler alt i ét effektivt administrationsmodul,
+                der reducerer fejl og sparer dig for dobbeltarbejde.
             </p>
+
+            <p class="font-semibold text-gray-900">Funktioner</p>
 
             <!-- 3 Steps Container -->
             <div class="mt-12 space-y-16 w-[90vw] md:w-[70vw] mx-auto">
@@ -234,10 +258,10 @@
                         <div class="inline-block bg-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
                             Trin 1
                         </div>
-                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Opret din køreskoleprofil</h2>
+                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Opsæt din køreskole</h2>
                         <p class="text-[#AFAFAF] mb-5 pr-0 md:pr-[40px]">
-                            Tilføj alle dine oplysninger, instruktører og køretøjer for at komme i gang. Alt bliver
-                            samlet ét sted.
+                            Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
+                            fremdrift.
                         </p>
                         <button
                             class="bg-[#3384FF] text-white px-6 py-2 rounded-lg font-normal hover:bg-[#2563eb] transition-all duration-300 shadow-2xl shadow-[#3384FF] text-xs">
@@ -256,9 +280,10 @@
                         <div class="inline-block bg-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
                             Trin 2
                         </div>
-                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Administrér elever og bookinger</h2>
+                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Begynd at booke online</h2>
                         <p class="text-[#AFAFAF] mb-5 pr-0 md:pr-[40px]">
-                            Se dine elevers fremskridt, planlæg lektioner, og hold styr på betalinger – helt automatisk.
+                            Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer og online
+                            tilmelding via hjemmeside eller findkoreskole.dk.
                         </p>
                         <button
                             class="bg-[#3384FF] text-white px-6 py-2 rounded-lg font-normal hover:bg-[#2563eb] transition-all duration-300 shadow-2xl shadow-[#3384FF] text-xs">
@@ -277,9 +302,9 @@
                         <div class="inline-block bg-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
                             Trin 3
                         </div>
-                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Følg resultater og vækst</h2>
+                        <h2 class="text-2xl font-bold mb-3 text-gray-900">Følg med og voks</h2>
                         <p class="text-[#AFAFAF] mb-5 pr-0 md:pr-[40px]">
-                            Få indsigt i din køreskoles præstationer, elevtilfredshed og økonomi – alt på ét dashboard.
+                            Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og elevforløb.
                         </p>
                         <button
                             class="bg-[#3384FF] text-white px-6 py-2 rounded-lg font-normal hover:bg-[#2563eb] transition-all duration-300 shadow-2xl shadow-[#3384FF] text-xs">
@@ -290,7 +315,264 @@
             </div>
         </section>
 
-        <!-- Section 4 -->
+
+        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+            <!-- Subtitle -->
+            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-black text-lg relative z-10">
+                Mere struktur. Færre manuelle opgaver. Mere tid til undervisning.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-8 relative z-10">
+                <a href="#"
+                    class="inline-flex items-center bg-[#3384FF] text-sm text-white px-6 py-2 rounded-xl font-semibold shadow-md hover:bg-[#2563EB] transition">
+                    Læs mere
+                </a>
+            </div>
+        </section>
+
+        <!-- Container for three sections to prevent layout shifts -->
+        <div class="max-w-full 2xl:max-w-7xl mx-auto relative">
+            <section id=""
+                class="text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-50">
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/home1.png') }}" alt="Administration System" class="w-full max-w-[450px]">
+                </div>
+
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="text-2xl font-bold text-[#1E1E1E]">
+                        Online undervisningssystem – Fremtidssikret<br /> læring
+                    </h2>
+                    <p class="text-[#858599] text-sm">
+                        Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
+                        undervisning
+                        enkel og overskuelig.
+                    </p>
+
+                    <p class="text-black font-semibold text-sm">
+                        Du får:
+                    </p>
+                    <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til deling
+                                og
+                                udskrivning.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Online teoriprøver med fuld visning af elevens fremdrift og direkte integration til
+                                elevens profil.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Undervisning tilgængelig på dansk, engelsk og arabisk.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id=""
+                class="text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-50">
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="text-2xl font-bold text-[#1E1E1E]">
+                        Online bookingsystem – Mere struktur, mindre spildtid
+                    </h2>
+                    <p class="text-[#858599] text-sm">
+                        Giv eleverne en nem bookingoplevelse – og få fuld kontrol over kalenderen.
+                    </p>
+
+                    <p class="text-black font-semibold text-sm">
+                        Fordele:
+                    </p>
+                    <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Realtidsopdateret kalender med automatiske påmindelser til elever.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Automatisk fakturering ved ekstra lektioner samt fuld synkronisering med lektionsplan
+                                og
+                                betaling.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Fleksibel løsning, der passer til både enkeltlærere og større køreskoler.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/home2.png') }}" alt="Administration System" class="w-full max-w-[450px]">
+                </div>
+            </section>
+
+            <section id=""
+                class="text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start justify-between mt-10 gap-3 overflow-hidden z-50">
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/home3.png') }}" alt="Administration System" class="w-full max-w-[450px]">
+                </div>
+
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="text-2xl font-bold text-[#1E1E1E]">
+                        Digitalt økonomisystem – Overblik uden bøvl
+                    </h2>
+                    <p class="text-[#858599] text-sm">
+                        Et moderne økonomisystem, der håndterer hele elevens betalingsforløb automatisk.
+                    </p>
+
+                    <p class="text-black font-semibold text-sm">
+                        Funktioner:
+                    </p>
+                    <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Kun betalende elever kan booke, så du undgår restancer.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 text-[#3384FF]">
+                            <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section -->
+        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+
+            <!-- Subtitle -->
+            <p class="w-[90vw] md:w-[60vw] mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
+                Slip for manuelle fejl, rykkere og regneark – Just Driving gør økonomien digital og professionel.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-4 pb-2 flex items-center justify-center gap-2 sm:gap-4 z-10">
+                <a href="#"
+                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
+                    prøv gratis nu
+                </a>
+                <a href="#"
+                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
+                    Læs mere
+                </a>
+            </div>
+        </section>
+
+        <!-- Section  -->
+        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1
+                class="max-w-6xl mx-auto text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+                Tag din køreskole til næste niveau
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="w-[90vw] md:w-[60vw] mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
+                Gør administrationen enkel med én samlet løsning. Just Driving håndterer alle daglige opgaver for dig,
+                minimerer fejl og sparer tid, så du kan fokusere på undervisningen. Systemet er udviklet med danske
+                køreskoler og bygger på moderne teknologi, der kan skalere i takt med din forretning.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-4 relative z-10">
+                <a href="#"
+                    class="inline-flex items-center bg-[#3384FF] text-sm text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-[#2563EB] transition">
+                    Prøv Just Driving gratis
+                </a>
+            </div>
+        </section>
+
+        <!-- Payment Flow Section -->
+        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+            <div class="max-w-full 2xl:max-w-7xl mx-auto px-6 md:px-10 lg:px-20">
+                <!-- Main Heading -->
+                <h1 class="text-2xl font-bold leading-tight text-gray-900 relative z-10">
+                    Betalingsflow – Sikkert, Enkelt Og 100% Automatiseret
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-lg font-semibold text-gray-600 mt-4 relative z-10">
+                    Slut Med Manuelt Betalingsarbejde
+                </p>
+
+                <!-- Description -->
+                <p class="w-[90vw] md:w-[60vw] mx-auto mt-4 text-[#858599] text-sm sm:text-base relative z-10">
+                    Eleven Betaler Direkte I Systemet, Hvorefter Adgang Tildeles Automatisk.
+                </p>
+
+                <!-- Fordele Heading -->
+                <p class="text-black font-semibold text-lg mt-8 mb-6 relative z-10">
+                    Fordele:
+                </p>
+
+                <!-- Three Feature Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-5xl mx-auto">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-start gap-4">
+                            <!-- Clock Icon -->
+                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            <p class="text-[#444] text-sm font-semibold text-left">
+                                Ingen betaling, ingen booking
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-start gap-4">
+                            <!-- Clock Icon -->
+                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            <p class="text-[#444] text-sm font-semibold text-left">
+                                Automatisk kvittering
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-start gap-4">
+                            <!-- Clock Icon -->
+                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            <p class="text-[#444] text-sm font-semibold text-left">
+                                Driftssikker dansk betalingsinfrastruktur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
         <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
             <div
@@ -305,7 +587,7 @@
 
             <!-- Subtitle -->
             <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Fra elevbooking til betalinger og lektionssporing – alt er strømlinet og automatiseret.
+                Tag ikke bare vores ord for det. Hør fra teams, der har forbedret deres produktivitet med os.
             </p>
 
             <!-- Logo Carousel Wrapper -->
@@ -366,7 +648,7 @@
             </div>
         </section>
 
-        <!-- Section 5 -->
+        <!-- Section 6 -->
         <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
             <div
@@ -417,7 +699,7 @@
             </div>
         </section>
 
-        <!-- Section 6 -->
+        <!-- Section 7 -->
         <section
             class="w-[95vw] py-6 px-5 sm:px-0 rounded-2xl outline outline-[#ffffff] outline-offset-2 bg-[#eaeff4] mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
 
@@ -450,7 +732,7 @@
 
         @include('layouts.footer')
 
-        <!-- Section 7 -->
+        <!-- Section 8 -->
         <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
         </section>
     </div>

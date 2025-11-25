@@ -62,14 +62,14 @@
 
             <!-- Left Column (Image) -->
             <div
-                class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
                 <img src="{{ asset('images/admin-system.png') }}" alt="Administration System"
                     class="w-full max-w-[450px]">
             </div>
 
             <!-- Right Column (Text Content) -->
             <div
-                class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl font-bold text-[#1E1E1E]">
                     Holdadministration giver dig overblik
                 </h2>
