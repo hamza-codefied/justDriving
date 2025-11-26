@@ -13,11 +13,11 @@
                     administrationssystem.
                     <br />
                     <br />
-                    Just Driving ApS<br />
+                    <!-- Just Driving ApS<br />
                     CVR: 28848161<br>
                     Adresse: Trykkeriet, Kvarmløsevej 36, 4340 Tølløse<br />
                     Telefon: +45 42424276<br />
-                    E-mail: support@just-driving.dk
+                    E-mail: support@just-driving.dk -->
                 </p>
             </div>
 
