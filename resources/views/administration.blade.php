@@ -29,31 +29,97 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-28 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl font-bold text-gray-900 relative z-10">
-                Online Administrationssystem
+            <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 relative z-10">
+                Online administrationssystem – Alt samlet ét sted
             </h1>
 
             <!-- Subtitle -->
             <p class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
-                Med Just Driving slipper du for at jonglere mellem flere systemer. Vores komplette administrationsmodul
-                samler alt i ét – så du kan fokusere på eleverne og undervisningen, frem for bøvl og dobbeltarbejde.
+                Med Just Driving får du ét samlet system, der håndterer alle dine administrative opgaver hurtigt,
+                sikkert og effektivt. Du slipper for flere systemer og manuelle arbejdsgange.
             </p>
+        </section>
 
-            <!-- CTA Button -->
-            <div class="mt-4 pb-2 flex items-center justify-center gap-2 sm:gap-4 z-10">
-                <a href="#"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    prøv gratis nu
-                </a>
-                <a href="{{ route('priser') }}"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    Se Vores Priser
-                </a>
+        @php
+            $features = [
+                [
+                    'id' => 1,
+                    'description' => 'Ét samlet overblik over elever, kørelærere og afdelinger',
+                    'icon' => asset('images/admin1.png'),
+                ],
+                [
+                    'id' => 2,
+
+                    'description' => 'Digital holdadministration og lektionsstyring',
+                    'icon' => asset('images/admin2.png'),
+                ],
+                [
+                    'id' => 3,
+
+                    'description' => 'Indbygget aflønning og betalingsovervågning',
+                    'icon' => asset('images/admin3.png'),
+                ],
+                [
+                    'id' => 4,
+
+                    'description' => 'Elevdata, historik og progression – opdateret i realtid',
+                    'icon' => asset('images/admin4.png'),
+                ],
+                [
+                    'id' => 5,
+
+                    'description' => 'Adgang via både computer og mobil-app',
+                    'icon' => asset('images/admin5.png'),
+                ],
+                [
+                    'id' => 6,
+
+                    'description' => 'Sikker datalagring i overensstemmelse med GDPR',
+                    'icon' => asset('images/admin6.png'),
+                ],
+                [
+                    'id' => 7,
+
+                    'description' => 'Automatisk integration med e-teori.dk og findkoreskole.dk',
+                    'icon' => asset('images/admin7.png'),
+                ],
+            ];
+         @endphp
+
+        <!-- Section 2 -->
+        <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 relative z-10">
+                Du får blandt andet
+            </h1>
+
+            <!-- Cards Grid -->
+            <div class="max-w-5xl mx-auto flex flex-wrap justify-center gap-8 mt-12">
+                @foreach ($features as $feature)
+                    <div
+                        class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.33rem)] lg:w-[calc(25%-1.5rem)] max-w-[280px]">
+                        <!-- Icon Section -->
+                        <div
+                            class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-2xl transition-all duration-300 hover:bg-[#DCE8F5]">
+                            <div
+                                class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
+                            <p class="text-[#AFAFAF] text-start w-[95%] text-sm">{{ $feature['description'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-
-
+            <p class="text-center text-[24px] py-10 font-semibold text-[#858599]">
+                Ét login. Ét system. Fuld kontrol over hele din køreskole.
+            </p>
         </section>
 
         <!-- Info Section -->
@@ -71,97 +137,104 @@
             <div
                 class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl font-bold text-[#1E1E1E]">
-                    Holdadministration giver dig overblik
+                    Holdadministration – Automatisk overblik fra start til slut
                 </h2>
                 <p class="text-[#858599] text-sm">
-                    Uanset om du skal oprette nye hold, komplet med prisoversigt og lektionsplan, eller vil administrere
-                    nuværende hold, kan du gøre det hele med Just Driving.
+                    Just Driving giver dig intelligent og fleksibel holdstyring, der gør både oprettelse, tilmelding,
+                    betaling og lektionsplanlægning problemfri.
                 </p>
                 <p class="text-[#858599] text-sm">
-                    Dine elever kan tilmelde sig dine hold direkte via din hjemmeside og al data sendes videre til Just
-                    Driving med en simpel API, der integrerer din hjemmeside med vores system.
+                    Elever kan tilmelde sig direkte fra din hjemmeside, og systemet håndterer resten automatisk.
                 </p>
-                <p class="text-[#858599] text-sm">
-                    For at sikre dig en så enkel og ligetil adgang, har du følgende primære funktioner i
-                    holdadministrationsmodulet:
+                <p class="text-[#1E1E1E] text-base font-semibold">
+                    Du får:
                 </p>
 
                 <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Fuld oversigt over alle hold</span>
+                        <span>Fuld oversigt over alle aktive, kommende og afsluttede hold.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Elever betaler automatisk når de tilmelder sig et hold</span>
+                        <span>Automatisk betaling ved tilmelding og færre administrative fejl.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Elever kan tilmelde sig direkte på din hjemmeside</span>
+                        <span>API-integration til din hjemmeside og digital lektionsplan for hvert hold.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Eleven følger altid den lektionsplan, du har tilknyttet det enkelte hold</span>
+                        <span>Alt synkroniseres automatisk med elevens profil og logbog for et nemt workflow.</span>
                     </li>
                 </ul>
             </div>
         </section>
+        <p class="text-center text-[16px] py-10 font-semibold text-[#858599]">
+            Holdadministration har aldrig været nemmere – ét login styrer hele forløbet.
+        </p>
 
         <!-- Features Section -->
         <section id="features-section"
             class="max-w-full 2xl:max-w-7xl mx-auto py-16 px-6 md:px-10 lg:px-20 overflow-hidden">
+
+
             <div class="max-w-full mx-auto text-center">
+                <h2 class="text-[28px] font-bold text-[#1E1E1E]">
+                    Holdadministration – Effektiv styring med automatisk flow
+                </h2>
+                <p class="text-[#858599] text-[16px] mt-3">
+                    Just Driving samler hele holdprocessen i ét automatiseret flow, så du får mere tid til selve
+                    undervisningen.
+                </p>
                 @php
                     $features = [
                         [
-                            'img' => 'book.png',
+                            'img' => 'hola1.png',
                             'title' => 'Tilmelding',
-                            'desc' => 'Eleven tilmelder sig selv til holdet, og Just Driving tager sig af alt betaling og registrering.',
+                            'desc' => 'Eleven tilmelder sig via din hjemmeside – systemet opretter og giver automatisk adgang.',
                         ],
                         [
-                            'img' => 'book.png',
+                            'img' => 'hola2.png',
                             'title' => 'Betalinger',
-                            'desc' => 'Køreskolen sætter selv prisen på holdet, og Just Driving håndterer alle indbetalinger.',
+                            'desc' => 'Du sætter prisen. Systemet opkræver betaling ved tilmelding og holder styr på restancer.',
                         ],
                         [
-                            'img' => 'book.png',
+                            'img' => 'hola3.png',
                             'title' => 'Lektionsplan',
-                            'desc' => 'Køreskolen tilknytter en lektionsplan til hvert hold, som eleven automatisk vil få tildelt.',
+                            'desc' => 'Hvert hold får en automatisk, ensartet lektionsplan for alle elever.',
                         ],
                         [
-                            'img' => 'book.png',
-                            'title' => 'Kørelærer',
-                            'desc' => 'Kørelæreren får automatisk tildelt adgang til alle elever på holdet.',
+                            'img' => 'hola4.png',
+                            'title' => 'Kørelæreradgang',
+                            'desc' => 'Kørelærere får automatisk adgang til eleverne på deres hold – ingen manuel opsætning.',
                         ],
                         [
-                            'img' => 'book.png',
-                            'title' => 'Afdeling',
-                            'desc' => 'Hold kan oprettes på tværs af afdelinger i køreskolen.',
+                            'img' => 'hola5.png',
+                            'title' => 'Afdelingsstyring',
+                            'desc' => 'Opret hold på tværs af afdelinger og bevar fuldt overblik ét sted.',
                         ],
                         [
-                            'img' => 'book.png',
-                            'title' => 'Faktura',
-                            'desc' => 'Når eleverne betaler, modtager de automatisk kvittering.',
+                            'img' => 'hola6.png',
+                            'title' => 'Fakturering og kvittering',
+                            'desc' => 'Betaling udløser automatisk faktura og kvittering – helt uden ekstra systemer.',
                         ],
                     ];
                 @endphp
-
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                     @foreach ($features as $index => $feature)
-                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff] transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
 
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                class="w-12 h-12 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
 
                             <h3
                                 class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
@@ -175,43 +248,49 @@
                         </div>
                     @endforeach
                 </div>
+
+                <p class="text-center text-[20px] py-3 font-semibold text-[#1E1E1E]">
+                    Resultatet:
+                </p>
+                <p class="text-center text-[16px] font-semibold text-[#858599]">
+                     Et komplet, synkroniseret holdflow – fra oprettelse til undervisning og betaling.
+                </p>
             </div>
         </section>
 
         <!-- Info Section2 -->
         <section id="afdelinger"
-            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-5 gap-3 overflow-hidden z-10">
             <!-- Left Column (Text) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl capitalize font-bold text-[#1E1E1E]">
-                    Hold styr på dine afdelinger
+                    Afdelingsstyring – Én platform til alle dine lokationer
                 </h2>
                 <p class="text-[#858599]  text-sm">
-                    Har du længe ønsket at udvide din køreskole med flere afdelinger, men er afskrækket af den ekstra
-                    administrative byrde?
+                    Vil du udvide din køreskole uden ekstra administrativt kaos? Med Just Driving kan du oprette og
+                    administrere ubegrænset antal afdelinger i ét samlet system.
                 </p>
-                <p class="text-[#858599] text-sm">
-                    Når du vælger Just Driving, får du adgang til alle dine afdelinger i samme system og kan med få,
-                    enkle trin håndtere hver enkelt afdeling.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Dine kørelærere får adgang til den afdeling, de er tilknyttet, og du har overblikket over alle dele
-                    af din forretning samme sted :
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Fordele:
                 </p>
 
                 <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Opret så mange afdelinger, du ønsker</span>
+                        <span>Opret ubegrænsede afdelinger og administrér dem samlet ét sted.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Kørelærere kan arbejde nemt og overskueligt på tværs af afdelinger</span>
+                        <span>Kørelærere tilknyttes automatisk de rette afdelinger og kan arbejde på tværs.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Elever kan tilmelde sig direkte på din hjemmeside</span>
+                        <span>Ét login giver fuldt centralt overblik over struktur, elever og aktiviteter.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Klar økonomioversigt pr. afdeling for nem styring og kontrol.</span>
                     </li>
 
                 </ul>
@@ -222,303 +301,421 @@
                 <img src="{{ asset('images/feature2.png') }}" alt="Administration System" class="w-full max-w-[450px]">
             </div>
         </section>
+        <p class="text-center w-full text-[16px] pb-10 bg-[#f3f8fd] font-semibold text-[#858599]">
+            Holdadministration har aldrig været nemmere – ét login styrer hele forløbet.
+        </p>
 
         <!-- Features Section2 -->
         <section id="features-section2"
-            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] py-10 px-6 md:px-10 lg:px-20 overflow-hidden">
+            class="max-w-full 2xl:max-w-7xl mx-auto py-20 px-6 md:px-10 lg:px-20 overflow-hidden">
             <div class="max-w-full mx-auto text-center">
+                <!-- Title -->
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+                    Afdelingsstyring – Skalér Din Køreskole Uden Besvær
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="w-[90vw] md:w-[60vw] max-w-3xl mx-auto mt-4 text-[#858599] text-base relative z-10">
+                    Just Driving Giver Dig Alle Værktøjer Til At Drifte Og Vækste Professionelt, Uanset Størrelse.
+                </p>
+
                 @php
                     $features = [
                         [
-                            'img' => 'book.png',
+                            'img' => 'afdelin1.png',
                             'title' => 'Afdelinger',
-                            'desc' => 'Din køreskole kan oprette så mange afdelinger du ønsker, med godt overblik over elever, kørelærer og hold i den enkelte afdeling.',
+                            'desc' => 'Opret ubegrænsede afdelinger og få et klart overblik over elever, hold og kørelærere.',
                         ],
                         [
-                            'img' => 'book.png',
+                            'img' => 'afdelin2.png',
                             'title' => 'Kørelærere',
-                            'desc' => 'Tildel nemt kørelærere til dine afdelinger, og hold styr på aftaler – også hvis du arbejder som selvstændig for flere køreskoler.',
+                            'desc' => 'Tildel kørelærere til afdelinger med få klik - perfekt også for selvstændige, der arbejder flere steder.',
                         ],
                         [
-                            'img' => 'book.png',
-                            'title' => 'Elever og hold',
-                            'desc' => 'Elever knyttes direkte til deres kørelærer, hvorved de tildeles den rigtige afdeling. Ønsker du bedre overblik kan du inddele hold i afdelinger.',
+                            'img' => 'afdelin3.png',
+                            'title' => 'Elever & hold',
+                            'desc' => 'Elever tilknyttes automatisk korrekt afdeling gennem kørelæreren. Hold organiseres pr. afdeling.',
+                        ],
+                        [
+                            'img' => 'afdelin4.png',
+                            'title' => 'Ledelsesoverblik',
+                            'desc' => 'Følg elevstatus, økonomi og aktiviteter på tværs af alle lokationer fra ét login.',
                         ],
                     ];
                 @endphp
 
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-12 max-w-5xl mx-auto">
                     @foreach ($features as $index => $feature)
-                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                                            hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                            transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
-                            style="transition-delay: {{ $index * 100 }}ms;">
-
-                            <!-- Glow effect -->
-                            <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
-                            </div>
-
+                        <div
+                            class="relative bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
 
-                            <h3
-                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
+                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10">
                                 {{ $feature['title'] }}
                             </h3>
 
-                            <p
-                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
+                            <p class="text-[#444] text-start text-sm leading-relaxed relative z-10">
                                 {{ $feature['desc'] }}
                             </p>
                         </div>
                     @endforeach
                 </div>
+
+                <!-- Footer Text -->
+                <p class="text-gray-900 text-base font-semibold mt-4 relative z-10">
+                    Én Platform. Én Struktur. Fuld Skalering Uden Besvær.
+                </p>
             </div>
         </section>
 
 
         <!-- Info Section3 -->
         <section id="Gå-aldrig"
-            class="max-w-full 2xl:max-w-7xl mx-auto text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-5 gap-10 overflow-hidden z-10">
             <!-- Left Column (image) -->
             <div
-                class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/scope.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] object-cover">
+                class="w-full md:w-1/3 flex justify-center md:justify-end opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                <img src="{{ asset('images/scope.png') }}" alt="Administration System" class=" object-cover">
             </div>
             <!-- Right Column (text) -->
             <div
-                class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                class="w-full md:w-2/3 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl capitalize font-bold text-[#1E1E1E]">
-                    Gå aldrig glip af en aftale
+                    Automatisk notifikationssystem – Gå aldrig glip af en aftale
                 </h2>
                 <p class="text-[#858599]  text-sm">
-                    Når du vælger Just Driving, får du adgang til automatiske notifikationer. Det giver dig det bedste
-                    overblik over dine aftaler, og en direkte, digital måde at kommunikere med dine elever, hvis du er
-                    nødt til at ændre eller aflyse en lektion.
+                    Just Driving sender automatisk SMS- og e-mailnotifikationer til både elev og kørelærer, så alle
+                    altid er opdaterede.
                 </p>
-                <p class="text-[#858599] text-sm">
-                    Det samme gælder, hvis en af dine elever er nødt til at ændre på sin aftale med dig. På den måde
-                    mindsker du risikoen for forvirringer, spildtid og mistede aftaler, og du undgår tabt omsætning.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Du kan bruge automatiske notifikationer til en stor del af din kommunikation med dine elever og være
-                    sikker på, dine beskeder bliver set af dine elever.
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Systemet sender automatisk besked ved:
                 </p>
 
-                <ul class="space-y-3 text-[#2b70d8] text-sm font-semibold mt-4">
+
+                <ul class="space-y-3 text-[#] text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Notifikationer via e-mail og sms til både elev og kørelærerr</span>
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[]">
+                        <span>Ændringer, aflysninger og nye lektioner</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Automatisk set-up systemet sørger for informere så snart du foretager en
-                            ændring</span>
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[]">
+                        <span>Reservationer og tilmeldinger</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Brug notifikationerne til betaling, reservationer, annulleringer og meget mere</span>
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[]">
+                        <span>Betalingspåmindelser og frister</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[]">
+                        <span>Udeblivelser og annulleringer</span>
                     </li>
 
                 </ul>
+                <p class="text-[#858599]  text-sm">
+                    Reducer no-shows, skab klar kommunikation og spar tid – helt automatisk.
+                </p>
             </div>
         </section>
 
         <!-- Features Section3 -->
         <section id="features-section3"
-            class="max-w-full 2xl:max-w-7xl mx-auto py-5 px-6 md:px-10 lg:px-20 overflow-hidden">
-            <div class="max-w-full mx-auto text-center">
+            class="w-full 2xl:max-w-7xl mx-auto py-20 px-6 md:px-10 lg:px-20 overflow-hidden">
+            <div class="w-full mx-auto text-center">
+                <!-- Title -->
+                <h1 class="text-2xl sm:text-2xl font-bold leading-tight text-gray-900 relative z-10">
+                    Notifikationssystem – Automatisk besked, hver gang det gælder
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="w-[90vw] md:w-[50vw] mx-auto mt-4 text-[#858599] text-base relative z-10">
+                    Notifikationer opdateres i realtid, så ingen misser vigtige aftaler.
+                </p>
+
+                <p
+                    class="w-[90vw] md:w-[60vw] max-w-3xl mx-auto mt-4 text-gray-900 relative z-10 text-[20px] font-semibold capitalize">
+                    Du får bl.a.:
+                </p>
+
                 @php
                     $features = [
                         [
-                            'img' => 'book.png',
+                            'img' => 'noti1.png',
                             'title' => 'Lektioner',
-                            'desc' => 'Både kørelærer og elev får notifikationer om nye reservationer, annulleringer og ændringer.',
+                            'desc' => 'Besked ved nye bookinger, ændringer og aflysninger.',
                         ],
                         [
-                            'img' => 'book.png',
+                            'img' => 'noti2.png',
                             'title' => 'Betalinger',
-                            'desc' => 'Modtag betalingsnotifikationer og påmindelser om forfaldne betalinger.',
+                            'desc' => 'Automatiske påmindelser og bekræftelser.',
                         ],
                         [
-                            'img' => 'book.png',
-                            'title' => 'Køreskole data',
-                            'desc' => 'Komplet oversigt over køreskolens grunddata, aftaler, elever og kørelærer og meget mere.',
+                            'img' => 'noti3.png',
+                            'title' => 'Lektionsplan',
+                            'desc' => 'Elever får løbende opdateringer på deres progression.',
+                        ],
+                        [
+                            'img' => 'noti4.png',
+                            'title' => 'Automatisk og intelligent',
+                            'desc' => 'Opsæt det én gang – systemet klarer resten.',
                         ],
                     ];
                 @endphp
 
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-4 max-w-5xl mx-auto">
                     @foreach ($features as $index => $feature)
-                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                                    hover:shadow-2xl hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
-                            style="transition-delay: {{ $index * 100 }}ms;">
-
-                            <!-- Glow effect -->
-                            <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
-                            </div>
-
+                        <div
+                            class="relative bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
 
-                            <h3
-                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
+                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10">
                                 {{ $feature['title'] }}
                             </h3>
 
-                            <p
-                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
+                            <p class="text-[#858599] text-start text-sm leading-relaxed relative z-10">
                                 {{ $feature['desc'] }}
                             </p>
                         </div>
                     @endforeach
                 </div>
+
+                <!-- Footer Text -->
+                <p class="text-gray-900 text-base font-semibold mt-4 relative z-10">
+                    Mindre spildtid. Færre misforståelser. Mere professionel drift.
+                </p>
             </div>
         </section>
 
-
-        <!--SMS Notificationer-->
-        <section id="SMS-Notificationer"
-            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
+        <!--Synkroniseret data-->
+        <section id="Synkroniseret"
+            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 md:py-20 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
             <!-- Left Column (image) -->
             <div
                 class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/sms.png') }}" alt="Administration System"
+                <img src="{{ asset('images/synkroneseret.png') }}" alt="Administration System"
                     class="w-full max-w-[450px] object-cover">
             </div>
             <!-- Right Column (text) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl capitalize font-bold text-[#1E1E1E]">
-                    SMS Notifikationer
+                    Synkroniseret data – Altid opdateret. Altid sikkert.
                 </h2>
                 <p class="text-[#858599]  text-sm">
-                    Gå ikke glip af vigtig information via vores SMS notifikationer, som sendes ved vigtige ændringer i
-                    din dag.
+                    Just Driving synkroniserer alt i realtid: hold, elever, betalinger og lektionsplaner.  Ingen
+                    dobbeltindtastning. Ingen fejl. Ingen tabte oplysninger.
+                </p>
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Fordele:
                 </p>
 
-                <ul class="space-y-3 text-black text-sm font-semibold mt-4">
+                <ul class="space-y-8 text-black text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Aflysninger eller ændringer på dine aftaler.</span>
+                        <span>Realtidsopdatering på tværs af hele systemet.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Både kørelærer og elev modtager notifikationerne.</span>
+                        <span>GDPR-sikker datalagring</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Adgangsstyring – kun de rigtige ser data.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Digital elevmappe – alt samlet ét sted</span>
+                    </li>
+                </ul>
+                <p class="text-[#858599] mt-4 text-sm">
+                    Ét system, der altid er opdateret – uden manuelt arbejde.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section4 -->
+        <section id="features-section4"
+            class="w-full 2xl:max-w-7xl mx-auto py-20 px-6 md:px-10 lg:px-20 overflow-hidden">
+            <div class="w-full mx-auto text-center">
+                <!-- Title -->
+                <h1 class="text-2xl sm:text-3xl font-bold leading-tight text-gray-900 relative z-10">
+                    Datastyring & overblik – Al information, ét sted
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="w-[90vw] md:w-[60vw] max-w-3xl mx-auto mt-4 text-[#858599] text-base relative z-10">
+                    Få adgang til alle data, du behøver – når som helst.
+                </p>
+
+                @php
+                    $features = [
+                        [
+                            'img' => 'data1.png',
+                            'title' => 'Elevdata',
+                            'desc' => 'Kontaktinfo, status, lektionsplaner, bookinger, betalinger og kommunikation.',
+                        ],
+                        [
+                            'img' => 'data2.png',
+                            'title' => 'Kørelærerdata',
+                            'desc' => 'Skemaer, undervisning, fakturering, afdelinger og aktiviteter..',
+                        ],
+                        [
+                            'img' => 'data3.png',
+                            'title' => 'Køreskoledatakontrol',
+                            'desc' => 'Struktur, rapporter, økonomi og administrative nøgletal samlet ét sted.',
+                        ],
+
+                    ];
+                @endphp
+
+                <!-- Card Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+                    @foreach ($features as $index => $feature)
+                        <div
+                            class="relative bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
+
+                            <h3 class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10">
+                                {{ $feature['title'] }}
+                            </h3>
+
+                            <p class="text-[#858599] text-start text-sm leading-relaxed relative z-10">
+                                {{ $feature['desc'] }}
+                            </p>
+                        </div>
+                    @endforeach
+                </div>
+
+                <!-- Footer Text -->
+                <p class="text-gray-900 text-base font-semibold mt-4 relative z-10">
+                    Professionel datastyring, der gør hverdagen enklere og mere effektiv.
+                </p>
+            </div>
+        </section>
+
+        <!--SMS Notificationer-->
+        <section id="SMS-Notificationer"
+            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
+
+            <!-- Right Column (text) -->
+            <div
+                class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                <h2 class="text-2xl capitalize font-bold text-[#1E1E1E]">
+                    SMS-notifikationer – Vigtig information leveret med det samme
+                </h2>
+                <p class="text-[#858599]  text-sm">
+                    Just Driving sikrer, at alle kritiske beskeder når frem med det samme.
+                </p>
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Eksempler på automatiske SMS’er:
+                </p>
+
+                <ul class="space-y-5 text-black text-sm font-semibold mt-4">
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Lektioner ændret/aflyst</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Bekræftelser på reservationer.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
                         <span>Overskredet betalingsfrister.</span>
                     </li>
-
+                    <li class="flex items-start gap-2">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <span>Vigtige beskeder fra køreskolen</span>
+                    </li>
                 </ul>
+                <p class="text-[#858599]  text-sm">
+                    Elever og kørelærere modtager samme besked samtidig – helt uden manuelt arbejde.
+                </p>
             </div>
+
+            <!-- Left Column (image) -->
+            <div
+                class="w-full md:w-1/2 flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                <img src="{{ asset('images/sms.png') }}" alt="Administration System"
+                    class="w-full max-w-[450px] object-cover">
+            </div>
+
         </section>
 
         <!-- Data Sikkerhed -->
         <section
-            class="w-[90vw] py-6 px-5 sm:px-0 rounded-2xl outline outline-[#d5e4ff] outline-offset-0 bg-[#eaeff4] mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-10 px-6 md:px-10 lg:px-20 mt-24 sm:mt-16 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row gap-8 md:gap-24">
+                <!-- Left Column -->
+                <div class="w-full md:w-1/2 flex flex-col items-start">
+                    <!-- Tag -->
+                    <div
+                        class="flex items-center justify-center bg-white text-gray-700 px-4 py-2 rounded-2xl text-sm font-medium shadow-sm mb-6 border border-gray-100">
+                        Data sikkerhed
+                    </div>
 
-            <div
-                class="inline-block capitalize bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
-                Data Sikkerhed
+                    <!-- Main Heading -->
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-6">
+                        Datasikkerhed – Tryghed for dig og dine elever
+                    </h1>
+
+                    <!-- First Paragraph -->
+                    <p class="text-[#444] text-xl mb-4 leading-relaxed">
+                        Just Driving er bygget med fokus på sikkerhed, stabil drift og GDPR-overholdelse.
+                    </p>
+                    <p class="text-[#444] text-xl mb-4 leading-relaxed">
+                        Dine data er beskyttet året rundt – sikkert, stabilt og GDPR-kompatibelt.
+                    </p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="w-full md:w-1/2 flex flex-col items-start">
+                    <!-- Section Title -->
+                    <h2 class="text-xl font-bold text-gray-900 mb-6">
+                        Vi garanterer
+                    </h2>
+
+                    <!-- Feature List -->
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] text-base leading-relaxed">
+                                Fuld adgang til alle data med dansk hosting og høj sikkerhed.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] text-base leading-relaxed">
+                                Automatiske backups på time-, dags-, uge- og månedsbasis.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] text-base leading-relaxed">
+                                Løbende opdateringer og stabil drift uden afbrydelser.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] text-base leading-relaxed">
+                                Logning og adgangskontrol sikrer fuld sporbarhed og kontrol.
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-
-            <h1 class="text-2xl sm:text-4xl font-bold leading-tight text-gray-900 relative">
-                Dine data er altid sikre hos Just Driving.
-            </h1>
-
-            <p class="w-[65vw] mx-auto mt-4 text-gray-700 text-md relative">
-                Når du vælger Just Driving, garanterer vi, at du altid har adgang til al din data og at systemet er
-                opdateret, så du aldrig mister noget information. Vi opdaterer og udfører backup hver time, dag, uge og
-                måned året rundt.
-            </p>
 
         </section>
 
-        <!-- Reviews -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
-            <!-- Tag -->
-            <div
-                class="inline-block uppercase bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
-                Tillid fra førende skoler
-            </div>
-
-            <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
-                Betroet af køreskoler over hele Danmark
-            </h1>
-
-            <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Fra elevbooking til betalinger og lektionssporing – alt er strømlinet og automatiseret.
-            </p>
-
-            <!-- Logo Carousel Wrapper -->
-            <div class="mt-5 w-full overflow-hidden relative">
-                <!-- Fading edges -->
-                <div
-                    class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20">
-                </div>
-                <div
-                    class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20">
-                </div>
-
-                <!-- Row 1 (left to right) -->
-                <div class="flex animate-scroll-left space-x-8 w-max">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                </div>
-
-                <!-- Row 2 (right to left) -->
-                <div class="flex animate-scroll-right space-x-8 w-max mt-8">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                </div>
-            </div>
-        </section>
         @include('layouts.footer')
 
         <!-- Section 7 -->

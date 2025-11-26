@@ -32,28 +32,68 @@
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
             <!-- Title -->
             <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
-                Om <span class="text-[#3384FF]">Os</span>
+                Om <span class="text-[#3384FF]">Os</span> – Skabt til køreskoler. Udviklet i Danmark.
             </h1>
 
             <!-- Subtitle -->
             <p class="w-full sm:max-w-4xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
-                Just Driving er den perfekte kombination af erfarne it-folk, med fokus på at skabe systemer, der er
-                nemme at bruge og giver overblik – og erfarne kørelærere og køreskoler, som har skubbet på for at få et
-                system, der kan det hele.
+                Just Driving er udviklet af Nuvia ApS, et dansk team af IT-udviklere og erfarne kørelærere. Vi bygger
+                digitale løsninger, der fungerer i den virkelige køreskolehverdag: stabile, enkle og nemme at bruge.
             </p>
-
-            <!-- CTA Button -->
-            <div class="mt-4 pb-2 flex items-center justify-center gap-2 sm:gap-4 z-10">
-                <a href="#"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    prøv gratis nu
-                </a>
-                <a href="{{ route('priser') }}"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    Se Vores Priser
-                </a>
-            </div>
         </section>
+
+        <section
+            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-10 px-6 md:px-10 lg:px-20 mt-24 sm:mt-16 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-24">
+                <!-- Left Column -->
+                <div class="w-full md:w-1/2 flex flex-col items-start">
+                    <!-- Main Heading -->
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-6">
+                        En del af et samlet økosystem
+                    </h1>
+
+                    <!-- First Paragraph -->
+                    <p class="text-[#444] text-xl mb-4 leading-relaxed">
+                        Just Driving er bygget af danske kørelærere og udviklere, som kender hverdagen i en køreskole.
+                    </p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="w-full md:w-1/2 flex flex-col items-start">
+                    <p class="text-[#1E1E1E] font-semibold text-lg mb-4 leading-relaxed">
+                        Just Driving arbejder tæt sammen med:
+                    </p>
+                    <!-- Feature List -->
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] capitalize text-base leading-relaxed">
+                                <span class="underline text-[#3384FF]"> e-teori.dk </span>– teoriundervisning
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] capitalize text-base leading-relaxed">
+                                <span class="underline text-[#3384FF]"> findkoreskole.dk </span>– elevtilmelding
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-5 h-5 mt-0.5 flex-shrink-0">
+                            <span class="text-[#444] capitalize text-base leading-relaxed">
+                                <span class="font-semibold"> just-pay.dk </span>– betaling og fakturering
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <p class="text-[#1E1E1E] mt-4 text-sm sm:text-base max-w-md text-center leading-relaxed">
+            Alt udvikles og hostes i Danmark med fuld fokus på brugervenlighed og datasikkerhed.
+        </p>
 
         <!-- About Video Section -->
         <section
@@ -75,102 +115,49 @@
             <!-- Right: Text Content -->
             <div class="w-full md:w-1/2 text-center md:text-left">
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 capitalize">
-                    Nemmere for dig
+                    Én platform til hele din køreskole
                 </h2>
-                <p class="text-[#858599] text-sm sm:text-base lg:text-lg leading-relaxed mb-6">
-                    Der findes mange systemer på markedet, men de mangler altid noget. Hos Just Driving får du ét
-                    komplet system, der samler det hele – kalender, fakturering og undervisning. Vi udvikler løbende, så
-                    du altid er på forkant med fremtidens behov.
+                <p class="text-[#858599] text-sm sm:text-base w-full md:w-[80%] lg:text-lg leading-relaxed mb-6">
+                    De fleste køreskoler bruger flere systemer – og mangler stadig noget. Just Driving samler det hele
+                    ét sted: undervisning, booking, betaling og administration. Ingen overlap. Ingen rod.
                 </p>
-                <a href="{{ route('kontakt') }}"
-                    class="inline-block bg-[#3384FF] text-white px-16 py-3 rounded-xl text-sm font-semibold shadow-md hover:bg-[#2563EB] transition">
-                    Kontakt Os
-                </a>
             </div>
         </section>
 
-        <!-- info Section -->
         <section
-            class="max-w-full 2xl:max-w-7xl mx-auto mt-10 px-4 sm:px-6 text-start animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Her mangler ikke noget
-            </h2>
-            <p class="text-[#858599] text-sm sm:text-base w-full leading-relaxed">
-                Det er vores intention at gøre det enkelt for dig at fokusere på din kerneforretning – dine elever.
-                Og for dine elever at komme godt igennem deres oplevelse hos dig.
-                I stedet for at se Just Driving som ”endnu et system”, du skal sætte dig ind i, kan du se på det som
-                ”det eneste system” du skal sætte dig ind i.
-                Med hjælp fra erfarne kørelærere har vi udviklet et system, der er nemt at tilgå og giver dig præcis det
-                overblik, du før har skullet åbne flere systemer for at opnå.
-                Her får du det hele et sted – så du kan lave det, du er bedst til.
-            </p>
-        </section>
+            class="max-w-full 2xl:max-w-7xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
 
-        <!-- Dynamic Info Cards Section -->
-        <section
-            class="max-w-full 2xl:max-w-7xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 text-center animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
+            <!-- Right: Text Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 capitalize">
+                    Hvorfor vælge os?
+                </h2>
+                <ul class="space-y-4 text-[#444] text-base leading-relaxed list-disc list-inside">
+                    <li>Udviklet sammen med karelærere</li>
+                    <li>Færre klik, mindre bavi</li>
+                    <li>Løbende opdateringer og nye funktioner</li>
+                    <li>Vi lytter til dine behov</li>
+                </ul>
+            </div>
 
-            <!-- Heading -->
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Vores værdier
-            </h2>
-
-            <!-- Paragraph -->
-            <p class="text-[#858599] text-sm sm:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed mb-10">
-                Vi er drevet af at skabe en platform, der er nem at bruge, sikker og altid i udvikling.
-            </p>
-
-            @php
-                $cards = [
-                    [
-                        'img' => 'simplicitet.png',
-                        'title' => 'Simplicitet',
-                        'desc' => 'Vi tror på, at det enkle er det bedste.',
-                    ],
-                    [
-                        'img' => 'tillid.png',
-                        'title' => 'Tillid',
-                        'desc' => 'Vi behandler dine data med respekt og sikkerhed.',
-                    ],
-                    [
-                        'img' => 'innovation.png',
-                        'title' => 'Innovation',
-                        'desc' => 'Vi forbedrer løbende vores løsninger med ny teknologi.',
-                    ],
-                ];
-            @endphp
-
-            <!-- Cards Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                @foreach ($cards as $card)
-                    <div
-                        class="group bg-[#F7FAFC] border  rounded-xl p-6 transition-all duration-500 ease-out hover:shadow-[0_8px_25px_rgba(0,0,0,0.1)] hover:-translate-y-3 hover:scale-[1.03] hover:border-[#4c8099]/40 hover:bg-white hover:shadow-[#4c8099]/20 relative overflow-hidden">
-
-                        <!-- Glow effect -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-[#4c8099]/5 via-[#4c8099]/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-500">
-                        </div>
-
-                        <div class="relative z-10 flex justify-start mb-4">
-                            <img src="{{ asset('images/' . $card['img']) }}" alt="{{ $card['title'] }}"
-                                class="h-8 w-8 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#4c8099]">
-                        </div>
-
-                        <h3
-                            class="relative z-10 text-lg sm:text-xl font-semibold text-gray-900 mb-2 text-left transition-colors duration-300 group-hover:text-[#4c8099]">
-                            {{ $card['title'] }}
-                        </h3>
-
-                        <p
-                            class="relative z-10 text-[#4c8099] text-sm text-left transition-all duration-300 group-hover:text-[#366074]">
-                            {{ $card['desc'] }}
-                        </p>
-                    </div>
-                @endforeach
+            <!-- Left: Image -->
+            <div class="w-full md:w-1/2 relative group">
+                <div class="overflow-hidden shadow-lg">
+                    <img src="{{ asset('images/chooseus.png') }}" alt="Choose Us"
+                        class="w-full h-auto object-cover transition-transform duration-500">
+                </div>
             </div>
         </section>
 
-
+        <section class="w-full mx-auto mt-6 sm:mt-10 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+                Vi hjælper dig med at gøre hverdagen enklere
+            </h1>
+            <p class="text-[#1E1E1E] w-full md:w-[80vw] mx-auto py-5 text-[20px]">
+                Just Driving giver dig tid til det vigtigste: eleverne og undervisningen.
+            </p>
+        </section>
 
         @include('layouts.footer')
 

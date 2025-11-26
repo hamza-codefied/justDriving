@@ -535,11 +535,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-5xl mx-auto">
                     <!-- Card 1 -->
                     <div
-                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
-                            <p class="text-[#444] text-sm font-semibold text-left">
+                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            </div>
+                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Ingen betaling, ingen booking
                             </p>
                         </div>
@@ -547,11 +549,13 @@
 
                     <!-- Card 2 -->
                     <div
-                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
-                            <p class="text-[#444] text-sm font-semibold text-left">
+                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            </div>
+                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Automatisk kvittering
                             </p>
                         </div>
@@ -559,11 +563,13 @@
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
-                            <p class="text-[#444] text-sm font-semibold text-left">
+                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                            </div>
+                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Driftssikker dansk betalingsinfrastruktur
                             </p>
                         </div>
@@ -683,7 +689,7 @@
                         <button id="faq-{{ $index }}"
                             class="bg-white/70 shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
                             data-index="{{ $index }}">
-                            <span class="text-xs sm:text-md font-semibold text-gray-900">{{ $faq['question'] }}</span>
+                            <span class="text-xs sm:text-lg font-semibold text-gray-900">{{ $faq['question'] }}</span>
                             <div
                                 class="icon w-6 h-6 flex items-center p-1 justify-center bg-[#3384FF] rounded-full text-white transition-all duration-300">
                                 <i class="" data-lucide="plus"></i>

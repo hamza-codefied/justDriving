@@ -33,28 +33,77 @@
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
             <!-- Title -->
             <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
-                Online økonomisystem
+                Online økonomisystem – Fuld kontrol over din forretning
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
-                Med Just Driving får du et integreret økonomisystem, der samler fakturering og betalinger direkte med
-                din kalender. Du har fuldt overblik over elever, betalinger og historik – alt samlet ét sted.
+            <p class="w-full sm:max-w-6xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
+                Et stærkt økonomisystem er fundamentet for en professionel køreskole. I Just Driving er økonomien fuldt
+                integreret i hele platformen — kalender, booking og betaling arbejder sammen i ét flow, så du altid har
+                styr på indtægter, fakturaer og elevbetalinger uden ekstra systemer.
             </p>
+        </section>
 
-            <!-- CTA Button -->
-            <div class="mt-4 pb-2 flex items-center justify-center gap-2 sm:gap-4 z-10">
-                <a href="#"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    prøv gratis nu
-                </a>
-                <a href="{{ route('priser') }}"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    Se Vores Priser
-                </a>
+        @php
+            $features = [
+                [
+                    'id' => 1,
+                    'description' => 'Betaling og booking i samme flow – direkte i kalenderen.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 2,
+
+                    'description' => 'Automatisk faktura, kvittering og betalingspåmindelser.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 3,
+
+                    'description' => 'Komplet betalingshistorik for hver elev med nem opfølgning.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 4,
+
+                    'description' => 'Fleksibel loginstruktur, så kørelærere kan skifte mellem flere køreskoler.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+            ];
+         @endphp
+
+        <!-- Section 2 -->
+        <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-gray-900 relative z-10">
+                Du får
+            </h1>
+
+            <!-- Cards Grid -->
+            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                @foreach ($features as $feature)
+                    <div
+                        class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+                        <!-- Icon Section -->
+                        <div
+                            class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-2xl transition-all duration-300 hover:bg-[#DCE8F5]">
+                            <div
+                                class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
+                            <p class="text-[#AFAFAF] text-start w-[85%] text-sm">{{ $feature['description'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
-
-
+            <p class="text-center text-[20px] py-10 font-semibold text-[#858599]">
+                Et økonomisystem, der arbejder for dig – så du kan fokusere på undervisningen.
+            </p>
         </section>
 
         <!-- Info Section -->
@@ -71,139 +120,143 @@
             <!-- Right Column (Text Content) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="text-2xl font-bold text-[#1E1E1E]">
-                    Automatiske betalinger
+                <h2 class="text-2xl font-bold capitalize text-[#1E1E1E]">
+                    Slut med manuelle afstemninger – betalingen matcher automatisk
                 </h2>
                 <p class="text-[#858599] text-sm">
-                    Du sparer din køreskole for en masse spildtid ved at investere i Just Driving.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Her får du adgang til en nem og overskuelig betalingsmetode, hvor langt det meste foregår helt
-                    automatisk, så snart en ny elev har valgt sin betalingsplan.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Uanset om det er en fast betaling for et helt forløb, enkelte lektioner eller tilkøb, kan du bruge
-                    Just Drivings betalingsintegration til at håndtere den del af dit bogholderi.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Brug systemet til:
+                    Når en elev køber en lektion, et forløb eller et tilkøb, matcher systemet automatisk betalingen. Du
+                    slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
                 </p>
 
-                <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Automatiseret og sikker betalingskontrol:
+                </p>
+
+                <ul class="space-y-5 text-[#444] text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Betalinger for forløb, ekstra lektioner og tilkøb</span>
+                        <span>Elever kan kun booke lektioner, når betalingen er gennemført.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Betaling med kort og MobilePay</span>
+                        <span>Systemet håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Send faktura direkte til dine elever</span>
+                        <span>Alle opkrævninger og transaktioner er samlet i et klart overblik.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Faktura og kvitteringer er tilgængelige i systemet og nemme at eksportere til PDF</span>
+                        <span>Betalinger behandles sikkert via Stripe med høj datasikkerhed.</span>
                     </li>
                 </ul>
             </div>
         </section>
+        <p class="text-[#858599] py-5 text-[20px]">
+            Mindre administration – mere ro i maven.
+        </p>
 
-        <!-- Features Section -->
-        <section id="features-section"
-            class="max-w-full 2xl:max-w-7xl mx-auto py-16 px-6 md:px-10 lg:px-20 overflow-hidden">
-            <div class="max-w-full mx-auto text-center">
-                @php
-                    $features = [
-                        [
-                            'img' => 'book.png',
-                            'title' => 'Slut med at spilde tid på afstemning',
-                            'desc' => 'Systemet matcher betalinger automatisk for dig.',
-                        ],
-                        [
-                            'img' => 'book.png',
-                            'title' => 'Betaling med det samme',
-                            'desc' => 'Elever kan kun booke lektioner, hvis de betaler med det samme, eller lektionen er en del af et allerede betalt forløb.',
-                        ],
-                        [
-                            'img' => 'book.png',
-                            'title' => 'Høj sikkerhed',
-                            'desc' => 'Betalinger håndteres sikkert gennem vores danske partner Bambora, så du kan være tryg og fokusere på din kerneforretning.',
-                        ],
+        @php
+            $features = [
+                [
+                    'id' => 1,
+                    'description' => 'Betaling for forløb, enkeltlektioner og tilkøb – samlet ét sted.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 2,
 
-                    ];
-                @endphp
+                    'description' => 'Kortbetaling og MobilePay integreret direkte i systemet.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 3,
 
-                <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    @foreach ($features as $index => $feature)
-                        <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                           hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                            transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
-                            style="transition-delay: {{ $index * 100 }}ms;">
-                            <!-- Glow effect -->
+                    'description' => 'Automatisk fakturering, kvittering og PDF-eksport til arkiv eller bogholder.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+                [
+                    'id' => 4,
+
+                    'description' => 'Systemet sender selv påmindelser ved manglende betaling.',
+                    'icon' => asset('images/newbook.png'),
+                ],
+            ];
+         @endphp
+
+        <!-- Section 2 -->
+        <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+            <!-- Title -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+                Mindre administration, mere undervisning
+            </h1>
+            <p class="text-[#1E1E1E] w-full md:w-[80vw] mx-auto py-5 text-[20px]">
+                Just Driving automatiserer hele betalingsforløbet fra start til slut. Når en elev vælger sin
+                betalingsplan, sørger systemet for alt: betaling, kvittering, opfølgning og dokumentation.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
+                @foreach ($features as $feature)
+                    <div
+                        class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+                        <!-- Icon Section -->
+                        <div
+                            class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-2xl transition-all duration-300 hover:bg-[#DCE8F5]">
                             <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
                             </div>
-                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                            <h3
-                                class="text-lg font-semibold text-[#1E1E1E] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300">
-                                {{ $feature['title'] }}
-                            </h3>
-                            <p
-                                class="text-[#858599] text-start text-sm relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300">
-                                {{ $feature['desc'] }}
-                            </p>
                         </div>
-                    @endforeach
-                </div>
+
+                        <!-- Text Section -->
+                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
+                            <p class="text-[#AFAFAF] text-start w-[85%] text-sm">{{ $feature['description'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
+            <p class="text-center text-[20px] py-10 font-semibold text-[#858599]">
+                Ét samlet økonomisystem betyder mindre tastearbejde og mere undervisning.
+            </p>
         </section>
 
         <!-- Info Section2 -->
         <section id="rapporter"
-            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-10 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
             <!-- Left Column (text) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                 <h2 class="text-2xl font-bold text-[#1E1E1E]">
-                    Mindre spildtid og større overblik
+                    Mindre spildtid – Større overblik
                 </h2>
                 <p class="text-[#858599] text-sm">
-                    Få det komplette overblik over din køreskoles indtjening og dine elevers betalinger med Just
-                    Driving.
+                    Med Just Driving er både du og dine elever altid opdateret på økonomien. Alt er samlet ét sted, så
+                    du slipper for at jonglere mellem flere systemer.
                 </p>
-                <p class="text-[#858599] text-sm">
-                    Du behøver ikke længere bruge flere systemer for at holde styr på fakturering og indbetalinger, du
-                    skal kun gå et sted hen.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Betalingsoversigten giver også dine elever et overskueligt overblik over deres transaktioner og
-                    sender automatisk påmindelser ud, hvis en betaling udebliver.
-                </p>
-                <p class="text-[#858599] text-sm">
-                    Alt samlet et sted:
+
+                <p class="text-[#1E1E1E] font-semibold text-base">
+                    Dine fordele:
                 </p>
 
                 <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Betalinger for forløb, ekstra lektioner og tilkøb</span>
+                        <span>Fuldt overblik over indtjening, restancer, transaktioner og alle betalingstyper ét
+                            sted.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Betaling med kort og MobilePay</span>
+                        <span>Automatiske betalingspåmindelser, så du undgår udeblivelser.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Faktura og kvitteringer er tilgængelige i systemet og nemme at eksportere til PDF</span>
+                        <span>Elever har eget betalingsoverblik og adgang til kvitteringer via deres login.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Integration mellem Just Driving og dit økonomisystem</span>
+                        <span>Kortbetaling, MobilePay, PDF-fakturaer og integration til eksternt økonomisystem.</span>
                     </li>
                 </ul>
             </div>
@@ -214,107 +267,13 @@
                     class="w-full max-w-[450px] object-cover">
             </div>
         </section>
-
-        <!-- Data Sikkerhed -->
-        <section
-            class="w-[90vw] py-6 px-5 sm:px-0 rounded-2xl outline outline-[#d5e4ff] outline-offset-0 bg-[#eaeff4] mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
-
-            <div
-                class="inline-block capitalize bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
-                Data Sikkerhed
-            </div>
-
-            <h1 class="text-2xl sm:text-4xl font-bold leading-tight text-gray-900 relative">
-                Dine data er altid sikre hos Just Driving.
-            </h1>
-
-            <p class="w-[65vw] mx-auto mt-4 text-gray-700 text-md relative">
-                Når du vælger Just Driving, garanterer vi, at du altid har adgang til al din data og at systemet er
-                opdateret, så du aldrig mister noget information. Vi opdaterer og udfører backup hver time, dag, uge og
-                måned året rundt.
-            </p>
-
-        </section>
-
-        <!-- Reviews -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
-            <!-- Tag -->
-            <div
-                class="inline-block uppercase bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
-                Tillid fra førende skoler
-            </div>
-
-            <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
-                Betroet af køreskoler over hele Danmark
-            </h1>
-
-            <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Fra elevbooking til betalinger og lektionssporing – alt er strømlinet og automatiseret.
-            </p>
-
-            <!-- Logo Carousel Wrapper -->
-            <div class="mt-5 w-full overflow-hidden relative">
-                <!-- Fading edges -->
-                <div
-                    class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20">
-                </div>
-                <div
-                    class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20">
-                </div>
-
-                <!-- Row 1 (left to right) -->
-                <div class="flex animate-scroll-left space-x-8 w-max">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                </div>
-
-                <!-- Row 2 (right to left) -->
-                <div class="flex animate-scroll-right space-x-8 w-max mt-8">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                    <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
-                </div>
-            </div>
-        </section>
+        <p class="text-[#858599] bg-[#f3f8fd] w-full text-center py-5 text-[20px]">
+            Mindst mulig administration — mest mulig tid til eleverne.
+        </p>
 
         @include('layouts.footer')
 
-        <!-- Section 7 -->
+
         <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
         </section>
     </div>
