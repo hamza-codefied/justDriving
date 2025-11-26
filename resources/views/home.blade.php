@@ -711,36 +711,7 @@
             </div>
         </section>
 
-        <!-- Section 7 -->
-        <section
-            class="w-[95vw] py-6 px-5 sm:px-0 rounded-2xl outline outline-[#ffffff] outline-offset-2 bg-[#eaeff4] mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
 
-            <div
-                class="inline-block capitalize bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
-                Take the First Step Toward Efficiency
-            </div>
-
-
-            <h1 class="text-2xl sm:text-3xl  font-bold leading-tight text-gray-900 relative">
-                Enkel og gennemsigtig pris, der vokser med dig
-            </h1>
-
-
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-gray-700 text-md relative">
-                Betal kun 149 DKK pr. aktiv elev om måneden. Ingen skjulte gebyrer, ingen opstartsgebyrer –
-                nogensinde.
-            </p>
-
-
-            <div class="mt-5 relative z-10">
-                <a href="#"
-                    class="inline-flex items-center bg-[#3384FF] text-sm text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-[#2563EB] transition">
-                    <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Se alle
-                    priser →
-                </a>
-            </div>
-
-        </section>
 
         @include('layouts.footer')
 
