@@ -29,8 +29,8 @@
 
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
-            style="background-image: url('{{ asset('images/Background.svg') }}');">
+        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); backdrop-filter: blur(2px);">
         </div>
 
         <!-- Hero Section -->
@@ -538,10 +538,12 @@
                         class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <div
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
                                 <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
                             </div>
-                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                            <p
+                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Ingen betaling, ingen booking
                             </p>
                         </div>
@@ -552,10 +554,12 @@
                         class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <div
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
                                 <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
                             </div>
-                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                            <p
+                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Automatisk kvittering
                             </p>
                         </div>
@@ -566,10 +570,12 @@
                         class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-[#3384FF]/20 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
-                            <div class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <div
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
                                 <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
                             </div>
-                            <p class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                            <p
+                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
                                 Driftssikker dansk betalingsinfrastruktur
                             </p>
                         </div>
