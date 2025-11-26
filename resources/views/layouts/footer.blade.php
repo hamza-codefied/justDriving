@@ -67,6 +67,6 @@
 
 
     <div class="border-t border-gray-200 mt-10 pt-4 text-center text-xs text-gray-900">
-        © <span id="year"></span> - Udviklet af Just Driving A/S.
+        © <span id="year">2025</span> - Udviklet af Just Driving A/S.
     </div>
 </footer>
