@@ -98,28 +98,62 @@ header {
 /* ===== Hero Blue Shadow Backgrounds ===== */
 .hero-bg-left {
     position: absolute;
-    top: -5%;
+    top: 0;
     left: 0;
-    width: 600px;
-    height: 100%;
+    width: 500px;
+    height: 100vh;
+    /* min-height: 800px; */
     background: url("/images/shadow-left.png") no-repeat left top;
     background-size: contain;
+    background-position: left top;
     opacity: 1;
     z-index: -1;
     pointer-events: none;
+    mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+    .hero-bg-left {
+        width: 550px;
+        opacity: 0.6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-bg-left {
+        width: 600px;
+        opacity: 0.65;
+    }
 }
 
 .hero-bg-right {
     position: absolute;
-    top: -5%;
+    top: 0;
     right: 0;
-    width: 600px;
-    height: 100%;
+    width: 500px;
+    height: 100vh;
+    /* min-height: 800px; */
     background: url("/images/shadow-right.png") no-repeat right top;
     background-size: contain;
+    background-position: right top;
     opacity: 1;
     z-index: -1;
     pointer-events: none;
+    mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+    .hero-bg-right {
+        width: 550px;
+        opacity: 0.6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-bg-right {
+        width: 600px;
+        opacity: 0.65;
+    }
 }
 
 /* ===== Testimonial Elements ===== */

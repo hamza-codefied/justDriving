@@ -26,8 +26,8 @@
 
         @include('layouts.header')
 
-        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover"
-            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); backdrop-filter: blur(2px);">
+        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover pointer-events-none"
+            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); will-change: transform; transform: translateZ(0);">
         </div>
 
         <!-- Hero Section -->
@@ -454,8 +454,8 @@
         @include('layouts.footer')
 
         <!-- Section 7 -->
-        <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
-        </section>
+        <!-- <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
+        </section> -->
     </div>
     <script type="text/javascript" src="/js/script.js"></script>
     <!-- Splide JS -->
