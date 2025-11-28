@@ -31,12 +31,17 @@
             </button>
 
             <!-- Full-width mega menu -->
-            <div class="absolute left-1/2 top-full w-[50vw] -translate-x-1/2 mt-2 bg-white text-black border-t border-gray-400 rounded-b-2xl shadow-2xl z-40
+            <div class="mega-menu absolute left-1/2 top-full w-[50vw] -translate-x-1/2 z-40
         opacity-0 translate-y-2 pointer-events-none scale-95 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]
         group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-hover:scale-100
         hover:opacity-100 hover:translate-y-0 hover:pointer-events-auto hover:scale-100">
-
-                <div class="grid grid-cols-2 gap-8 px-10 py-8">
+                
+                <!-- Invisible bridge to cover gap between trigger and menu -->
+                <div class="absolute -top-2 left-0 right-0 h-2 bg-transparent pointer-events-auto"></div>
+                
+                <!-- Menu content -->
+                <div class="bg-white text-black border-t border-gray-400 rounded-b-2xl shadow-2xl mt-2">
+                    <div class="grid grid-cols-2 gap-8 px-10 py-8">
 
                     <!-- Column 1 -->
                     <div>
@@ -92,6 +97,7 @@
                             <li><a href="{{ route('okonomi') }}#rapporter"
                                     class="block hover:text-[#4eb1df] transition">Rapporter</a></li>
                         </ul>
+                    </div>
                     </div>
                 </div>
             </div>
