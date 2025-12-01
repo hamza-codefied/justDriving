@@ -20,8 +20,16 @@
 <body>
     <div class="content-container">
         <!-- Hero Backgrounds -->
-        <div class="hidden md:block hero-bg-right"></div>
-        <div class="hidden md:block hero-bg-left"></div>
+        <!-- <div class="hidden md:block hero-bg-right"></div>
+        <div class="hidden md:block hero-bg-left"></div> -->
+
+        <div class="absolute top-0 left-0 w-[200px] h-[200px]"
+            style="background: radial-gradient(circle at top left, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        </div>
+
+        <div class="absolute top-0 right-0 w-[200px] h-[200px]"
+            style="background: radial-gradient(circle at top right, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        </div>
 
         @include('layouts.header')
 
