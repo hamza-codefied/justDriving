@@ -551,8 +551,6 @@
         <!-- Section 5 -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
-
-
             <div
                 class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
                 Tillid fra førende skoler

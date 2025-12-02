@@ -89,7 +89,7 @@
             </h1>
 
             <!-- Cards Grid -->
-            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
                 @foreach ($features as $feature)
                     <div
                         class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </section>
-        <p class="text-[#858599] bg-[#f3f8fd] w-full text-center py-5 text-[24px] font-semibold">
+        <p class="text-[#858599] bg-[#f3f8fd] w-full text-center py-10 text-[24px] font-semibold">
             Mindst mulig administration — mest mulig tid til eleverne.
         </p>
 

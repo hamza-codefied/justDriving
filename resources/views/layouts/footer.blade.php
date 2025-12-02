@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-[#1E1E1E] mt-16 text-white py-10 px-6 md:px-12 w-full">
+<footer class="bg-[#1E1E1E] text-white py-10 px-6 md:px-12 w-full">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex flex-col justify-between ">
             <div class="space-x-1 text-lg font-semibold mb-3">

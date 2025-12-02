@@ -81,11 +81,11 @@
             </h2>
 
             <!-- Two Columns Grid -->
-            <div class="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto mb-8 items-stretch">
+            <div class="flex flex-col lg:flex-row gap-3 max-w-7xl mx-auto mb-8 items-stretch">
                 <!-- Left Column - 2 rows -->
-                <div class="flex flex-col flex-1 justify-between">
+                <div class="flex flex-col gap-3 flex-1">
                     <!-- System og administration -->
-                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6 flex-1 flex flex-col">
                         <h3 class="text-lg text-center font-bold text-black mb-4">System og administration</h3>
                         <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
@@ -144,7 +144,7 @@
                     </div>
 
                     <!-- Undervisning og læring -->
-                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6 flex-1 flex flex-col">
                         <h3 class="text-lg text-center font-bold text-black mb-4">Undervisning og læring</h3>
                         <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
@@ -183,9 +183,9 @@
                 </div>
 
                 <!-- Right Column - 3 rows -->
-                <div class="flex flex-col gap-6 flex-1">
+                <div class="flex flex-col gap-3 flex-1">
                     <!-- Økonomi og betaling -->
-                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6 flex-1 flex flex-col">
                         <h3 class="text-lg text-center font-bold text-black mb-4">Økonomi og betaling</h3>
                         <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
@@ -223,7 +223,7 @@
                     </div>
 
                     <!-- Booking og tilmelding -->
-                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6 flex-1 flex flex-col">
                         <h3 class="text-lg text-center font-bold text-black mb-4">Booking og tilmelding</h3>
                         <ul class="space-y-3 text-[18px]">
                             <li class="flex items-start gap-2">
@@ -261,7 +261,7 @@
                     </div>
 
                     <!-- Digital dokumentation og elevstyring -->
-                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6 flex-1 flex flex-col">
                         <h3 class="text-lg text-center font-bold text-black mb-4">Digital dokumentation og
                             elevstyring</h3>
                         <ul class="space-y-3">
@@ -293,7 +293,7 @@
             </div>
 
             <!-- Full Width Row - Kommunikation og påmindelser -->
-            <div class="max-w-7xl mx-auto mt-2">
+            <div class="max-w-7xl mx-auto">
                 <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
                     <h3 class="text-lg text-center font-bold text-black mb-6">Kommunikation og påmindelser</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

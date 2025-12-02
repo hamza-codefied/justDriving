@@ -53,7 +53,7 @@
         </section>
 
         <section
-            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-10 px-6 md:px-10 mt-24 sm:mt-16 relative overflow-hidden">
+            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-5 px-6 md:px-10 mt-24 sm:mt-16 relative overflow-hidden">
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-24">
                 <!-- Left Column -->
                 <div class="w-full md:w-1/2 flex flex-col items-start">
@@ -70,31 +70,35 @@
 
                 <!-- Right Column -->
                 <div class="w-full md:w-1/2 flex flex-col items-start justify-between">
-                    <p class="text-black font-semibold text-lg mb-4 leading-relaxed">
+                    <p class="text-black font-semibold text-lg mb-16 leading-relaxed">
                         Just Driving arbejder tæt sammen med:
                     </p>
                     <!-- Feature List -->
-                    <ul class="space-y-6 text-[#858599] text-[18px] font-normal">
+                    <ul class="space-y-16 text-black text-[18px] font-normal">
                         <li class="flex items-start gap-3">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span class="text-[#858599] capitalize text-base leading-relaxed">
-                                <span class="underline text-[#3384FF] font-semibold"> e-teori.dk </span>–
+                            <span class="text-black capitalize text-base leading-relaxed">
+                                <a href="https://e-teori.dk/" target="_blank"
+                                    class="underline text-[#3384FF] font-semibold hover:text-[#2563EB] transition-colors">
+                                    e-teori.dk </a>–
                                 teoriundervisning
                             </span>
                         </li>
                         <li class="flex items-start gap-3">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span class="text-[#858599] capitalize text-base leading-relaxed">
-                                <span class="underline text-[#3384FF] font-semibold"> findkoreskole.dk </span>–
+                            <span class="text-black capitalize text-base leading-relaxed">
+                                <a href="https://findkoreskole.dk/" target="_blank"
+                                    class="underline text-[#3384FF] font-semibold hover:text-[#2563EB] transition-colors">
+                                    findkoreskole.dk </a>–
                                 elevtilmelding
                             </span>
                         </li>
                         <li class="flex items-start gap-3">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span class="text-[#858599] capitalize text-base leading-relaxed">
+                            <span class="text-black capitalize text-base leading-relaxed">
                                 <span class="font-semibold"> just-pay.dk </span>– betaling og fakturering
                             </span>
                         </li>
