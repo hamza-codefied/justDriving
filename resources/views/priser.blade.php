@@ -39,35 +39,35 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
-            <div class="max-w-4xl mx-auto px-6">
+        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-6">
                 <!-- Main Heading -->
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 relative z-10 mb-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black relative z-10 mb-6">
                     Fra Kun <span class="text-[#3384FF]">149 Kr.</span>/Måned Pr. Elev
                 </h1>
 
                 <!-- First Descriptive Paragraph -->
-                <p class="text-[#858599] text-base sm:text-lg relative z-10">
+                <p class="text-[#858599] text-base sm:text-[24px] font-normal relative z-10">
                     En enkel, gennemsigtig pris — med alt inkluderet.
                 </p>
 
                 <!-- Second Descriptive Paragraph -->
-                <p class="text-[#858599] text-base sm:text-lg mb-8 relative z-10">
+                <p class="text-[#858599] text-base sm:text-[24px] mt-1 font-normal mb-8 relative z-10">
                     Ingen skjulte gebyrer. Ingen moduler. En platform til hele din køreskole.
                 </p>
 
                 <!-- Key Feature Highlight -->
-                <p class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 relative z-10">
+                <p class="text-xl sm:text-2xl font-bold text-black mb-4 relative z-10">
                     Én pris — alle funktioner inkluderet
                 </p>
 
                 <!-- Platform Description Paragraph 1 -->
-                <p class="text-[#858599] text-base sm:text-lg relative z-10">
+                <p class="text-[#858599] text-base sm:text-[24px] font-normal relative z-10">
                     Just Driving giver dig adgang til Danmarks mest komplette platform til køreskoler.
                 </p>
 
                 <!-- Platform Description Paragraph 2 -->
-                <p class="text-[#858599] text-base sm:text-lg relative z-10">
+                <p class="text-[#858599] text-base sm:text-[24px] mt-1 font-normal relative z-10">
                     Alt administration, undervisning, booking og betaling samlet ét sted.
                 </p>
             </div>
@@ -76,7 +76,7 @@
         <!-- Features Included Section -->
         <section id="pricing" class="w-full mt-10 py-5 px-4 sm:px-8 md:px-16 lg:px-24 relative overflow-hidden">
             <!-- Main Heading -->
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold text-black text-center mb-12">
                 Alt dette er inkluderet – samlet ét sted
             </h2>
 
@@ -86,58 +86,58 @@
                 <div class="flex flex-col flex-1 justify-between">
                     <!-- System og administration -->
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="text-lg text-center font-bold text-gray-900 mb-4">System og administration</h3>
-                        <ul class="space-y-3">
+                        <h3 class="text-lg text-center font-bold text-black mb-4">System og administration</h3>
+                        <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Online administrationssystem</span>
+                                <span class="text-sm text-black">Online administrationssystem</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Medarbejder-, elev- og holdadministration</span>
+                                <span class="text-sm text-black">Medarbejder-, elev- og holdadministration</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Adgang til alle elevers oplysninger</span>
+                                <span class="text-sm text-black">Adgang til alle elevers oplysninger</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Ubegrænset antal elever, kørelærere og hold</span>
+                                <span class="text-sm text-black">Ubegrænset antal elever, kørelærere og hold</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Kørelærer- og elevnotater</span>
+                                <span class="text-sm text-black">Kørelærer- og elevnotater</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Mobil-app til elever og kørelærere</span>
+                                <span class="text-sm text-black">Mobil-app til elever og kørelærere</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">E-mail og support tickets</span>
+                                <span class="text-sm text-black">E-mail og support tickets</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Flere afdelinger med central styring</span>
+                                <span class="text-sm text-black">Flere afdelinger med central styring</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">GDPR-sikker databehandling og fuld
+                                <span class="text-sm text-black">GDPR-sikker databehandling og fuld
                                     adgangsstyring</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Hosting i Danmark med backup hver time, dag, uge og
+                                <span class="text-sm text-black">Hosting i Danmark med backup hver time, dag, uge og
                                     måned</span>
                             </li>
                         </ul>
@@ -145,38 +145,38 @@
 
                     <!-- Undervisning og læring -->
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="text-lg text-center font-bold text-gray-900 mb-4">Undervisning og læring</h3>
-                        <ul class="space-y-3">
+                        <h3 class="text-lg text-center font-bold text-black mb-4">Undervisning og læring</h3>
+                        <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Online teoriundervisning med tekst, billeder og
+                                <span class="text-sm text-black">Online teoriundervisning med tekst, billeder og
                                     video</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Undervisning med automatisk afvikling</span>
+                                <span class="text-sm text-black">Undervisning med automatisk afvikling</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Test elever direkte i klassen</span>
+                                <span class="text-sm text-black">Test elever direkte i klassen</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Materiale på dansk, engelsk og arabisk</span>
+                                <span class="text-sm text-black">Materiale på dansk, engelsk og arabisk</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Integration med e-teori.dk</span>
+                                <span class="text-sm text-black">Integration med e-teori.dk</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Elevdokumentbank og digital opgaveaflevering</span>
+                                <span class="text-sm text-black">Elevdokumentbank og digital opgaveaflevering</span>
                             </li>
                         </ul>
                     </div>
@@ -186,37 +186,37 @@
                 <div class="flex flex-col gap-6 flex-1">
                     <!-- Økonomi og betaling -->
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="text-lg text-center font-bold text-gray-900 mb-4">Økonomi og betaling</h3>
-                        <ul class="space-y-3">
+                        <h3 class="text-lg text-center font-bold text-black mb-4">Økonomi og betaling</h3>
+                        <ul class="space-y-3 text-[#858599] text-[18px] font-normal">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Online betaling direkte i systemet</span>
+                                <span class="text-sm text-black">Online betaling direkte i systemet</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Integration med Gompay.dk</span>
+                                <span class="text-sm text-black">Integration med Gompay.dk</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Fuld betalingshistorik og oversigt</span>
+                                <span class="text-sm text-black">Fuld betalingshistorik og oversigt</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk fakturering og kvittering</span>
+                                <span class="text-sm text-black">Automatisk fakturering og kvittering</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Online faktura og restancestyring</span>
+                                <span class="text-sm text-black">Online faktura og restancestyring</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk adgangsbegrænsning ved manglende
+                                <span class="text-sm text-black">Automatisk adgangsbegrænsning ved manglende
                                     betaling</span>
                             </li>
                         </ul>
@@ -224,67 +224,67 @@
 
                     <!-- Booking og tilmelding -->
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="text-lg text-center font-bold text-gray-900 mb-4">Booking og tilmelding</h3>
-                        <ul class="space-y-3">
+                        <h3 class="text-lg text-center font-bold text-black mb-4">Booking og tilmelding</h3>
+                        <ul class="space-y-3 text-[18px]">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Online bookingsystem</span>
+                                <span class="text-sm text-black">Online bookingsystem</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Tilmeldingsformular Integreret på din hjemmeside
+                                <span class="text-sm text-black">Tilmeldingsformular Integreret på din hjemmeside
                                     (API)</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Digital lektionsplan og elevtilknytning</span>
+                                <span class="text-sm text-black">Digital lektionsplan og elevtilknytning</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Opret og tilknyt egne lektionsplaner</span>
+                                <span class="text-sm text-black">Opret og tilknyt egne lektionsplaner</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk elevtilmelding og lektionsflow</span>
+                                <span class="text-sm text-black">Automatisk elevtilmelding og lektionsflow</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Kalenderbooking for både elev og kørelærer</span>
+                                <span class="text-sm text-black">Kalenderbooking for både elev og kørelærer</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Digital dokumentation og elevstyring -->
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="text-lg text-center font-bold text-gray-900 mb-4">Digital dokumentation og
+                        <h3 class="text-lg text-center font-bold text-black mb-4">Digital dokumentation og
                             elevstyring</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Digital underskrift lektionsplan</span>
+                                <span class="text-sm text-black">Digital underskrift lektionsplan</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Digital samtykkeerklæring og GDPR-samtykke</span>
+                                <span class="text-sm text-black">Digital samtykkeerklæring og GDPR-samtykke</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk synkronisering af elevdata og
+                                <span class="text-sm text-black">Automatisk synkronisering af elevdata og
                                     status</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Elevlogin med personlig oversigt og
+                                <span class="text-sm text-black">Elevlogin med personlig oversigt og
                                     kommunikation</span>
                             </li>
                         </ul>
@@ -295,20 +295,20 @@
             <!-- Full Width Row - Kommunikation og påmindelser -->
             <div class="max-w-7xl mx-auto mt-2">
                 <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-gray-200 p-6">
-                    <h3 class="text-lg text-center font-bold text-gray-900 mb-6">Kommunikation og påmindelser</h3>
+                    <h3 class="text-lg text-center font-bold text-black mb-6">Kommunikation og påmindelser</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Left Column -->
                         <div class="space-y-3">
                             <div class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">SMS- og e-mailnotifikationer til elev og
+                                <span class="text-sm text-black">SMS- og e-mailnotifikationer til elev og
                                     kørelærer</span>
                             </div>
                             <div class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Opret egne e-mail-skabeloner til tilmelding og
+                                <span class="text-sm text-black">Opret egne e-mail-skabeloner til tilmelding og
                                     påmindelser</span>
                             </div>
                         </div>
@@ -317,13 +317,13 @@
                             <div class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk besked ved ændringer, aflysninger og
+                                <span class="text-sm text-black">Automatisk besked ved ændringer, aflysninger og
                                     betaling</span>
                             </div>
                             <div class="flex items-start gap-2">
                                 <img src="{{ asset('images/simplicitet.png') }}" class="w-5 h-5 mt-0.5 flex-shrink-0"
                                     alt="Checkmark">
-                                <span class="text-sm text-gray-700">Automatisk påmindelse om betalinger og
+                                <span class="text-sm text-black">Automatisk påmindelse om betalinger og
                                     bookinger</span>
                             </div>
                         </div>
@@ -332,22 +332,23 @@
             </div>
         </section>
 
-        <!-- Reviews -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+        <!-- Section 5 -->
+        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
             <div
-                class="inline-block uppercase bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
+                class="inline-block bg-gray-50 text-black px-4 py-1 rounded-full text-[18px] font-normal shadow-sm mb-4 border border-gray-100 relative">
                 Tillid fra førende skoler
             </div>
 
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
                 Betroet af køreskoler over hele Danmark
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative z-10">
-                Fra elevbooking til betalinger og lektionssporing – alt er strømlinet og automatiseret.
+            <p class="w-[90vw] md:w-[50vw] mx-auto mt-4 text-[#858599] text-[22px] font-normal relative z-10">
+                Tag ikke bare vores ord for det. Hør fra teams, der har forbedret deres produktivitet med os.
             </p>
 
             <!-- Logo Carousel Wrapper -->
@@ -408,29 +409,31 @@
             </div>
         </section>
 
-        <!-- faq -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 text-center relative overflow-hidden">
+        <!-- Section 6 -->
+        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
             <!-- Tag -->
+
+
             <div
-                class="inline-block uppercase bg-gray-50 text-gray-700 px-4 py-1 rounded-full text-sm font-medium shadow-sm mb-4 border border-gray-100 relative">
+                class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
                 Spørgsmål? Vi har svarene
             </div>
 
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative">
                 Ofte stillede <span class="text-[#3384FF]">spørgsmål</span>
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#AFAFAF] text-lg relative">
-                Find hurtige svar på nogle af de mest almindelige spørgsmål om Increasy.
+            <p class="w-[90vw] md:w-[50vw] mx-auto mt-4 text-[#858599] text-[22px] font-normal relative">
+                Find hurtige svar på nogle af de mest almindelige spørgsmål om Just Driving.
             </p>
 
             <!-- FAQ Section -->
             <div class="w-[90vw] md:w-[60vw] mx-auto mt-10 text-left">
                 @php
                     $faqs = [
-                        ['question' => 'Hvordan fungerer Increasy?', 'answer' => 'Increasy hjælper skoler med at automatisere planlægning, booking og betalinger på en nem og effektiv måde.'],
+                        ['question' => 'Hvordan fungerer forøge?', 'answer' => 'forøge hjælper skoler med at automatisere planlægning, booking og betalinger på en nem og effektiv måde.'],
                         ['question' => 'Er der en gratis prøveperiode?', 'answer' => 'Ja, vi tilbyder en gratis prøveperiode, så du kan prøve systemet, før du forpligter dig.'],
                         ['question' => 'Hvordan kan jeg opsige mit abonnement?', 'answer' => 'Du kan til enhver tid opsige dit abonnement fra dit kontrolpanel under indstillinger.'],
                         ['question' => 'Tilbyder I kundesupport?', 'answer' => 'Ja, vores supportteam er tilgængeligt via e-mail og chat for at hjælpe dig med alt, du måtte have brug for.'],
@@ -443,7 +446,7 @@
                         <button id="faq-{{ $index }}"
                             class="bg-white/70 shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
                             data-index="{{ $index }}">
-                            <span class="text-xs sm:text-base font-semibold text-gray-900">{{ $faq['question'] }}</span>
+                            <span class="text-xs sm:text-[22px] font-semibold text-black">{{ $faq['question'] }}</span>
                             <div
                                 class="icon w-6 h-6 flex items-center p-1 justify-center bg-[#3384FF] rounded-full text-white transition-all duration-300">
                                 <i class="" data-lucide="plus"></i>
@@ -451,8 +454,8 @@
                         </button>
 
                         <div
-                            class="faq-answer max-h-0 opacity-0 px-4 py-0 rounded-xl bg-white overflow-hidden transition-all duration-500 ease-in-out mt-2 text-[#777777]">
-                            <p class="text-xs sm:text-base leading-relaxed py-2">{{ $faq['answer'] }}</p>
+                            class="faq-answer max-h-0 opacity-0 px-4 py-0 rounded-xl bg-white overflow-hidden transition-all duration-500 ease-in-out mt-2 text-[#858599]">
+                            <p class="text-[20px] font-normal leading-relaxed py-2">{{ $faq['answer'] }}</p>
                         </div>
                     </div>
                 @endforeach

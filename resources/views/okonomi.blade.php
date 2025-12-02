@@ -38,14 +38,15 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
+            <h1 class="text-xl md:text-5xl capitalize font-bold text-black relative z-10">
                 Online økonomisystem – Fuld kontrol over din forretning
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-full sm:max-w-6xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
+            <p
+                class="w-full sm:max-w-6xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-[24px] leading-tight relative z-10">
                 Et stærkt økonomisystem er fundamentet for en professionel køreskole. I Just Driving er økonomien fuldt
                 integreret i hele platformen — kalender, booking og betaling arbejder sammen i ét flow, så du altid har
                 styr på indtægter, fakturaer og elevbetalinger uden ekstra systemer.
@@ -83,7 +84,7 @@
         <!-- Section 2 -->
         <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-gray-900 relative z-10">
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-black relative z-10">
                 Du får
             </h1>
 
@@ -103,7 +104,8 @@
 
                         <!-- Text Section -->
                         <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
-                            <p class="text-[#AFAFAF] text-start w-[85%] text-sm">{{ $feature['description'] }}</p>
+                            <p class="text-[#858599] text-start w-[85%] text-base font-normal">{{ $feature['description'] }}
+                            </p>
                         </div>
                     </div>
                 @endforeach
@@ -116,45 +118,49 @@
 
         <!-- Info Section -->
         <section id="betalinger"
-            class="max-w-full 2xl:max-w-7xl mx-auto text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
 
             <!-- Left Column (Image) -->
             <div
                 class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
                 <img src="{{ asset('images/undervising1.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] object-cover">
+                    class="w-full max-w-[500px] object-cover">
             </div>
 
             <!-- Right Column (Text Content) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="text-2xl font-bold capitalize text-[#1E1E1E]">
+                <h2 class="text-2xl sm:text-[28px] font-bold capitalize text-black">
                     Slut med manuelle afstemninger – betalingen matcher automatisk
                 </h2>
-                <p class="text-[#858599] text-sm">
+                <p class="text-[#858599] text-base font-normal">
                     Når en elev køber en lektion, et forløb eller et tilkøb, matcher systemet automatisk betalingen. Du
                     slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
                 </p>
 
-                <p class="text-[#1E1E1E] font-semibold text-base">
+                <p class="text-black font-semibold text-base">
                     Automatiseret og sikker betalingskontrol:
                 </p>
 
-                <ul class="space-y-5 text-[#444] text-sm font-semibold mt-4">
+                <ul class="space-y-5 text-[#3384FF] text-[18px] font-normal mt-4">
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Elever kan kun booke lektioner, når betalingen er gennemført.</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Systemet håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Alle opkrævninger og transaktioner er samlet i et klart overblik.</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Betalinger behandles sikkert via Stripe med høj datasikkerhed.</span>
                     </li>
                 </ul>
@@ -195,16 +201,17 @@
         <!-- Section 2 -->
         <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
                 Mindre administration, mere undervisning
             </h1>
-            <p class="text-[#1E1E1E] w-full md:w-[80vw] mx-auto py-5 text-[20px]">
+            <p class="text-black w-full md:w-[80vw] mx-auto py-5 text-[24px]">
                 Just Driving automatiserer hele betalingsforløbet fra start til slut. Når en elev vælger sin
                 betalingsplan, sørger systemet for alt: betaling, kvittering, opfølgning og dokumentation.
             </p>
 
             <!-- Cards Grid -->
-            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
                 @foreach ($features as $feature)
                     <div
                         class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
@@ -219,63 +226,72 @@
 
                         <!-- Text Section -->
                         <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
-                            <p class="text-[#AFAFAF] text-start w-[85%] text-sm">{{ $feature['description'] }}</p>
+                            <p class="text-[#858599] text-start w-[85%] text-base font-normal">{{ $feature['description'] }}
+                            </p>
                         </div>
                     </div>
                 @endforeach
 
             </div>
-            <p class="text-center text-[20px] py-10 font-semibold text-[#858599]">
+            <p class="text-center text-[24px] py-10 font-semibold text-[#858599]">
                 Ét samlet økonomisystem betyder mindre tastearbejde og mere undervisning.
             </p>
         </section>
 
         <!-- Info Section2 -->
-        <section id="rapporter"
-            class="max-w-full 2xl:max-w-7xl mx-auto bg-[#f3f8fd] text-gray-900 py-10 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
-            <!-- Left Column (text) -->
+        <section id="rapporter" class="bg-[#f3f8fd] text-black w-full">
             <div
-                class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="text-2xl font-bold text-[#1E1E1E]">
-                    Mindre spildtid – Større overblik
-                </h2>
-                <p class="text-[#858599] text-sm">
-                    Med Just Driving er både du og dine elever altid opdateret på økonomien. Alt er samlet ét sted, så
-                    du slipper for at jonglere mellem flere systemer.
-                </p>
+                class="max-w-full 2xl:max-w-7xl mx-auto py-10 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 overflow-hidden z-10">
+                <!-- Left Column (text) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="text-2xl sm:text-[28px] font-bold text-black">
+                        Mindre spildtid – Større overblik
+                    </h2>
+                    <p class="text-[#858599] text-base font-normal">
+                        Med Just Driving er både du og dine elever altid opdateret på økonomien. Alt er samlet ét sted,
+                        så
+                        du slipper for at jonglere mellem flere systemer.
+                    </p>
 
-                <p class="text-[#1E1E1E] font-semibold text-base">
-                    Dine fordele:
-                </p>
+                    <p class="text-black font-semibold text-base">
+                        Dine fordele:
+                    </p>
 
-                <ul class="space-y-3 text-[#444] text-sm font-semibold mt-4">
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Fuldt overblik over indtjening, restancer, transaktioner og alle betalingstyper ét
-                            sted.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Automatiske betalingspåmindelser, så du undgår udeblivelser.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Elever har eget betalingsoverblik og adgang til kvitteringer via deres login.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
-                        <span>Kortbetaling, MobilePay, PDF-fakturaer og integration til eksternt økonomisystem.</span>
-                    </li>
-                </ul>
-            </div>
-            <!-- Right Column (image) -->
-            <div
-                class="w-full md:w-1/2 flex justify-end opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/okonomi1.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] object-cover">
+                    <ul class="space-y-3 text-[#3384FF] text-[18px] font-normal mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span>Fuldt overblik over indtjening, restancer, transaktioner og alle betalingstyper ét
+                                sted.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span>Automatiske betalingspåmindelser, så du undgår udeblivelser.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span>Elever har eget betalingsoverblik og adgang til kvitteringer via deres login.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span>Kortbetaling, MobilePay, PDF-fakturaer og integration til eksternt
+                                økonomisystem.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right Column (image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-end opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/okonomi1.png') }}" alt="Administration System"
+                        class="w-full max-w-[500px] object-cover">
+                </div>
             </div>
         </section>
-        <p class="text-[#858599] bg-[#f3f8fd] w-full text-center py-5 text-[20px]">
+        <p class="text-[#858599] bg-[#f3f8fd] w-full text-center py-5 text-[24px] font-semibold">
             Mindst mulig administration — mest mulig tid til eleverne.
         </p>
 

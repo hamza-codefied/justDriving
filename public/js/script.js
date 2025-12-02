@@ -86,27 +86,29 @@ document.addEventListener("DOMContentLoaded", () => {
     // const hasPlayed = sessionStorage.getItem("videoPlayedOnce");
 
     // Observe when video container enters viewport
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    video.play(); // Play video when visible
-                    sessionStorage.setItem("videoPlayedOnce", "true");
-                    observer.unobserve(videoContainer); // Stop observing
-                }
-            });
-        },
-        { threshold: 0.5 }
-    ); // 50% visible trigger
+    // const observer = new IntersectionObserver(
+    //     (entries) => {
+    //         entries.forEach((entry) => {
+    //             if (entry.isIntersecting) {
+    //                 video.play(); // Play video when visible
+    //                 sessionStorage.setItem("videoPlayedOnce", "true");
+    //                 observer.unobserve(videoContainer); // Stop observing
+    //             }
+    //         });
+    //     },
+    //     { threshold: 0.5 }
+    // ); // 50% visible trigger
 
-    observer.observe(videoContainer);
+    // observer.observe(videoContainer);
 
-    if (currentYear === developedYear) {
-        document.getElementById("year").textContent = currentYear;
-    } else {
-        document.getElementById(
-            "year"
-        ).textContent = `${developedYear} - ${currentYear}`;
+    // Update year if element exists
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        if (currentYear === developedYear) {
+            yearElement.textContent = currentYear;
+        } else {
+            yearElement.textContent = `${developedYear} - ${currentYear}`;
+        }
     }
 
     new Splide("#clientSlider", {

@@ -196,6 +196,7 @@ header {
     animation: floatUpDown 4s ease-in-out infinite;
     animation-delay: 0.5s;
     transition: right 0.4s ease-in-out; /* smooth animation */
+    z-index: 9999;
 }
 
 .testimoniol2:hover {

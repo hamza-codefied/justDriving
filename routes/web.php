@@ -33,3 +33,7 @@ Route::get('/kontakt-os', function () {
 Route::get('/priser', function () {
     return view('priser');
 })->name('priser');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');

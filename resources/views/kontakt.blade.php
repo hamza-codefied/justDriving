@@ -38,7 +38,7 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
             <!-- Title -->
             <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
                 Kontakt<span class="text-[#3384FF]"> Os</span>
@@ -156,9 +156,7 @@
 
         @include('layouts.footer')
 
-        <!-- Section 7 -->
-        <section class="w-full h-[120px] bg-[#f6f7fa] mx-auto mt-0 text-center relative overflow-hidden">
-        </section>
+
     </div>
     <script type="text/javascript" src="/js/script.js"></script>
     <!-- Splide JS -->

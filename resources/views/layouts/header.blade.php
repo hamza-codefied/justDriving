@@ -1,11 +1,11 @@
 <!-- Header -->
 <header
-    class="bg-[#1E1E1E] text-white py-3 pl-6 pr-3 flex items-center justify-between rounded-xl w-[90vw] md:w-[80vw] xl:w-[50vw] mx-auto mt-4 shadow-md relative z-50">
+    class="bg-[#1E1E1E] text-white py-3 pl-6 pr-3 flex items-center justify-between rounded-xl w-[90vw] md:w-[80vw] xl:max-w-[900px] mx-auto mt-4 shadow-md relative z-50">
 
     <!-- Logo -->
-    <div href="{{ route('home') }}" class="flex items-center">
+    <a href="{{ route('home') }}" class="flex items-center">
         <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo" class="h-7 w-auto object-contain" />
-    </div>
+    </a>
 
     <!-- Hamburger button (mobile only) -->
     <input type="checkbox" id="menu-toggle" class="peer hidden">
@@ -17,101 +17,115 @@
 
     <!-- Navigation (desktop) -->
     <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="{{ route('home') }}" class="hover:text-blue-400 transition">Forside</a>
+        <a href="{{ route('home') }}" class="hover:text-[#3384FF] font-semibold text-[16px] transition">Forside</a>
 
-        <!-- Dropdown (now click-based) -->
-        <!-- Dropdown (hover-based and flicker-free with faster animation) -->
-        <div class="relative group">
+        <!-- Dropdown (click-based) -->
+        <div class="relative">
+            <!-- Hidden checkbox for toggle state -->
+            <input type="checkbox" id="funktioner-toggle" class="peer hidden">
+
             <!-- Trigger -->
-            <button class="flex items-center space-x-1 hover:text-blue-400 transition focus:outline-none">
+            <label for="funktioner-toggle"
+                class="flex items-center font-semibold space-x-1 hover:text-[#3384FF] transition focus:outline-none text-[16px] cursor-pointer relative">
                 <span>Funktioner</span>
-                <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-            </button>
+                <span class="relative inline-block w-4 h-4 mt-0.5">
+                    <!-- Arrow Down (shown when closed) -->
+                    <svg id="arrow-down" class="absolute inset-0 w-4 h-4 transition-opacity duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <!-- Arrow Up (shown when open) -->
+                    <svg id="arrow-up" class="absolute inset-0 w-4 h-4 opacity-0 transition-opacity duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                    </svg>
+                </span>
+            </label>
 
             <!-- Full-width mega menu -->
-            <div class="mega-menu absolute left-1/2 top-full w-[50vw] -translate-x-1/2 z-40
+            <div id="mega-menu" class="mega-menu absolute top-full w-[90vw] md:w-[80vw] xl:max-w-[900px] z-40
         opacity-0 translate-y-2 pointer-events-none scale-95 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]
-        group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-hover:scale-100
-        hover:opacity-100 hover:translate-y-0 hover:pointer-events-auto hover:scale-100">
-                
-                <!-- Invisible bridge to cover gap between trigger and menu -->
-                <div class="absolute -top-2 left-0 right-0 h-2 bg-transparent pointer-events-auto"></div>
-                
+        peer-checked:opacity-100 peer-checked:translate-y-0 peer-checked:pointer-events-auto peer-checked:scale-100">
+
+
+
                 <!-- Menu content -->
-                <div class="bg-white text-black border-t border-gray-400 rounded-b-2xl shadow-2xl mt-2">
+                <div class="bg-white text-black border-t border-gray-400 rounded-xl shadow-2xl mt-[20px] ml-1">
                     <div class="grid grid-cols-2 gap-8 px-10 py-8">
 
-                    <!-- Column 1 -->
-                    <div>
-                        <h3 class="font-bold text-[#248ec1] mb-3 border-b pb-1">
-                            <a href="{{ route('administration') }}">Online administrationssystem</a>
-                        </h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="{{ route('administration') }}#holdadministration"
-                                    class="block hover:text-[#4eb1df] transition">Holdadministration</a></li>
-                            <li><a href="{{ route('administration') }}#afdelinger"
-                                    class="block hover:text-[#4eb1df] transition">Afdelinger</a></li>
-                            <li><a href="{{ route('administration') }}#Gå-aldrig"
-                                    class="block hover:text-[#4eb1df] transition">Gå Aldrig</a></li>
-                            <li><a href="{{ route('administration') }}#SMS-Notificationer"
-                                    class="block hover:text-[#4eb1df] transition">SMS Notifikationer</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 1 -->
+                        <div>
+                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] transition mb-3 border-b pb-1">
+                                <a href="{{ route('administration') }}">Online administrationssystem</a>
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="{{ route('administration') }}#holdadministration"
+                                        class="block hover:text-[#3384FF] transition">Holdadministration</a></li>
+                                <li><a href="{{ route('administration') }}#afdelinger"
+                                        class="block hover:text-[#3384FF] transition">Afdelinger</a></li>
+                                <li><a href="{{ route('administration') }}#Gå-aldrig"
+                                        class="block hover:text-[#3384FF] transition">Gå Aldrig</a></li>
+                                <li><a href="{{ route('administration') }}#SMS-Notificationer"
+                                        class="block hover:text-[#3384FF] transition">SMS Notifikationer</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Column 2 -->
-                    <div>
-                        <h3 class="font-bold text-[#248ec1] mb-3 border-b pb-1">
-                            <a href="{{ route('undervisning') }}">Online undervisningsystem</a>
-                        </h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="{{ route('undervisning') }}#digitale-lektionsplaner"
-                                    class="block hover:text-[#4eb1df] transition">Digitale Lektionsplaner</a></li>
-                            <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
-                                    class="block hover:text-[#4eb1df] transition">Digital Undervisning</a></li>
-                            <li><a href="{{ route('undervisning') }}#online-teoriprøver"
-                                    class="block hover:text-[#4eb1df] transition">Online teoriprøver</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 2 -->
+                        <div>
+                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                                <a href="{{ route('undervisning') }}">Online undervisningsystem</a>
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="{{ route('undervisning') }}#digitale-lektionsplaner"
+                                        class="block hover:text-[#3384FF] transition">Digitale Lektionsplaner</a></li>
+                                <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
+                                        class="block hover:text-[#3384FF] transition">Digital Undervisning</a></li>
+                                <li><a href="{{ route('undervisning') }}#online-teoriprøver"
+                                        class="block hover:text-[#3384FF] transition">Online teoriprøver</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Column 3 -->
-                    <div>
-                        <h3 class="font-bold text-[#248ec1] mb-3 border-b pb-1">
-                            <a href="{{ route('booking') }}">Online Bookingsystem</a>
-                        </h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="{{ route('booking') }}#overview"
-                                    class="block hover:text-[#4eb1df] transition">Booking Oversigt</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 3 -->
+                        <div>
+                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                                <a href="{{ route('booking') }}">Online Bookingsystem</a>
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="{{ route('booking') }}#overview"
+                                        class="block hover:text-[#3384FF] transition">Booking Oversigt</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Column 4 -->
-                    <div>
-                        <h3 class="font-bold text-[#248ec1] mb-3 border-b pb-1">
-                            <a href="{{ route('okonomi') }}">Online Økonomisystem</a>
-                        </h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="{{ route('okonomi') }}#betalinger"
-                                    class="block hover:text-[#4eb1df] transition">Automatiske betalinger</a></li>
-                            <li><a href="{{ route('okonomi') }}#rapporter"
-                                    class="block hover:text-[#4eb1df] transition">Rapporter</a></li>
-                        </ul>
-                    </div>
+                        <!-- Column 4 -->
+                        <div>
+                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                                <a href="{{ route('okonomi') }}">Online Økonomisystem</a>
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="{{ route('okonomi') }}#betalinger"
+                                        class="block hover:text-[#3384FF] transition">Automatiske betalinger</a></li>
+                                <li><a href="{{ route('okonomi') }}#rapporter"
+                                        class="block hover:text-[#3384FF] transition">Rapporter</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <a href="{{ route('omJustDriving') }}" class="hover:text-blue-400 transition">Om Os</a>
-        <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
+        <a href="{{ route('omJustDriving') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Om
+            Os</a>
+        <a href="{{ route('priser') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Priser</a>
+
+        <a href="{{ route('kontakt') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Kontakt</a>
+
     </nav>
 
     <!-- Contact Button (desktop only) -->
-    <a href="{{ route('kontakt') }}" class="hidden md:inline-block relative overflow-hidden text-white px-5 py-2 text-sm font-medium rounded-lg
+    <a href="{{ route('login') }}" class="hidden md:inline-block relative overflow-hidden text-white px-5 py-2 text-sm font-medium rounded-lg
          transition-all duration-300 bg-[#3384FF] hover:bg-[#2563EB] hover:scale-105 group shadow-md">
-        <span class="relative z-10">Kontakt</span>
+        <span class="relative z-10">Login</span>
         <span class="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 
                opacity-0 group-hover:opacity-100 blur-sm transition duration-500"></span>
     </a>
@@ -135,10 +149,88 @@
 
         <a href="{{ route('omJustDriving') }}" class="hover:text-blue-400 transition">Om Os</a>
         <a href="{{ route('priser') }}" class="hover:text-blue-400 transition">Priser</a>
+        <a href="{{ route('kontakt') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Kontakt</a>
 
-        <a href="{{ route('kontakt') }}"
+        <a href="{{ route('login') }}"
             class="bg-[#3384FF] text-white px-5 py-2 text-sm font-medium shadow-md transition rounded-lg hover:bg-[#2563EB] inline-block w-[80%] mx-auto">
-            Kontakt
+            Login
         </a>
     </div>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.getElementById('funktioner-toggle');
+        const arrowDown = document.getElementById('arrow-down');
+        const arrowUp = document.getElementById('arrow-up');
+
+        if (!toggle || !arrowDown || !arrowUp) return;
+
+        // Function to update arrow visibility
+        function updateArrows() {
+            if (toggle.checked) {
+                arrowDown.style.opacity = '0';
+                arrowUp.style.opacity = '1';
+            } else {
+                arrowDown.style.opacity = '1';
+                arrowUp.style.opacity = '0';
+            }
+        }
+
+        // Update arrows on toggle change
+        toggle.addEventListener('change', updateArrows);
+
+        // Initial state
+        updateArrows();
+
+        // Position mega menu to align with header
+        function positionMegaMenu() {
+            const header = document.querySelector('header');
+            const megaMenu = document.getElementById('mega-menu');
+            const dropdown = megaMenu ? megaMenu.closest('.relative') : null;
+
+            if (!header || !megaMenu || !dropdown) return;
+
+            const headerRect = header.getBoundingClientRect();
+            const dropdownRect = dropdown.getBoundingClientRect();
+
+            // Calculate left position: header's left edge minus dropdown's left edge
+            const leftOffset = headerRect.left - dropdownRect.left;
+
+            // Set the left position
+            megaMenu.style.left = leftOffset + 'px';
+        }
+
+        // Position on load and resize
+        positionMegaMenu();
+        window.addEventListener('resize', positionMegaMenu);
+
+        // Also position when menu opens
+        toggle.addEventListener('change', function () {
+            if (this.checked) {
+                setTimeout(positionMegaMenu, 10);
+            }
+        });
+    });
+
+    // Close mega menu when clicking outside
+    document.addEventListener('click', function (event) {
+        const toggle = document.getElementById('funktioner-toggle');
+        if (!toggle) return;
+
+        const dropdown = toggle.closest('.relative');
+        if (!dropdown) return;
+
+        // Check if click is outside the dropdown container
+        if (!dropdown.contains(event.target)) {
+            toggle.checked = false;
+            // Update arrows when closing
+            const arrowDown = document.getElementById('arrow-down');
+            const arrowUp = document.getElementById('arrow-up');
+            if (arrowDown && arrowUp) {
+                arrowDown.style.opacity = '1';
+                arrowUp.style.opacity = '0';
+            }
+        }
+    });
+</script>

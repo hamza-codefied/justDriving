@@ -39,14 +39,15 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl font-bold text-gray-900 relative z-10">
+            <h1 class="text-xl md:text-5xl font-bold text-black relative z-10">
                 Online bookingsystem – Ét klik. Fuld kontrol.
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
+            <p
+                class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-[24px] leading-tight relative z-10">
                 Et stærkt bookingsystem er afgørende for en effektiv hverdag i din køreskole. Med Just Driving får du et
                 bookingsystem, hvor både elever og kørelærere nemt kan booke, ændre og følge deres lektioner – samlet i
                 én platform.
@@ -84,7 +85,8 @@
         <!-- Section 2 -->
         <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-gray-900 relative z-10">
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
                 Derfor vælger køreskoler Just Driving
             </h1>
 
@@ -104,7 +106,8 @@
 
                         <!-- Text Section -->
                         <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
-                            <p class="text-[#AFAFAF] text-start w-[85%] text-sm">{{ $feature['description'] }}</p>
+                            <p class="text-[#858599] text-start w-[85%] text-base font-medium">{{ $feature['description'] }}
+                            </p>
                         </div>
                     </div>
                 @endforeach
@@ -117,7 +120,7 @@
 
         <!-- Info Section -->
         <section id="overview"
-            class="max-w-full 2xl:max-w-7xl mx-auto text-gray-900 py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
             <!-- Left Column (Image) -->
             <div
                 class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
@@ -127,34 +130,38 @@
             <!-- Right Column (Text Content) -->
             <div
                 class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="text-2xl font-bold text-[#1E1E1E]">
+                <h2 class="text-2xl sm:text-[28px] capitalize font-bold text-black">
                     Booking, aftaler og betaling – samlet ét sted
                 </h2>
-                <p class="text-[#858599] text-sm">
+                <p class="text-[#858599] text-base font-normal">
                     Hvor mange systemer vil du logge ind i hver dag? De fleste kørelærere svarede: Ét. Derfor har vi
                     samlet booking, kalender og betaling i ét strømlinet system.
 
 
                 </p>
-                <p class="text-[#1E1E1E] font-semibold text-base">
+                <p class="text-black capitalize font-semibold text-base">
                     Du får blandt andet:
                 </p>
 
-                <ul class="space-y-6 text-[#444] text-sm font-semibold mt-8">
+                <ul class="space-y-3 text-[#3384FF] text-[18px] font-normal mt-8">
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Fælles kalenderoverblik for elev, kørelærer og køreskole</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Direkte booking og betaling i samme flow</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Hurtig oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right" class="w-4 h-4 text-[#3384FF]">
+                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                            class="w-4 h-4 text-[#3384FF] mt-1">
                         <span>Klar visning af alle kommende lektioner og aftaler</span>
                     </li>
                 </ul>
@@ -168,22 +175,23 @@
         <section class="w-full mx-auto mt-24 sm:mt-16 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
             <div class="max-w-6xl mx-auto">
                 <!-- Main Heading -->
-                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-[#1E1E1E] relative z-10 mb-6">
+                <h1
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10 mb-6">
                     Dynamiske Formularer – Fleksibel Planlægning
                 </h1>
 
                 <!-- Introductory Paragraph -->
-                <p class="text-[#858599] text-sm mb-12 relative z-10">
+                <p class="text-[#858599] text-base font-normal mb-12 relative z-10">
                     Opret præcis de lektionstyper, du har brug for – enkeltlektioner, gruppetimer eller længere forløb.
                     Systemet tilpasser sig din måde at arbejde på.
                 </p>
 
                 <!-- First Sub-section -->
                 <div class="text-center mb-10">
-                    <h2 class="text-xl sm:text-2xl font-bold text-[#1E1E1E] mb-4 text-center">
+                    <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-black mb-4 text-center">
                         Smidig betaling – direkte i bookingflowet
                     </h2>
-                    <p class="text-[#858599] text-sm mb-3">
+                    <p class="text-[#858599] text-base mb-3">
                         Tilbyder du ekstra eller frivillige lektioner? 
                     </p>
                     <p class="text-[#858599] text-base leading-relaxed">
@@ -194,10 +202,10 @@
 
                 <!-- Second Sub-section -->
                 <div class="text-center">
-                    <h2 class="text-xl sm:text-2xl font-bold text-[#1E1E1E] mb-4">
+                    <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-black mb-4">
                         Avanceret søgning og filtre – altid overblik
                     </h2>
-                    <p class="text-[#858599] text-base leading-relaxed">
+                    <p class="text-[#858599] text-base font-normal leading-relaxed">
                         Med intelligente filtre kan du hurtigt finde specifikke elever, lektioner eller tidsrum. Perfekt
                         til travle dage, hvor du ønsker fuldt overblik med få klik.
                     </p>
