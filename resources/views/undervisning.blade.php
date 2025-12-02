@@ -195,10 +195,10 @@
             class="max-w-full 2xl:max-w-7xl mx-auto py-5 px-6 md:px-10 lg:px-20 overflow-hidden">
 
             <div class="max-w-full mx-auto text-center">
-                <h2 class="text-[28px] mb-6 font-bold text-black">
+                <h2 class="text-[28px] capitalize mb-6 font-bold text-black">
                     Lektionsplan-funktioner – Klar til brug og tilpasning
                 </h2>
-                <p class="text-black font-normal mb-8 text-[16px]">
+                <p class="text-black capitalize font-normal mb-8 text-[16px]">
                     Med fuld fleksibilitet kan du strukturere lektionsplaner præcis efter dine læringsforløb.
                 </p>
 
@@ -231,13 +231,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
                                 class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">

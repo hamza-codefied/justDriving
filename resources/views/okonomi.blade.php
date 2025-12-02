@@ -138,7 +138,7 @@
                     slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
                 </p>
 
-                <p class="text-black font-semibold text-base">
+                <p class="text-black capitalize font-semibold text-base">
                     Automatiseret og sikker betalingskontrol:
                 </p>
 
@@ -245,7 +245,7 @@
                 <!-- Left Column (text) -->
                 <div
                     class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="text-2xl sm:text-[28px] font-bold text-black">
+                    <h2 class="text-2xl sm:text-[28px] capitalize font-bold text-black">
                         Mindre spildtid – Større overblik
                     </h2>
                     <p class="text-[#858599] text-base font-normal">

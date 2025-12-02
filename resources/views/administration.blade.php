@@ -247,7 +247,7 @@
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -570,7 +570,7 @@
             class="w-full 2xl:max-w-7xl mx-auto py-20 px-6 md:px-10 lg:px-20 overflow-hidden">
             <div class="w-full mx-auto text-center">
                 <!-- Title -->
-                <h1 class="text-2xl sm:text-[28px] font-bold leading-tight text-black relative z-10">
+                <h1 class="text-2xl sm:text-[28px] capitalize font-bold leading-tight text-black relative z-10">
                     Datastyring & overblik – Al information, ét sted
                 </h1>
 
@@ -620,7 +620,7 @@
                 </div>
 
                 <!-- Footer Text -->
-                <p class="text-black text-[20px] font-bold mt-6 relative z-10">
+                <p class="text-black text-[20px] capitalize font-bold mt-6 relative z-10">
                     Professionel datastyring, der gør hverdagen enklere og mere effektiv.
                 </p>
             </div>

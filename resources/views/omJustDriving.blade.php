@@ -164,7 +164,7 @@
 
         <section class="w-full mx-auto mt-6 sm:mt-10 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-[34px] font-bold leading-tight text-black relative z-10">
+            <h1 class="text-2xl sm:text-3xl md:text-[34px] capitalize font-bold leading-tight text-black relative z-10">
                 Vi hjælper dig med at gøre hverdagen enklere
             </h1>
             <p class="text-black w-full md:w-[80vw] mx-auto py-5 text-[24px]">
