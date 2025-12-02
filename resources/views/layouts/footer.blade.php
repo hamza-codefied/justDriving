@@ -69,9 +69,12 @@
         <div>
             <h3 class="font-semibold mb-3">Login</h3>
             <ul class="space-y-2 text-base">
-                <li><a href="#" class="hover:text-[#3384FF] transition">Køreskole</a></li>
-                <li><a href="#" class="hover:text-[#3384FF] transition">Kørelærer</a></li>
-                <li><a href="#" class="hover:text-[#3384FF] transition">Elev</a></li>
+                <li><a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                        class="hover:text-[#3384FF] transition">Køreskole</a></li>
+                <li><a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                        class="hover:text-[#3384FF] transition">Kørelærer</a></li>
+                <li><a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                        class="hover:text-[#3384FF] transition">Elev</a></li>
             </ul>
         </div>
         <div>
