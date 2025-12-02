@@ -218,10 +218,10 @@
                         </p>
 
                         <!-- Enhanced Login Button -->
-                        <button
-                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative">
+                        <a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative inline-block text-center">
                             <span class="relative z-10">Login</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -248,10 +248,10 @@
                         </p>
 
                         <!-- Enhanced Login Button -->
-                        <button
-                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative">
+                        <a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative inline-block text-center">
                             <span class="relative z-10">Login</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -278,10 +278,10 @@
                         </p>
 
                         <!-- Enhanced Login Button -->
-                        <button
-                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative">
+                        <a href="https://school.just-driving.dk/login?lang=da" target="_blank"
+                            class="btn-gradient w-full text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg relative inline-block text-center">
                             <span class="relative z-10">Login</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
