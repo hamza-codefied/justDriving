@@ -34,8 +34,8 @@
 
         @include('layouts.header')
 
-        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover pointer-events-none"
-            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); will-change: transform; transform: translateZ(0);">
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
         </div>
 
         <!-- Hero Section -->
@@ -231,13 +231,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-2xl shadow-md p-6 flex flex-col items-start 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
                                 class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
@@ -314,7 +314,7 @@
 
         <!-- Info Section3 -->
         <section id="online-teoriprøver"
-            class="max-w-full 2xl:max-w-7xl mx-auto text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-20 gap-3 overflow-hidden z-10">
+            class="max-w-full 2xl:max-w-7xl mx-auto text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-20 gap-3 overflow-hidden z-10 mb-10">
             <!-- Left Column (image) -->
             <div
                 class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">

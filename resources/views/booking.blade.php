@@ -34,8 +34,8 @@
 
         @include('layouts.header')
 
-        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover pointer-events-none"
-            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); will-change: transform; transform: translateZ(0);">
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
         </div>
 
         <!-- Hero Section -->
@@ -172,7 +172,7 @@
         </p>
 
         <!-- Dynamiske Formularer Section -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-24 sm:mt-16 px-6 py-0 sm:py-5 text-center mb-10 relative overflow-hidden">
             <div class="max-w-6xl mx-auto">
                 <!-- Main Heading -->
                 <h1

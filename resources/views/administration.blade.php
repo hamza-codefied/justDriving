@@ -32,8 +32,8 @@
         </div>
         @include('layouts.header')
 
-        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover pointer-events-none"
-            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); will-change: transform; transform: translateZ(0);">
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
         </div>
 
         <!-- Hero Section -->
@@ -247,7 +247,7 @@
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -681,7 +681,7 @@
 
         <!-- Data Sikkerhed -->
         <section
-            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-10 px-6 md:px-10 lg:px-20 mt-24 sm:mt-16 relative overflow-hidden">
+            class="max-w-6xl mx-auto bg-[#eaeff4] rounded-2xl py-10 px-6 md:px-10 lg:px-20 mt-24 sm:mt-16 relative overflow-hidden mb-10">
             <div class="flex flex-col md:flex-row gap-8 md:gap-24">
                 <!-- Left Column -->
                 <div class="w-full md:w-1/2 flex flex-col items-start">

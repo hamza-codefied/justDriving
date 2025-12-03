@@ -36,8 +36,8 @@
 
         @include('layouts.header')
 
-        <div class="lg:block absolute inset-0 -z-10 bg-no-repeat bg-center bg-cover pointer-events-none"
-            style="background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6)), url('{{ asset('images/Background.svg') }}'); will-change: transform; transform: translateZ(0);">
+        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+            style="background-image: url('{{ asset('images/Background.svg') }}');">
         </div>
 
         <!-- Hero Section -->
@@ -626,9 +626,7 @@
         </section>
 
         <!-- Section 6 -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
-            <!-- Tag -->
-
+        <section class="w-full mx-auto mt-16 text-center mb-10 relative overflow-hidden">
 
             <div
                 class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
@@ -658,14 +656,14 @@
                  @endphp
 
                 @foreach ($faqs as $index => $faq)
-                    <div class="bg-transparent p-2">
+                    <div class="bg-white p-2">
                         <button id="faq-{{ $index }}"
-                            class="bg-white/70 shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
+                            class="bg-white shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
                             data-index="{{ $index }}">
                             <span class="text-xs sm:text-[22px] font-semibold text-black">{{ $faq['question'] }}</span>
                             <div
                                 class="icon w-6 h-6 flex items-center p-1 justify-center bg-[#3384FF] rounded-full text-white transition-all duration-300">
-                                <i class="" data-lucide="plus"></i>
+                                <i class="faq-icon" data-lucide="plus"></i>
                             </div>
                         </button>
 

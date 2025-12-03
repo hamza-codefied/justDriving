@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     questions.forEach((btn) => {
         btn.addEventListener("click", () => {
             const answer = btn.nextElementSibling;
+            const iconElement = btn.querySelector(".faq-icon");
+            const iconContainer = btn.querySelector(".icon");
 
             // Close all others
             document.querySelectorAll(".faq-answer").forEach((a) => {
@@ -65,19 +67,50 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             document.querySelectorAll(".faq-question").forEach((q) => {
-                if (q !== btn) q.classList.remove("open");
+                if (q !== btn) {
+                    q.classList.remove("open");
+                    // Reset icons for other FAQs to plus
+                    const otherIcon = q.querySelector(".faq-icon");
+                    if (otherIcon) {
+                        otherIcon.innerHTML = '';
+                        otherIcon.setAttribute("data-lucide", "plus");
+                        requestAnimationFrame(() => {
+                            lucide.createIcons();
+                        });
+                    }
+                }
             });
 
             // Toggle current FAQ
             const isOpen = btn.classList.contains("open");
             if (isOpen) {
+                // Closing - show plus
                 btn.classList.remove("open");
                 answer.style.maxHeight = "0px";
                 answer.style.opacity = "0";
+                // Change to plus icon
+                if (iconElement) {
+                    iconElement.innerHTML = '';
+                    iconElement.setAttribute("data-lucide", "plus");
+                    // Use requestAnimationFrame to ensure DOM is updated
+                    requestAnimationFrame(() => {
+                        lucide.createIcons();
+                    });
+                }
             } else {
+                // Opening - show minus
                 btn.classList.add("open");
                 answer.style.maxHeight = answer.scrollHeight + "px";
                 answer.style.opacity = "1";
+                // Change to minus icon
+                if (iconElement) {
+                    iconElement.innerHTML = '';
+                    iconElement.setAttribute("data-lucide", "minus");
+                    // Use requestAnimationFrame to ensure DOM is updated
+                    requestAnimationFrame(() => {
+                        lucide.createIcons();
+                    });
+                }
             }
         });
     });
