@@ -656,7 +656,7 @@
                  @endphp
 
                 @foreach ($faqs as $index => $faq)
-                    <div class="bg-white p-2">
+                    <div class="bg-transparent p-2">
                         <button id="faq-{{ $index }}"
                             class="bg-white shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
                             data-index="{{ $index }}">
