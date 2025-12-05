@@ -5,7 +5,13 @@ module.exports = {
     "./**/*.{html,php}" // Scans all HTML and PHP files in subdirectories
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'product-sans': ['"Product Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'manrope': ['"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'sans': ['"Product Sans"', '"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

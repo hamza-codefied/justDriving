@@ -1,3 +1,167 @@
+/* ===== Custom Fonts ===== */
+
+/* Product Sans Font Family */
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Product Sans Italic Variants */
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-ThinItalic.ttf")
+        format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-LightItalic.ttf")
+        format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-MediumItalic.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-BoldItalic.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/ProductSans-BlackItalic.ttf")
+        format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Manrope Font Family */
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope/static/Manrope-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===== Animations ===== */
+
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -44,6 +208,122 @@
     padding: 0;
 }
 
+/* ===== Product Sans Font Classes ===== */
+.font-product-sans-thin {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.font-product-sans-thin-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.font-product-sans-light {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-product-sans-light-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.font-product-sans-regular {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-product-sans-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.font-product-sans-medium {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-product-sans-medium-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.font-product-sans-bold {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-product-sans-bold-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.font-product-sans-black {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-product-sans-black-italic {
+    font-family: "Product Sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ===== Manrope Font Classes ===== */
+.font-manrope-extralight {
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.font-manrope-light {
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-manrope-regular {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-manrope-medium {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-manrope-semibold {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-manrope-bold {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-manrope-extrabold {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 body {
     width: 100vw;
     height: auto;
@@ -52,7 +332,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f7f8fa;
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: "Product Sans", "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Optional blurry edges (commented out)

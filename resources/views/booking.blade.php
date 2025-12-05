@@ -39,19 +39,29 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
+        <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl font-bold text-black relative z-10">
-                Online bookingsystem – Ét klik. Fuld kontrol.
+            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[95px] text-black relative z-10"
+                style="letter-spacing: -2px; word-spacing: -2px;">
+                Online <span class="text-[#3384FF]"> Bookingsystem</span>– Ét klik. Fuld kontrol.
             </h1>
 
             <!-- Subtitle -->
-            <p
-                class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-[24px] leading-tight relative z-10">
-                Et stærkt bookingsystem er afgørende for en effektiv hverdag i din køreskole. Med Just Driving får du et
+            <p style="letter-spacing: -1px;"
+                class="w-full sm:max-w-6xl px-6 md:px-0 mx-auto mt-[16px] leading-[38px] text-[#858599] md:text-[16px] lg:text-[24px] z-10 font-manrope-bold opacity-[90%]">
+                Et stærkt bookingsystem er afgørende for en effektiv hverdag i din køreskole. Med Just Driving får du et
                 bookingsystem, hvor både elever og kørelærere nemt kan booke, ændre og følge deres lektioner – samlet i
                 én platform.
             </p>
+            <!-- CTA Button -->
+            <div class="mt-[50px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+                <a href="#"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
+                    style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
+                    prøv Bookingsystem
+                </a>
+
+            </div>
         </section>
 
         @php
@@ -59,156 +69,164 @@
                 [
                     'id' => 1,
                     'description' => 'Intuitiv kalender til lektioner, prøver og møder.',
-                    'icon' => asset('images/newbook.png'),
+                    'icon' => asset('images/book.png'),
                 ],
                 [
                     'id' => 2,
 
                     'description' => 'Automatiske SMS- og e-mailpåmindelser for færre udeblivelser.',
-                    'icon' => asset('images/newbook.png'),
+                    'icon' => asset('images/book.png'),
                 ],
                 [
                     'id' => 3,
 
                     'description' => 'Hurtig håndtering af ændringer og aflysninger.',
-                    'icon' => asset('images/newbook.png'),
+                    'icon' => asset('images/book.png'),
                 ],
                 [
                     'id' => 4,
 
                     'description' => 'Tydeligt overblik for kørelæreren – tilgængeligt på mobil, tablet og computer.',
-                    'icon' => asset('images/newbook.png'),
+                    'icon' => asset('images/book.png'),
                 ],
+
             ];
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto mt-24 sm:mt-20 px-6 py-0 sm:py-5 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative overflow-hidden">
             <!-- Title -->
-            <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
+            <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
+                style="letter-spacing: -1.2px;">
                 Derfor vælger køreskoler Just Driving
             </h1>
 
             <!-- Cards Grid -->
-            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div class="max-w-[1280px] mx-auto flex flex-wrap justify-center gap-[50px] mt-16">
                 @foreach ($features as $feature)
                     <div
-                        class="bg-[#F5f5f5] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+                        class="bg-[#F5f5f5] p-2 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2  hover:bg-white w-full md:max-w-[276px] h-[362px]">
                         <!-- Icon Section -->
                         <div
-                            class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-2xl transition-all duration-300 hover:bg-[#DCE8F5]">
+                            class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
-                                class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                                class="mx-auto rounded-[24px] flex items-center bg-white justify-center transform transition-transform duration-300 hover:scale-110 p-6">
                                 <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
                             </div>
                         </div>
 
                         <!-- Text Section -->
-                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
-                            <p class="text-[#858599] text-start w-[85%] text-base font-medium">{{ $feature['description'] }}
-                            </p>
+                        <div class="flex flex-col my-5 pl-6 items-start transition-all duration-300">
+                            <p class="font-manrope-medium text-[#858599] text-start w-[95%] text-[16px] font-medium leading-[30px]"
+                                style="letter-spacing: -0.32px;">{{ $feature['description'] }}</p>
                         </div>
                     </div>
                 @endforeach
-
             </div>
-            <p class="text-center text-[20px] py-10 font-semibold text-[#858599]">
-                Slut med dobbeltbookinger og rod. Få fuld kontrol over din daglige drift.
-            </p>
+
         </section>
 
         <!-- Info Section -->
         <section id="overview"
-            class="max-w-full 2xl:max-w-7xl mx-auto text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 overflow-hidden z-10">
+            class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center mt-[180px] gap-10 z-10">
+
             <!-- Left Column (Image) -->
             <div
-                class="w-full md:w-1/2 flex justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/undervising1.png') }}" alt="Administration System"
-                    class="w-full max-w-[450px] object-cover">
+                class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                <img src="{{ asset('images/undervising1.png') }}" alt="Administration System" class="">
             </div>
+
             <!-- Right Column (Text Content) -->
             <div
-                class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="text-2xl sm:text-[28px] capitalize font-bold text-black">
+                class="w-full md:w-1/2 space-y-6 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
                     Booking, aftaler og betaling – samlet ét sted
                 </h2>
-                <p class="text-[#858599] text-base font-normal">
+                <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
                     Hvor mange systemer vil du logge ind i hver dag? De fleste kørelærere svarede: Ét. Derfor har vi
                     samlet booking, kalender og betaling i ét strømlinet system.
-
-
                 </p>
-                <p class="text-black capitalize font-semibold text-base">
+
+                <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
                     Du får blandt andet:
                 </p>
 
-                <ul class="space-y-3 text-[#3384FF] text-[18px] font-normal mt-8">
+                <ul class="space-y-6 mt-4">
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 text-[#3384FF] mt-1">
-                        <span>Fælles kalenderoverblik for elev, kørelærer og køreskole</span>
+                            class="w-4 h-4 mt-1 text-[#3384FF]">
+                        <span
+                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Fælles
+                            kalenderoverblik for elev, kørelærer og køreskole</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 text-[#3384FF] mt-1">
-                        <span>Direkte booking og betaling i samme flow</span>
+                            class="w-4 h-4 mt-1 text-[#3384FF]">
+                        <span
+                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Direkte
+                            booking og betaling i samme flow</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 text-[#3384FF] mt-1">
-                        <span>Hurtig oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
+                            class="w-4 h-4 mt-1 text-[#3384FF]">
+                        <span
+                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Hurtig
+                            oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 text-[#3384FF] mt-1">
-                        <span>Klar visning af alle kommende lektioner og aftaler</span>
+                            class="w-4 h-4 mt-1 text-[#3384FF]">
+                        <span
+                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Klar
+                            visning af alle kommende lektioner og aftaler</span>
                     </li>
                 </ul>
             </div>
         </section>
-        <p class="text-[#858599] py-5 text-[20px]">
-            Just Driving giver dig en hverdag, hvor alt hænger sammen – præcis som det bør være.
-        </p>
 
         <!-- Dynamiske Formularer Section -->
-        <section class="w-full mx-auto mt-24 sm:mt-16 px-6 py-0 sm:py-5 text-center mb-10 relative overflow-hidden">
-            <div class="max-w-6xl mx-auto">
-                <!-- Main Heading -->
-                <h1
-                    class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10 mb-6">
-                    Dynamiske Formularer – Fleksibel Planlægning
-                </h1>
+        <section id="features-section4" class="max-w-[1280px] mx-auto px-6 mt-[133px] mb-[100px]">
+            <div class="">
+                @php
+                    $features = [
+                        [
+                            'img' => 'data1.png',
+                            'title' => 'Dynamiske formularer – fleksibel planlægning',
+                            'desc' => 'Opret præcis de lektionstyper, du har brug for – enkeltlektioner, gruppetimer eller længere forløb. Systemet tilpasser sig din måde at arbejde på.',
+                        ],
+                        [
+                            'img' => 'data2.png',
+                            'title' => 'Smidig betaling – direkte i bookingflowet',
+                            'desc' => 'Tilbyder du ekstra eller frivillige lektioner? Systemet håndterer betalingen automatisk som en del af bookingen – nemt for både elev og kørelærer.',
+                        ],
+                        [
+                            'img' => 'data3.png',
+                            'title' => 'Avanceret søgning og filtre – altid overblik',
+                            'desc' => 'Med intelligente filtre kan du hurtigt finde specifikke elever, lektioner eller tidsrum. Perfekt til travle dage, hvor du ønsker fuldt overblik med få klik.',
+                        ],
 
-                <!-- Introductory Paragraph -->
-                <p class="text-[#858599] text-base font-normal mb-12 relative z-10">
-                    Opret præcis de lektionstyper, du har brug for – enkeltlektioner, gruppetimer eller længere forløb.
-                    Systemet tilpasser sig din måde at arbejde på.
-                </p>
+                    ];
+                @endphp
 
-                <!-- First Sub-section -->
-                <div class="text-center mb-10">
-                    <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-black mb-4 text-center">
-                        Smidig betaling – direkte i bookingflowet
-                    </h2>
-                    <p class="text-[#858599] text-base mb-3">
-                        Tilbyder du ekstra eller frivillige lektioner? 
-                    </p>
-                    <p class="text-[#858599] text-base leading-relaxed">
-                        Systemet håndterer betalingen automatisk som en del af bookingen – nemt for både elev og
-                        kørelærer.
-                    </p>
-                </div>
+                <!-- Card Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                    @foreach ($features as $index => $feature)
+                        <div
+                            class="relative bg-white rounded-[30px] shadow-xl border-[4px] border-[#f0f2f5] p-5 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
 
-                <!-- Second Sub-section -->
-                <div class="text-center">
-                    <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-black mb-4">
-                        Avanceret søgning og filtre – altid overblik
-                    </h2>
-                    <p class="text-[#858599] text-base font-normal leading-relaxed">
-                        Med intelligente filtre kan du hurtigt finde specifikke elever, lektioner eller tidsrum. Perfekt
-                        til travle dage, hvor du ønsker fuldt overblik med få klik.
-                    </p>
+                            <h4 class="font-manrope-extrabold text-[#1B1C31] text-[24px] font-extrabold leading-[33px] mb-2 relative z-10"
+                                style="letter-spacing: -0.72px;">
+                                {{ $feature['title'] }}
+                            </h4>
+
+                            <p class="font-manrope-semibold text-[#747474] text-start text-[16px] font-semibold leading-normal relative z-10"
+                                style="letter-spacing: -0.32px;">
+                                {{ $feature['desc'] }}
+                            </p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>

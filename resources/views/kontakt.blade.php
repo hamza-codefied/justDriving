@@ -38,7 +38,7 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[140px] text-center relative overflow-hidden">
             <!-- Title -->
             <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
                 Kontakt<span class="text-[#3384FF]"> Os</span>

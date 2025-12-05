@@ -1,3 +1,10 @@
+<!-- Scroll to Top Button - Above Footer with 85px gap -->
+<div class="w-full flex justify-center items-center z-10 mb-[85px]">
+    <div id="scroll-to-top" class="cursor-pointer opacity-0 invisible transition-all duration-300 hover:scale-110">
+        <img src="{{ asset('images/mouse.png') }}" alt="Scroll to top" class="w-12 h-12 md:w-16 md:h-16">
+    </div>
+</div>
+
 <!-- Footer -->
 <footer class="bg-[#1E1E1E] text-white py-10 px-6 md:px-12 w-full">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -5,11 +12,10 @@
             <div class="space-x-1 text-lg font-semibold mb-3">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo"
-                        class="h-7 w-auto object-contain" />
+                    <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo" class="" />
                 </div>
-                <p class="text-base text-gray-300 mt-2 mb-4">
-                    Få bedre overblik, mindre spildtid og en stærkere forretning med Just Drivings online
+                <p class="text-base font-medium text-gray-300 mt-2 mb-4">
+                    Du får et bedre overblik, mindre spildtid og større omsætning med Just-drivings komplette online
                     administrationssystem.
                     <br />
                     <br />
@@ -93,7 +99,43 @@
     </div>
 
 
-    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-base text-white">
+    <div class="border-t-2 border-white mt-10 pt-4 text-center text-base text-white">
         © 2026 - Udviklet af Nuvia ApS
     </div>
 </footer>
+
+
+
+<script>
+    // Scroll to Top Functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollButton = document.getElementById('scroll-to-top');
+
+        // Function to check and update button visibility
+        function updateButtonVisibility() {
+            if (window.pageYOffset > 300) {
+                scrollButton.classList.remove('opacity-0', 'invisible');
+                scrollButton.classList.add('opacity-100', 'visible');
+            } else {
+                scrollButton.classList.remove('opacity-100', 'visible');
+                scrollButton.classList.add('opacity-0', 'invisible');
+            }
+        }
+
+        // Check initial scroll position on page load
+        updateButtonVisibility();
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function () {
+            updateButtonVisibility();
+        });
+
+        // Smooth scroll to top on click
+        scrollButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>

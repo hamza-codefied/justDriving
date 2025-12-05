@@ -38,18 +38,20 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
+        <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl capitalize font-bold text-black relative z-10">
-                Om <span class="text-[#3384FF]">Os</span> – Skabt til køreskoler. Udviklet i Danmark.
+            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-normal text-black relative z-10 capitalize"
+                style="letter-spacing: -2px; word-spacing: -2px;">
+                Om <span class="text-[#3384FF]"> os</span>– Skabt til køreskoler.<br /> Udviklet i Danmark
             </h1>
 
             <!-- Subtitle -->
-            <p
-                class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-[24px] leading-tight relative z-10">
+            <p style="letter-spacing: -1px;"
+                class="w-full sm:max-w-6xl px-6 md:px-0 mx-auto mt-[16px] leading-[38px] text-[#858599] md:text-[16px] lg:text-[24px] z-10 font-manrope-bold opacity-[90%]">
                 Just Driving er udviklet af Nuvia ApS, et dansk team af IT-udviklere og erfarne kørelærere. Vi bygger
                 digitale løsninger, der fungerer i den virkelige køreskolehverdag: stabile, enkle og nemme at bruge.
             </p>
+
         </section>
 
         <section

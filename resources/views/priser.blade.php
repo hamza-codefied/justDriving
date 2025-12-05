@@ -39,7 +39,7 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[100px] text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[140px] text-center relative overflow-hidden">
             <div class="max-w-5xl mx-auto px-6">
                 <!-- Main Heading -->
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black relative z-10 mb-6">
