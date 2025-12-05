@@ -113,7 +113,8 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto mt-[100px] md:mt-[166px] px-6 text-center relative overflow-hidden">
+        <section
+            class="w-full mx-auto mt-[100px] md:mt-[166px] px-6 text-center relative overflow-hidden bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -146,69 +147,73 @@
         </section>
 
         <!-- Info Section -->
-        <section id="holdadministration"
-            class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-start justify-center mt-[288px] gap-10 z-10">
+        <section id="holdadministration" class="w-full mx-auto text-black  pt-[288px] gap-10 z-10 bg-white">
+            <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-start justify-center">
 
-            <!-- Left Column (Image) -->
-            <div
-                class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/admin-system.png') }}" alt="Administration System" class="">
-            </div>
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/admin-system.png') }}" alt="Administration System" class="">
+                </div>
 
-            <!-- Right Column (Text Content) -->
-            <div
-                class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
-                    Holdadministration – Automatisk overblik fra <br /> start til slut
-                </h2>
-                <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
-                    Just Driving giver dig intelligent og fleksibel holdstyring, der gør både oprettelse, tilmelding,
-                    betaling og lektionsplanlægning problemfri.
-                </p>
-                <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
-                    Elever kan tilmelde sig direkte fra din hjemmeside, og systemet håndterer resten automatisk.
-                </p>
-                <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
-                    Du får:
-                </p>
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
+                        Holdadministration – Automatisk overblik fra <br /> start til slut
+                    </h2>
+                    <p
+                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                        Just Driving giver dig intelligent og fleksibel holdstyring, der gør både oprettelse,
+                        tilmelding,
+                        betaling og lektionsplanlægning problemfri.
+                    </p>
+                    <p
+                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                        Elever kan tilmelde sig direkte fra din hjemmeside, og systemet håndterer resten automatisk.
+                    </p>
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                        Du får:
+                    </p>
 
-                <ul class="space-y-3 mt-4">
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Fuld
-                            oversigt over alle aktive, kommende og afsluttede hold.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Automatisk
-                            betaling ved tilmelding og færre administrative fejl.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">API-integration
-                            til din hjemmeside og digital lektionsplan for hvert hold.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Alt
-                            synkroniseres automatisk med elevens profil og logbog for et nemt workflow.</span>
-                    </li>
-                </ul>
+                    <ul class="space-y-3 mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Fuld
+                                oversigt over alle aktive, kommende og afsluttede hold.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Automatisk
+                                betaling ved tilmelding og færre administrative fejl.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">API-integration
+                                til din hjemmeside og digital lektionsplan for hvert hold.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Alt
+                                synkroniseres automatisk med elevens profil og logbog for et nemt workflow.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
 
         <!-- Features Section -->
-        <section id="features-section" class="max-w-[1280px] mx-auto px-6 mt-[209px]">
-            <div class="text-center">
+        <section id="features-section" class="w-full pt-[209px] pb-[262px] bg-white">
+            <div class="text-center max-w-[1280px] mx-auto px-6">
                 <p class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal capitalize">
                     Holdadministration – Effektiv styring med automatisk flow
                 </p>
@@ -260,7 +265,7 @@
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
                             <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -282,7 +287,7 @@
         </section>
 
         <!-- Info Section2 -->
-        <section id="afdelinger" class="w-full bg-[#f3f8fd] md:p-[76px] text-black mt-[262px]">
+        <section id="afdelinger" class="w-full bg-[#f3f8fd] md:p-[76px] text-black">
             <div
                 class="max-w-[1280px] px-6 mx-auto flex flex-col md:flex-row items-start justify-center gap-[40px] z-10">
                 <!-- Left Column (Text) -->
@@ -340,7 +345,8 @@
             </div>
         </section>
 
-        <section id="" class="w-full px-6 md:px-0 text-black mt-[150px]">
+        <section id=""
+            class="w-full px-6 md:px-0 text-black pt-[150px] bg-gradient-to-b from-[#ffffff] via-[#ffffff]/20 to-transparent">
             <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10">
                 <!-- Left Column (image) -->
                 <div
@@ -456,63 +462,65 @@
                 </div>
             </div>
 
-            <div
-                class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10 mt-[150px]">
-                <!-- Left Column (image) -->
+            <div class="w-full bg-gradient-to-t from-[#ffffff] via-[#ffffff]/80 to-[#ffffff]/30">
                 <div
-                    class="w-full md:w-1/2 flex justify-center md:justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                    <img src="{{ asset('images/Rectangle.png') }}" alt="Administration System" class="">
-                </div>
-                <!-- Right Column (text) -->
-                <div
-                    class="w-full md:w-1/2 space-y-3 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
-                        Notifikationssystem – Automatisk besked, hver gang det gælder
-                    </h2>
-                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
-                        Notifikationer opdateres i realtid, så ingen misser vigtige aftaler.
-                    </p>
-                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
-                        Du får bl.a.:
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektioner
-                                : Besked ved nye bookinger, ændringer og aflysninger.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
-                                : Besked ved nye bookinger, ændringer og aflysninger.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektionsplan
-                                : Besked ved nye bookinger, ændringer og aflysninger.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Automatisk
-                                og intelligent : Besked ved nye bookinger, ændringer og aflysninger.</span>
-                        </li>
-                    </ul>
-                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
-                        Mindre spildtid. Færre misforståelser. Mere professionel drift.
-                    </p>
+                    class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10 mt-[150px]  pb-[230px]">
+                    <!-- Left Column (image) -->
+                    <div
+                        class="w-full md:w-1/2 flex justify-center md:justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                        <img src="{{ asset('images/Rectangle.png') }}" alt="Administration System" class="">
+                    </div>
+                    <!-- Right Column (text) -->
+                    <div
+                        class="w-full md:w-1/2 space-y-3 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                        <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
+                            Notifikationssystem – Automatisk besked, hver gang det gælder
+                        </h2>
+                        <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                            Notifikationer opdateres i realtid, så ingen misser vigtige aftaler.
+                        </p>
+                        <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                            Du får bl.a.:
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#3384FF]">
+                                <span
+                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektioner
+                                    : Besked ved nye bookinger, ændringer og aflysninger.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#3384FF]">
+                                <span
+                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
+                                    : Besked ved nye bookinger, ændringer og aflysninger.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#3384FF]">
+                                <span
+                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektionsplan
+                                    : Besked ved nye bookinger, ændringer og aflysninger.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#3384FF]">
+                                <span
+                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Automatisk
+                                    og intelligent : Besked ved nye bookinger, ændringer og aflysninger.</span>
+                            </li>
+                        </ul>
+                        <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                            Mindre spildtid. Færre misforståelser. Mere professionel drift.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="" class="w-full bg-[#f3f8fd] md:p-[76px] text-black mt-[230px]">
+        <section id="" class="w-full bg-[#f3f8fd] md:p-[76px] text-black">
             <div
                 class="max-w-[1280px] px-6 mx-auto flex flex-col md:flex-row items-start justify-center gap-[40px] z-10">
                 <!-- Right Column (Image) -->
@@ -575,8 +583,8 @@
         </section>
 
         <!-- Features Section4 -->
-        <section id="features-section4" class="max-w-[1280px] mx-auto px-6 mt-[170px]">
-            <div class="w-full mx-auto text-center">
+        <section id="features-section4" class="w-full bg-white mx-auto px-6 pt-[170px] pb-[150px]">
+            <div class="max-w-[1280px] mx-auto text-center">
                 <!-- Title -->
                 <h4 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal relative z-10">
                     Datastyring & overblik – Al information, ét sted
@@ -633,7 +641,7 @@
         </section>
 
         <!--SMS Notificationer-->
-        <section id="SMS-Notificationer" class="bg-[#f3f8fd] text-black mdp-[76px] w-full mt-[150px]">
+        <section id="SMS-Notificationer" class="bg-[#f3f8fd] text-black md:p-[76px] w-full">
             <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-3 overflow-hidden z-10">
                 <!-- Right Column (text) -->
                 <div
@@ -691,82 +699,84 @@
         </section>
 
         <!-- Data Sikkerhed -->
-        <section style="border: 3px solid rgba(43, 112, 216, 0.50);"
-            class="w-[90vw] md:max-w-[1280px] mx-auto bg-[#e2ebf4] rounded-[40px] p-[50px] mt-[140px] mb-[196px]">
-            <div class="flex flex-col md:flex-row gap-8 md:gap-24">
-                <!-- Left Column -->
-                <div class="w-full md:w-1/2 flex flex-col items-start">
-                    <!-- Tag -->
-                    <div
-                        class="flex items-center justify-center bg-white px-4 py-2 rounded-2xl shadow-sm mb-6 border border-gray-100 font-product-sans-regular text-[#171717] text-center text-[18px] font-normal leading-normal">
-                        Data sikkerhed
+        <div class="w-full bg-white">
+            <section style="border: 3px solid rgba(43, 112, 216, 0.50);"
+                class="w-[90vw] md:max-w-[1280px] mx-auto bg-[#e2ebf4] rounded-[40px] p-[50px] mt-[140px] mb-[196px]">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-24">
+                    <!-- Left Column -->
+                    <div class="w-full md:w-1/2 flex flex-col items-start">
+                        <!-- Tag -->
+                        <div
+                            class="flex items-center justify-center bg-white px-4 py-2 rounded-2xl shadow-sm mb-6 border border-gray-100 font-product-sans-regular text-[#171717] text-center text-[18px] font-normal leading-normal">
+                            Data sikkerhed
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h4 class="font-manrope-extrabold text-[#171717] text-[28px] md:text-[48px] font-extrabold leading-[46px] mb-6"
+                            style="">
+                            Datasikkerhed – Tryghed for dig og dine elever
+                        </h4>
+
+                        <!-- First Paragraph -->
+                        <p class="font-manrope-medium text-[#181433] text-[20px] font-medium leading-[36px] mb-4"
+                            style="letter-spacing: -0.4px;">
+                            Just Driving er bygget med fokus på sikkerhed, stabil drift og GDPR-overholdelse.
+                        </p>
+                        <p class="font-manrope-bold text-[#000] text-[20px] font-bold leading-[36px] mb-4"
+                            style="letter-spacing: -0.4px;">
+                            Dine data er beskyttet året rundt – sikkert, stabilt og GDPR-kompatibelt.
+                        </p>
                     </div>
 
-                    <!-- Main Heading -->
-                    <h4 class="font-manrope-extrabold text-[#171717] text-[28px] md:text-[48px] font-extrabold leading-[46px] mb-6"
-                        style="">
-                        Datasikkerhed – Tryghed for dig og dine elever
-                    </h4>
+                    <!-- Right Column -->
+                    <div class="w-full md:w-1/2 flex flex-col items-start">
+                        <!-- Section Title -->
+                        <h4 class="font-manrope-bold text-[#000] text-[24px] font-bold leading-[36px] mt-[72px] mb-10"
+                            style="letter-spacing: -0.48px;">
+                            Vi sikrer:
+                        </h4>
 
-                    <!-- First Paragraph -->
-                    <p class="font-manrope-medium text-[#181433] text-[20px] font-medium leading-[36px] mb-4"
-                        style="letter-spacing: -0.4px;">
-                        Just Driving er bygget med fokus på sikkerhed, stabil drift og GDPR-overholdelse.
-                    </p>
-                    <p class="font-manrope-bold text-[#000] text-[20px] font-bold leading-[36px] mb-4"
-                        style="letter-spacing: -0.4px;">
-                        Dine data er beskyttet året rundt – sikkert, stabilt og GDPR-kompatibelt.
-                    </p>
+                        <!-- Feature List -->
+                        <ul class="space-y-8">
+                            <li class="flex items-start gap-3">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-5 h-5 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    Fuld adgang til alle data med dansk hosting og høj sikkerhed.
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-5 h-5 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    Automatiske backups på time-, dags-, uge- og månedsbasis.
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-5 h-5 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    Løbende opdateringer og stabil drift uden afbrydelser.
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-5 h-5 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    Logning og adgangskontrol sikrer fuld sporbarhed og kontrol.
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Right Column -->
-                <div class="w-full md:w-1/2 flex flex-col items-start">
-                    <!-- Section Title -->
-                    <h4 class="font-manrope-bold text-[#000] text-[24px] font-bold leading-[36px] mt-[72px] mb-10"
-                        style="letter-spacing: -0.48px;">
-                        Vi sikrer:
-                    </h4>
-
-                    <!-- Feature List -->
-                    <ul class="space-y-8">
-                        <li class="flex items-start gap-3">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span
-                                class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
-                                Fuld adgang til alle data med dansk hosting og høj sikkerhed.
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span
-                                class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
-                                Automatiske backups på time-, dags-, uge- og månedsbasis.
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span
-                                class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
-                                Løbende opdateringer og stabil drift uden afbrydelser.
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-5 h-5 mt-0.5 flex-shrink-0">
-                            <span
-                                class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
-                                Logning og adgangskontrol sikrer fuld sporbarhed og kontrol.
-                            </span>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-        </section>
+            </section>
+        </div>
 
         @include('layouts.footer')
 
