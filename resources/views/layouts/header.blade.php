@@ -9,14 +9,14 @@
 
     <!-- Hamburger button (mobile only) -->
     <input type="checkbox" id="menu-toggle" class="peer hidden">
-    <label for="menu-toggle" class="md:hidden cursor-pointer p-2 rounded-lg hover:bg-[#2A2A2A] transition">
+    <label for="menu-toggle" class="lg:hidden cursor-pointer p-2 rounded-lg hover:bg-[#2A2A2A] transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </label>
 
     <!-- Navigation (desktop) -->
-    <nav class="hidden md:flex items-center space-x-6 text-sm">
+    <nav class="hidden lg:flex items-center space-x-6 text-sm">
         <a href="{{ route('home') }}" class="hover:text-[#3384FF] font-semibold text-[16px] transition">Forside</a>
 
         <!-- Dropdown (click-based) -->
@@ -129,7 +129,7 @@
     </nav>
 
     <!-- Contact Button (desktop only) -->
-    <a href="{{ route('login') }}" class="hidden md:inline-block relative overflow-hidden text-white px-5 py-2 text-sm font-medium rounded-lg
+    <a href="{{ route('login') }}" style="padding: 14px 36px;" class="hidden lg:inline-block relative overflow-hidden text-white text-sm font-medium rounded-[16px]
          transition-all duration-300 bg-[#3384FF] hover:bg-[#2563EB] hover:scale-105 group shadow-md">
         <span class="relative z-10">Login</span>
         <span class="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 

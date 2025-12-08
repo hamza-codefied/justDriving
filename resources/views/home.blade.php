@@ -96,9 +96,13 @@
         </section>
 
         <!-- Client Section -->
-        <section class="w-full mx-auto text-center relative bg-[#ffffff]/70 py-1 sm:py-5">
+        <section class="w-full mx-auto text-center relative bg-[#ffffff]/70 py-1 sm:py-5 overflow-hidden">
             <div class="relative py-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/clientBackground.png') }}'); background-size: cover; background-position: center;">
+                <!-- Left Fade -->
+                <div class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#ffffff]/70 to-transparent z-20"></div>
+                <!-- Right Fade -->
+                <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#ffffff]/70 to-transparent z-20"></div>
                 <div id="clientSlider" class="splide w-full" aria-label="Client Logos">
                     <div class="splide__track">
                         <ul class="splide__list opacity-50 grayscale">
@@ -156,7 +160,8 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full bg-gradient-to-b from-[#ffffff]/60 via-[#ffffff]/70 to-[#ffffff] pt-[165px] pb-[70px]">
+        <section
+            class="w-full bg-gradient-to-b from-[#ffffff]/60 via-[#ffffff]/70 to-[#ffffff] pt-[165px] pb-[70px] overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto text-center relative">
                 <!-- Tag -->
                 <div style="color: var(--Black, #171717); text-align: center; line-height: 30px; letter-spacing: -0.4px; text-transform: uppercase;"
@@ -248,7 +253,7 @@
         </section>
 
         <!-- Container for three sections to prevent layout shifts -->
-        <div class="w-full bg-[#ffffff]/70">
+        <div class="w-full bg-[#ffffff]/70 overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px] mb-[50px]">
                 <section id=""
                     class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
@@ -469,8 +474,8 @@
         </div>
 
         <!-- Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[138px] text-center relative">
-            <!-- CTA Button -->
+        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[138px] text-center relative overflow-hidden">
+
             <div class="mt-[60px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
                     class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
@@ -484,7 +489,7 @@
         </section>
 
         <!-- Section  -->
-        <section class="w-full bg-[#f3f8fd] mx-auto px-[73px] py-[100px] text-center relativeF">
+        <section class="w-full bg-[#f3f8fd] mx-auto px-[73px] py-[100px] text-center relative overflow-hidden">
             <!-- Title -->
             <p style="color: var(--Black, #171717);"
                 class="text-center font-manrope-bold text-[50px] leading-[60px] tracking-[-1.5px] relative z-10">
@@ -510,7 +515,7 @@
         </section>
 
         <!-- Payment Flow Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pt-16 text-center relative">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pt-16 text-center relative overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto px-6">
                 <!-- Main Heading -->
                 <h4 style="color: #000;"
@@ -671,7 +676,7 @@
         </section>
 
         <!-- Section 6 -->
-        <section class="w-full bg-[#ffffff] pt-[160px] mx-auto text-center pb-10 relative">
+        <section class="w-full bg-[#ffffff] pt-[160px] mx-auto text-center pb-10 relative overflow-hidden">
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[50px] relative">
                 Spørgsmål? Vi har svarene

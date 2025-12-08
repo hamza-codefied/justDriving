@@ -15,7 +15,8 @@
                     <img src="{{ asset('images/logo.png') }}" alt="Just Driving Logo" class="" />
                 </div>
                 <p class="text-base font-medium text-gray-300 mt-2 mb-4">
-                    Du får et bedre overblik, mindre spildtid og større omsætning med Just-drivings komplette online
+                    Du får et bedre overblik, mindre <br /> spildtid og større omsætning <br /> med Just-drivings
+                    komplette <br /> online
                     administrationssystem.
                     <br />
                     <br />
