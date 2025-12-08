@@ -100,9 +100,13 @@
             <div class="relative py-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/clientBackground.png') }}'); background-size: cover; background-position: center;">
                 <!-- Left Fade -->
-                <div class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#ffffff]/70 to-transparent z-20"></div>
+                <div
+                    class="pointer-events-none absolute inset-y-0 left-0 w-96 bg-gradient-to-r from-[#ffffff]/90 to-transparent z-20">
+                </div>
                 <!-- Right Fade -->
-                <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#ffffff]/70 to-transparent z-20"></div>
+                <div
+                    class="pointer-events-none absolute inset-y-0 right-0 w-96 bg-gradient-to-l from-[#ffffff]/70 to-transparent z-20">
+                </div>
                 <div id="clientSlider" class="splide w-full" aria-label="Client Logos">
                     <div class="splide__track">
                         <ul class="splide__list opacity-50 grayscale">
@@ -129,7 +133,7 @@
                 [
                     'id' => 2,
                     'title' => 'Online Undervisning & Lektionsplan',
-                    'description' => 'Digital teori (flere sprog), lektionsplan, logbog, underskrifter og automatisk adgang til e-teori.dk.',
+                    'description' => 'Digital teori (flere sprog), lektionsplan, logbog, underskrifter og automatisk adgang til <span class="font-bold text-black">e-teori.dk</span>.',
                     'icon' => asset('images/online.png'),
                 ],
                 [
@@ -147,7 +151,7 @@
                 [
                     'id' => 5,
                     'title' => 'Integrationer & Synlighed',
-                    'description' => 'API til din egen hjemmeside og automatisk synlighed på findkoreskole.dk.',
+                    'description' => 'API til din egen hjemmeside og automatisk synlighed på <span class="font-bold text-black">findkoreskole.dk</span>.',
                     'icon' => asset('images/dashboard.png'),
                 ],
                 [
@@ -177,38 +181,39 @@
 
                 <!-- Subtitle -->
                 <p style="color: var(--Grey, #858599); text-align: center; line-height: 30px; letter-spacing: -0.48px;"
-                    class="w-[80%] mx-auto mt-4 text-[24px] font-manrope-medium relative z-10">
+                    class="w-[85%] mx-auto mt-4 text-[24px] font-manrope-medium relative z-10">
                     Med just driving får du et moderne, driftssikkert system, som giver
                     overblik og sparer tid. Alt er
-                    digitalt, automatisk og bygget til danske køreskolers behov. <span class="text-black font-bold">Du
+                    digitalt,<br /> automatisk og bygget til danske køreskolers behov. <span
+                        class="text-black font-bold">Du
                         får
                         bl.a.:
                     </span></p>
 
                 <!-- Cards Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-[64px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[70px] mt-[64px]">
                     @foreach ($features as $feature)
-                        <div style="border: 4px solid rgba(255, 255, 255, 0.40)"
-                            class="bg-[#F8F8F8] p-1 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+                        <div style="border: 4px solid #ffffff"
+                            class="bg-[#F8F8F8] rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
                             <!-- Icon Section -->
                             <div
                                 class="bg-[#EAEFF4] py-11 px-[135px] flex items-center justify-center rounded-t-[40px] transition-all duration-300 hover:bg-[#DCE8F5]">
                                 <div
-                                    class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-                                    <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                                    class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300  hover:scale-110">
+                                    <img src="{{ $feature['icon'] }}" alt="Icon" class="" />
                                 </div>
                             </div>
 
                             <!-- Text Section -->
-                            <div class="flex flex-col my-3 pl-3 space-y-6 items-start transition-all duration-300">
+                            <div class="flex flex-col my-3 pl-6 space-y-6 items-start transition-all duration-300">
                                 <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
-                                    class="text-start font-manrope-bold text-[24px] leading-[33px] tracking-[-0.72px]">
+                                    class="text-start font-manrope-bold text-[24px] min-h-[70px] leading-[33px] tracking-[-0.72px]">
                                     {{ $feature['title'] }}
                                 </h4>
 
                                 <p style="color: var(--Grey, #858599);"
-                                    class="text-start w-[96%] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px]">
-                                    {{ $feature['description'] }}
+                                    class="text-start w-[96%] min-h-[100px] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px]">
+                                    {!! $feature['description'] !!}
                                 </p>
 
                                 <div
@@ -253,7 +258,7 @@
         </section>
 
         <!-- Container for three sections to prevent layout shifts -->
-        <div class="w-full bg-[#ffffff]/70 overflow-hidden">
+        <div class="w-full bg-[#ffffff]/70 overflow-hidden pt-[101px]">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px] mb-[50px]">
                 <section id=""
                     class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
@@ -275,11 +280,12 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
-                                <span>Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer
+                                <span>Automatisk aflønning, timesporing og digital håndtering af betalinger,<br />
+                                    restancer
                                     og
                                     online tilmelding via hjemmeside eller findkoreskole.dk.</span>
                             </li>
@@ -320,7 +326,7 @@
                         </p>
                         <p style="color: var(--Grey, #858599);"
                             class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
-                            Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
+                            Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og<br /> digital
                             undervisning enkel og overskuelig.
                         </p>
 
@@ -330,11 +336,12 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til
+                                    <br />
                                     deling
                                     og udskrivning.</span>
                             </li>
@@ -390,7 +397,7 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
@@ -439,7 +446,7 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
@@ -448,12 +455,13 @@
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
-                                <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
+                                <span>Kortbetaling, mobilepay og automatisk fakturering i ét system.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384ff]">
-                                <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
+                                <span>Fuld transaktionsoversigt og bogholderi-integration for nem
+                                    <br />økonomistyring.</span>
                             </li>
                         </ul>
 
@@ -474,15 +482,15 @@
         </div>
 
         <!-- Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[138px] text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[118px] text-center relative overflow-hidden">
 
-            <div class="mt-[60px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
                     Prøv gratis nu
                 </a>
                 <a href="#"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[276px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[#377DFF] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[#377DFF] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
                     Læs mere
                 </a>
             </div>
@@ -515,7 +523,7 @@
         </section>
 
         <!-- Payment Flow Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pt-16 text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[133px] text-center relative overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto px-6">
                 <!-- Main Heading -->
                 <h4 style="color: #000;"
@@ -532,7 +540,7 @@
                 </p>
 
                 <!-- Three Feature Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6 mt-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 mt-10">
                     <!-- Card 1 -->
                     <div style="border: 4px solid #F0F2F5"
                         class="group bg-white rounded-[40px] p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
@@ -547,7 +555,8 @@
                                 spildtid</h4>
                             <p style="color: var(--Grey, #858599);"
                                 class="font-manrope-bold text-[16px] leading-normal tracking-[-0.32px] text-left group-hover:text-[#3384FF] transition-colors duration-300">
-                                Eleven køber adgang direkte i systemet – enten til hold, lektioner eller pakker. Når
+                                Eleven køber adgang direkte i systemet – enten <br /> til hold, lektioner eller pakker.
+                                Når
                                 betalingen er gennemført, gives der automatisk adgang.
                             </p>
                         </div>
@@ -563,7 +572,7 @@
                                 <img src="{{ asset('images/clock2.png') }}" alt="Icon" class="">
                             </div>
                             <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
-                                class="font-manrope-bold text-[24px] leading-[33px] text-start tracking-[-0.72px]">Slut
+                                class="font-manrope-bold text-[24px] leading-[33px] text-start tracking-[-0.72px]">
                                 Betaling
                                 med det samme</h4>
                             <p style="color: var(--Grey, #858599);"
@@ -598,7 +607,7 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[180px] text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[178px] text-center relative overflow-hidden">
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[28px] relative">
@@ -629,54 +638,55 @@
 
                 <!-- Row 1 (left to right) -->
                 <div class="flex animate-scroll-left space-x-2 w-max">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                 </div>
 
                 <!-- Row 2 (right to left) -->
-                <div class="flex animate-scroll-right space-x-2 w-max mt-8">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                <div class="flex animate-scroll-right space-x-2 w-max mt-4">
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                 </div>
             </div>
         </section>
 
+
         <!-- Section 6 -->
-        <section class="w-full bg-[#ffffff] pt-[160px] mx-auto text-center pb-10 relative overflow-hidden">
+        <section class="w-full bg-white pt-[190px] mx-auto text-center pb-10 relative">
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[50px] relative">
                 Spørgsmål? Vi har svarene
@@ -689,8 +699,8 @@
             </h1>
 
             <!-- Subtitle -->
-            <p style="color: var(--Grey, #747474); text-align: center; font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 400; line-height: 41.6px;"
-                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative">
+            <p style="color: var(--Grey, #858599); text-align: center; font-size: 24px; line-height: 41.6px;"
+                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative font-product-sans-regular text-[#858599]">
                 Find hurtige svar på nogle af de mest almindelige <br /> spørgsmål om Just Driving.
             </p>
 
@@ -710,7 +720,7 @@
                     <div class="bg-transparent p-2">
                         <button id="faq-{{ $index }}"
                             style="border: 4px solid rgba(255, 255, 255, 0.40); box-shadow: 0 3px 8px 0 rgba(20, 27, 52, 0.04);"
-                            class="faq-question rounded-[24px] px-6 py-4 flex justify-between items-center w-full text-left focus:outline-none"
+                            class="faq-question rounded-[24px] px-6 py-4 flex justify-between items-center w-full text-left focus:outline-none bg-gradient-to-t from-[#F5F5F5] to-[#FFFFFF]"
                             data-index="{{ $index }}">
                             <span
                                 style="color: var(--Black, #171717); font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;">{{ $faq['question'] }}</span>

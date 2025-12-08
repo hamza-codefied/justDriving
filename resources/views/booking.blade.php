@@ -43,7 +43,7 @@
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[95px] text-black relative z-10"
                 style="letter-spacing: -2px; word-spacing: -2px;">
-                Online <span class="text-[#3384FF]"> Bookingsystem</span>– Ét klik. Fuld kontrol.
+                Online <span class="text-[#3384FF]"> Bookingsystem</span>– Ét klik. Fuld Kontrol.
             </h1>
 
             <!-- Subtitle -->
@@ -56,7 +56,7 @@
             <!-- CTA Button -->
             <div class="mt-[50px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[19.76px] font-product-sans-bold hover:bg-[#2563EB] transition"
                     style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
                     prøv Bookingsystem
                 </a>
@@ -68,7 +68,7 @@
             $features = [
                 [
                     'id' => 1,
-                    'description' => 'Intuitiv kalender til lektioner, prøver og møder.',
+                    'description' => 'Intuitiv kalender til lektioner,prøver og møder.',
                     'icon' => asset('images/book.png'),
                 ],
                 [
@@ -103,22 +103,22 @@
             </h1>
 
             <!-- Cards Grid -->
-            <div class="max-w-[1280px] mx-auto flex flex-wrap justify-center gap-[50px] mt-16">
+            <div class="max-w-[1280px] mx-auto flex flex-wrap justify-center gap-[13.33px] mt-16">
                 @foreach ($features as $feature)
                     <div
-                        class="bg-[#F5f5f5] p-2 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2  hover:bg-white w-full md:max-w-[276px] h-[362px]">
+                        class="bg-[#F5f5f5] p-2 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2  hover:bg-white w-full md:w-[310px] h-[362px]">
                         <!-- Icon Section -->
                         <div
                             class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
-                                class="mx-auto rounded-[24px] flex items-center bg-white justify-center transform transition-transform duration-300 hover:scale-110 p-6">
+                                class="mx-auto rounded-[24px] flex items-center bg-white/40 justify-center transform transition-transform duration-300 hover:scale-110 px-6 py-[35px]">
                                 <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
                             </div>
                         </div>
 
                         <!-- Text Section -->
-                        <div class="flex flex-col my-5 pl-6 items-start transition-all duration-300">
-                            <p class="font-manrope-medium text-[#858599] text-start w-[95%] text-[16px] font-medium leading-[30px]"
+                        <div class="flex flex-col my-5 pl-3 items-start transition-all duration-300">
+                            <p class="font-manrope-medium text-[#858599] text-start w-full text-[16px] font-medium leading-[30px]"
                                 style="letter-spacing: -0.32px;">{{ $feature['description'] }}</p>
                         </div>
                     </div>
@@ -141,16 +141,17 @@
                 <!-- Right Column (Text Content) -->
                 <div
                     class="w-full md:w-1/2 space-y-6 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
+                    <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal text-[#000]">
                         Booking, aftaler og betaling – samlet ét sted
                     </h2>
-                    <p
-                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
-                        Hvor mange systemer vil du logge ind i hver dag? De fleste kørelærere svarede: Ét. Derfor har vi
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                        hvor mange systemer vil du logge ind i hver dag? <br />de fleste kørelærere svarede: ét.
+                        <br />derfor
+                        har vi
                         samlet booking, kalender og betaling i ét strømlinet system.
                     </p>
 
-                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal">
                         Du får blandt andet:
                     </p>
 
@@ -158,29 +159,25 @@
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Fælles
+                            <span class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal">Fælles
                                 kalenderoverblik for elev, kørelærer og køreskole</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Direkte
+                            <span class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal">Direkte
                                 booking og betaling i samme flow</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Hurtig
+                            <span class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal">Hurtig
                                 oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Klar
+                            <span class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal">Klar
                                 visning af alle kommende lektioner og aftaler</span>
                         </li>
                     </ul>
@@ -217,16 +214,17 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     @foreach ($features as $index => $feature)
                         <div
-                            class="relative bg-white rounded-[30px] shadow-xl border-[4px] border-[#f0f2f5] p-5 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
-
+                            class="relative bg-white rounded-[30px] shadow-xl border-[4px] border-[#f0f2f5] px-3 py-5 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+                            <div class="flex justify-center items-center p-4 mb-2 rounded-[20px] bg-[#f3f8fd]">
+                                <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                    class="w-12 h-12 transform transition-transform duration-300 group-hover:scale-105">
+                            </div>
                             <h4 class="font-manrope-extrabold text-[#1B1C31] text-[24px] font-extrabold leading-[33px] mb-2 relative z-10"
                                 style="letter-spacing: -0.72px;">
                                 {{ $feature['title'] }}
                             </h4>
 
-                            <p class="font-manrope-semibold text-[#747474] text-start text-[16px] font-semibold leading-normal relative z-10"
+                            <p class="font-manrope-regular text-[#747474] text-start text-[16px] leading-normal relative z-10"
                                 style="letter-spacing: -0.32px;">
                                 {{ $feature['desc'] }}
                             </p>

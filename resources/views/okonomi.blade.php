@@ -40,17 +40,18 @@
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
             <!-- Title -->
-            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[95px] text-black relative z-10 capitalize"
+            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[65px] text-black relative z-10 capitalize"
                 style="letter-spacing: -2px; word-spacing: -2px;">
                 Online <span class="text-[#3384FF]"> økonomisystem</span>– Fuld kontrol<br /> over din forretning.
             </h1>
 
             <!-- Subtitle -->
             <p style="letter-spacing: -1px;"
-                class="w-full sm:max-w-6xl px-6 md:px-0 mx-auto mt-[16px] leading-[38px] text-[#858599] md:text-[16px] lg:text-[24px] z-10 font-manrope-bold opacity-[90%]">
+                class="w-full sm:max-w-7xl px-6 md:px-0 mx-auto mt-[16px] leading-[38px] text-[#858599] md:text-[16px] lg:text-[24px] z-10 font-manrope-bold opacity-[90%]">
                 Et stærkt økonomisystem er fundamentet for en professionel køreskole. I Just Driving er økonomien fuldt
-                integreret i hele platformen — kalender, booking og betaling arbejder sammen i ét flow, så du altid har
-                styr på indtægter,
+                integreret <br /> i hele platformen — kalender, booking og betaling arbejder sammen i ét flow, så du
+                altid har
+                styr på indtægter,<br />
                 fakturaer og elevbetalinger uden ekstra systemer.
             </p>
             <!-- CTA Button -->
@@ -110,14 +111,14 @@
                         <div
                             class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
-                                class="mx-auto rounded-[24px] flex items-center bg-white justify-center transform transition-transform duration-300 hover:scale-110 p-6">
+                                class="mx-auto rounded-[24px] flex items-center bg-white/40 justify-center transform transition-transform duration-300 hover:scale-110 p-6">
                                 <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
                             </div>
                         </div>
 
                         <!-- Text Section -->
                         <div class="flex flex-col my-5 pl-4 items-start transition-all duration-300">
-                            <p class="font-manrope-medium text-[#858599] text-start w-[95%] text-[16px] font-medium leading-[30px]"
+                            <p class="font-manrope-regular text-[#858599] text-start w-[95%] text-[16px] font-medium leading-[30px]"
                                 style="letter-spacing: -0.32px;">{{ $feature['description'] }}</p>
                         </div>
                     </div>
@@ -143,14 +144,13 @@
                     <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal text-[#000]">
                         Slut med manuelle afstemninger – betalingen matcher automatisk
                     </h2>
-                    <p
-                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
                         Når en elev køber en lektion, et forløb eller et tilkøb, matcher systemet automatisk betalingen.
-                        Du
+                        du
                         slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
                     </p>
 
-                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal ">
                         Automatiseret og sikker betalingskontrol:
                     </p>
 
@@ -159,28 +159,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Elever
                                 kan kun booke lektioner, når betalingen er gennemført.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Systemet
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Systemet
                                 håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Alle
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Alle
                                 opkrævninger og transaktioner er samlet i et klart overblik.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalinger
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Betalinger
                                 behandles sikkert via Stripe med høj datasikkerhed.</span>
                         </li>
                     </ul>
@@ -236,12 +236,12 @@
             <div class="max-w-[1280px] mx-auto flex flex-wrap justify-center gap-3 mt-[64px]">
                 @foreach ($features as $feature)
                     <div
-                        class="bg-[#F5f5f5] p-2 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2  hover:bg-white w-full md:max-w-[310px] h-[368px]">
+                        class="bg-[#F5f5f5] p-2 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2  hover:bg-white w-full md:w-[310px] h-[368px]">
                         <!-- Icon Section -->
                         <div
                             class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
-                                class="mx-auto rounded-[24px] flex items-center bg-white justify-center transform transition-transform duration-300 hover:scale-110 p-6">
+                                class="mx-auto rounded-[24px] flex items-center bg-white/40 justify-center transform transition-transform duration-300 hover:scale-110 p-6">
                                 <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
                             </div>
                         </div>
@@ -259,11 +259,11 @@
 
         <!-- Info Section2 -->
         <section id="rapporter" class="bg-[#f3f8fd] text-black w-full xl:p-[76px]">
-            <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-0 flex flex-col md:flex-row items-center gap-10 z-10">
                 <!-- Left Column (Text) -->
                 <div
-                    class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h4 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal capitalize">
+                    class="w-full md:w-1/2 space-y-2 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h4 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
                         Mindre spildtid – Større overblik
                     </h4>
                     <p
@@ -276,35 +276,35 @@
                         Dine fordele:
                     </p>
 
-                    <ul class="space-y-4 mt-4">
+                    <ul class="space-y-2 mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Fuldt
-                                overblik over indtjening, restancer, transaktioner og alle betalingstyper ét
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Fuldt
+                                overblik over indtjening, restancer, transaktioner og alle <br /> betalingstyper ét
                                 sted.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatiske
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Automatiske
                                 betalingspåmindelser, så du undgår udeblivelser.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Elever
                                 har eget betalingsoverblik og adgang til kvitteringer via deres login.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Kortbetaling,
-                                MobilePay, PDF-fakturaer og integration til eksternt økonomisystem.</span>
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Kortbetaling,
+                                MobilePay, PDF-fakturaer og integration til eksternt <br /> økonomisystem.</span>
                         </li>
                     </ul>
                 </div>

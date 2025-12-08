@@ -131,19 +131,18 @@
                             class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
                                 class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                                <img src="{{ $feature['icon'] }}" alt="Icon" class="" />
                             </div>
                         </div>
 
                         <!-- Text Section -->
                         <div class="flex flex-col my-5 pl-6 items-start transition-all duration-300">
-                            <p class="font-manrope-medium text-[#858599] text-start w-[95%] text-[16px] font-medium leading-[30px]"
+                            <p class="font-manrope-medium text-[#858599] text-start w-[98%] text-[16px] font-medium leading-[30px]"
                                 style="letter-spacing: -0.32px;">{{ $feature['description'] }}</p>
                         </div>
                     </div>
                 @endforeach
             </div>
-
         </section>
 
         <!-- Info Section -->
@@ -181,28 +180,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Fuld
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Fuld
                                 oversigt over alle aktive, kommende og afsluttede hold.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatisk
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Automatisk
                                 betaling ved tilmelding og færre administrative fejl.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">API-integration
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">API-integration
                                 til din hjemmeside og digital lektionsplan for hvert hold.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Alt
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Alt
                                 synkroniseres automatisk med elevens profil og logbog for et nemt workflow.</span>
                         </li>
                     </ul>
@@ -257,26 +256,28 @@
                     ];
                 @endphp
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 mt-[52px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[52px]">
                     @foreach ($features as $index => $feature)
-                        <div class="relative h-[220px] bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-5 flex flex-col items-start hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff] transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                        <div class="relative h-[220px] w-[403px] bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-4 flex flex-col items-start hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff] transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
 
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
 
-                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-12 h-12 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                            <div class="flex justify-center items-center p-4 rounded-[20px] bg-[#f3f8fd]">
+                                <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                    class="w-12 h-12 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                            </div>
 
-                            <h3 class="font-manrope-extrabold text-[#1B1C31] text-[20px] font-extrabold leading-[33px] mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300"
+                            <h3 class="font-manrope-extrabold text-[#1B1C31] text-[20px] font-extrabold leading-[33px] mb-2 relative z-10 group-hover:text-[#3384ff] transition-colors duration-300"
                                 style="letter-spacing: -0.6px;">
                                 {{ $feature['title'] }}
                             </h3>
 
-                            <p class="font-manrope-medium text-[#747474] text-start text-[16px] font-medium leading-normal relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300"
+                            <p class="font-manrope-medium text-[#858599] text-start text-[16px] font-medium leading-normal relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300"
                                 style="letter-spacing: -0.32px;">
                                 {{ $feature['desc'] }}
                             </p>
@@ -296,9 +297,8 @@
                     <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
                         Afdelingsstyring – Én platform til alle dine lokationer
                     </h2>
-                    <p
-                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal lowercase">
-                        Vil du udvide din køreskole uden ekstra administrativt kaos?<br /> Med Just Driving kan du
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                        Vil du udvide din køreskole uden ekstra administrativt kaos?<br />med Just Driving kan du
                         og
                         administrere ubegrænset antal afdelinger i ét samlet <br /> system.
                     </p>
@@ -311,31 +311,34 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Opret
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Opret
                                 ubegrænsede afdelinger og administrér dem samlet ét sted.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Kørelærere
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Kørelærere
                                 tilknyttes automatisk de rette afdelinger og kan arbejde på tværs.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Ét
                                 login giver fuldt centralt overblik over struktur, elever og aktiviteter.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Klar
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Klar
                                 økonomioversigt pr. afdeling for nem styring og kontrol.</span>
                         </li>
                     </ul>
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                        Uanset om du har én eller ti afdelinger, beholder du fuld kontrol over alle aktiviteter.
+                    </p>
                 </div>
                 <!-- Right Column (Image) -->
                 <div
@@ -356,7 +359,7 @@
                 <!-- Right Column (text) -->
                 <div
                     class="w-full md:w-1/2 space-y-1 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
+                    <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold capitalize leading-normal">
                         Afdelingsstyring – Skalér din køreskole uden besvær
                     </h2>
                     <p
@@ -368,7 +371,8 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Afdelinger
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                    class="font-product-sans-bold">Afdelinger</span>
                                 : Opret ubegrænsede afdelinger og få et klart overblik over elever, hold og
                                 kørelærere.</span>
                         </li>
@@ -376,7 +380,8 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Kørelærere
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                    class="font-product-sans-bold">Kørelærere</span>
                                 : Tildel kørelærere til afdelinger med få klik – perfekt også for
                                 selvstændige, der arbejder flere steder.</span>
                         </li>
@@ -384,7 +389,8 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                    class="font-product-sans-bold">Elever</span>
                                 & hold : Elever tilknyttes automatisk korrekt afdeling gennem kørelæreren. Hold
                                 organiseres pr. afdeling.</span>
                         </li>
@@ -392,7 +398,8 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Ledelsesoverblik
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                    class="font-product-sans-bold">Ledelsesoverblik</span>
                                 : Følg elevstatus, økonomi og aktiviteter på tværs af alle lokationer
                                 fra ét login.</span>
                         </li>
@@ -410,13 +417,13 @@
                 <div
                     class="w-full md:w-1/2 space-y-3 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                     <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
-                        Automatisk notifikationssystem – Gå aldrig glip af en aftale
+                        Automatisk notifikationssystem – gå aldrig glip af en aftale
                     </h2>
                     <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
-                        Just Driving sender automatisk SMS- og e-mailnotifikationer til både elev og kørelærer, så alle
+                        Just Driving sender automatisk sms- og e-mailnotifikationer til både elev og kørelærer, så alle
                         altid er opdaterede.
                     </p>
-                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal lowercase">
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal">
                         Systemet sender automatisk besked ved:
                     </p>
 
@@ -425,28 +432,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Ændringer,
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Ændringer,
                                 aflysninger og nye lektioner</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Reservationer
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Reservationer
                                 og tilmeldinger</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalingspåmindelser
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Betalingspåmindelser
                                 og frister</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Udeblivelser
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Udeblivelser
                                 og annulleringer</span>
                         </li>
                     </ul>
@@ -464,7 +471,7 @@
 
             <div class="w-full bg-gradient-to-t from-[#ffffff] via-[#ffffff]/80 to-[#ffffff]/30">
                 <div
-                    class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10 mt-[150px]  pb-[230px]">
+                    class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10 mt-[150px]  pb-[220px]">
                     <!-- Left Column (image) -->
                     <div
                         class="w-full md:w-1/2 flex justify-center md:justify-start opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
@@ -474,7 +481,7 @@
                     <div
                         class="w-full md:w-1/2 space-y-3 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                         <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
-                            Notifikationssystem – Automatisk besked, hver gang det gælder
+                            Notifikationssystem – automatisk besked, hver gang det gælder
                         </h2>
                         <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
                             Notifikationer opdateres i realtid, så ingen misser vigtige aftaler.
@@ -487,33 +494,37 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Lektioner
+                                    class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                        class="font-product-sans-bold">Lektioner</span>
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalinger
+                                    class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                        class="font-product-sans-bold">Betalinger</span>
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Lektionsplan
+                                    class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                        class="font-product-sans-bold">Lektionsplan</span>
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Automatisk
+                                    class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal"><span
+                                        class="font-product-sans-bold">Automatisk</span>
                                     og intelligent : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                         </ul>
                         <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
-                            Mindre spildtid. Færre misforståelser. Mere professionel drift.
+                            Mindre spildtid. færre misforståelser. mere professionel drift.
                         </p>
                     </div>
                 </div>
@@ -532,10 +543,9 @@
                 <div
                     class="w-full md:w-1/2 space-y-2 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                     <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
-                        Synkroniseret data – Altid opdateret. Altid sikkert.
+                        Synkroniseret data – altid opdateret. altid sikkert.
                     </h2>
-                    <p
-                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal lowercase">
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
                         Just Driving synkroniserer alt i realtid: hold, elever, betalinger og lektionsplaner.<br />
                         Ingen
                         dobbeltindtastning. Ingen fejl. Ingen tabte oplysninger.
@@ -549,32 +559,32 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Realtidsopdatering
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Realtidsopdatering
                                 på tværs af hele systemet</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">GDPR-sikker
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">GDPR-sikker
                                 datalagring.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Ét
                                 Adgangsstyring – kun de rigtige ser data</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Digital
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Digital
                                 elevmappe – alt samlet ét sted</span>
                         </li>
                     </ul>
-                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                    <p class="font-product-sans-bold text-[#858599] text-[16px] font-normal leading-normal">
                         Ét system, der altid er opdateret – uden manuelt arbejde.
                     </p>
                 </div>
@@ -587,12 +597,12 @@
             <div class="max-w-[1280px] mx-auto text-center">
                 <!-- Title -->
                 <h4 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal relative z-10">
-                    Datastyring & overblik – Al information, ét sted
+                    Datastyring & overblik – al information, ét sted
                 </h4>
 
                 <!-- Subtitle -->
                 <p
-                    class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal lowercase mt-4 relative z-10">
+                    class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal  mt-4 relative z-10">
                     Få adgang til alle data, du behøver – når som helst.
                 </p>
 
@@ -622,8 +632,10 @@
                     @foreach ($features as $index => $feature)
                         <div
                             class="relative bg-white rounded-[30px] shadow-xl border-[4px] border-[#f0f2f5] p-5 flex flex-col items-start hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class=" mb-4 transform transition-transform duration-300 group-hover:scale-105">
+                            <div class="bg-[#f3f8fd] rounded-[20px] p-4 mb-2">
+                                <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                    class="h-12 w-12 transform transition-transform duration-300 group-hover:scale-105">
+                            </div>
 
                             <h4 class="font-manrope-extrabold text-[#1B1C31] text-[24px] font-extrabold leading-[33px] mb-2 relative z-10"
                                 style="letter-spacing: -0.72px;">
@@ -642,18 +654,18 @@
 
         <!--SMS Notificationer-->
         <section id="SMS-Notificationer" class="bg-[#f3f8fd] text-black md:p-[76px] w-full">
-            <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-3 overflow-hidden z-10">
+            <div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row items-center gap-3 overflow-hidden z-10">
                 <!-- Right Column (text) -->
                 <div
                     class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                     <h4 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal ">
-                        SMS-notifikationer – Vigtig information leveret med det samme
+                        Sms-notifikationer – vigtig information leveret med det samme
                     </h4>
                     <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal ">
-                        Just Driving sikrer, at alle kritiske beskeder når frem med det samme.
+                        Just driving sikrer, at alle kritiske beskeder når frem med det samme.
                     </p>
                     <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal ">
-                        Eksempler på automatiske SMS'er:
+                        Eksempler på automatiske sms'er:
                     </p>
 
                     <ul class="space-y-3 mt-4">
@@ -661,38 +673,38 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Lektioner
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Lektioner
                                 ændret/aflyst</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Bekræftelser
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Bekræftelser
                                 på reservationer</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Betalingspåmindelser</span>
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Betalingspåmindelser</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Vigtige
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal">Vigtige
                                 beskeder fra køreskolen</span>
                         </li>
                     </ul>
-                    <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
+                    <p class="font-product-sans-bold text-[#858599] text-[16px] leading-normal">
                         Elever og kørelærere modtager samme besked samtidig – helt uden manuelt arbejde.
                     </p>
                 </div>
 
                 <!-- Left Column (image) -->
                 <div
-                    class="w-full md:w-1/2 flex justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    class="w-full md:w-1/2 flex justify-center lg:justify-end opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
                     <img src="{{ asset('images/sms.png') }}" alt="Administration System" class="">
                 </div>
             </div>
@@ -712,8 +724,8 @@
                         </div>
 
                         <!-- Main Heading -->
-                        <h4 class="font-manrope-extrabold text-[#171717] text-[28px] md:text-[48px] font-extrabold leading-[46px] mb-6"
-                            style="">
+                        <h4 style="letter-spacing: -1.44px;"
+                            class="font-manrope-bold text-[#171717] text-[28px] md:text-[48px] leading-[46px] mb-6">
                             Datasikkerhed – Tryghed for dig og dine elever
                         </h4>
 
@@ -742,7 +754,7 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-5 h-5 mt-0.5 flex-shrink-0">
                                 <span
-                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    class="font-product-sans-regular text-[#000] text-[16px] font-normal leading-normal capitalize">
                                     Fuld adgang til alle data med dansk hosting og høj sikkerhed.
                                 </span>
                             </li>
@@ -750,7 +762,7 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-5 h-5 mt-0.5 flex-shrink-0">
                                 <span
-                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    class="font-product-sans-regular text-[#000] text-[16px] font-normal leading-normal capitalize">
                                     Automatiske backups på time-, dags-, uge- og månedsbasis.
                                 </span>
                             </li>
@@ -758,7 +770,7 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-5 h-5 mt-0.5 flex-shrink-0">
                                 <span
-                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    class="font-product-sans-regular text-[#000] text-[16px] font-normal leading-normal capitalize">
                                     Løbende opdateringer og stabil drift uden afbrydelser.
                                 </span>
                             </li>
@@ -766,7 +778,7 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-5 h-5 mt-0.5 flex-shrink-0">
                                 <span
-                                    class="font-product-sans-regular text-[#000] text-[18px] font-normal leading-normal capitalize">
+                                    class="font-product-sans-regular text-[#000] text-[16px] font-normal leading-normal capitalize">
                                     Logning og adgangskontrol sikrer fuld sporbarhed og kontrol.
                                 </span>
                             </li>

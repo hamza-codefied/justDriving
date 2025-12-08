@@ -74,8 +74,8 @@
                         <!-- System og administration -->
                         <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
                             <h4 class="text-[22px] text-center font-bold text-black mb-4">System og administration</h3>
-                                <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 17.306px; font-style: normal; font-weight: 400; line-height: 26.625px;"
-                                    class="space-y-3">
+                                <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
+                                    class="space-y-3 font-manrope-regular">
                                     <li class="flex items-start gap-2">
                                         <img src="{{ asset('images/simplicitet.png') }}"
                                             class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
@@ -137,8 +137,8 @@
                         <!-- Undervisning og læring -->
                         <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
                             <h3 class="text-[22px] text-center font-bold text-black mb-4">Undervisning og læring</h3>
-                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 17.306px; font-style: normal; font-weight: 400; line-height: 26.625px;"
-                                class="space-y-3">
+                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; font-style: normal; line-height: 26.625px;"
+                                class="space-y-3 font-manrope-regular">
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
@@ -163,7 +163,7 @@
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span>Integration med e-teori.dk</span>
+                                    <span>Integration med <span class="font-product-sans-bold">e-teori.dk</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
@@ -178,9 +178,9 @@
                     <div class="flex flex-col gap-3 flex-1">
                         <!-- Økonomi og betaling -->
                         <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
-                            <h3 class="text-lg text-center font-bold text-black mb-4">Økonomi og betaling</h3>
-                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 17.306px; font-style: normal; font-weight: 400; line-height: 26.625px;"
-                                class="space-y-3">
+                            <h3 class="text-[22px] text-center font-bold text-black mb-4">Økonomi og betaling</h3>
+                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
+                                class="space-y-3 font-manrope-regular">
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
@@ -189,7 +189,7 @@
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span>Integration med Gompay.dk</span>
+                                    <span>Integration med <span class="font-product-sans-bold">Just-pay.dk</span></span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
@@ -217,9 +217,9 @@
 
                         <!-- Booking og tilmelding -->
                         <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
-                            <h3 class="text-lg text-center font-bold text-black mb-4">Booking og tilmelding</h3>
-                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 17.306px; font-style: normal; font-weight: 400; line-height: 26.625px;"
-                                class="space-y-3">
+                            <h3 class="text-[22px] text-center font-bold text-black mb-4">Booking og tilmelding</h3>
+                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
+                                class="space-y-3 font-manrope-regular">
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
@@ -256,10 +256,10 @@
 
                         <!-- Digital dokumentation og elevstyring -->
                         <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
-                            <h3 class="text-lg text-center font-bold text-black mb-4">Digital dokumentation og
+                            <h3 class="text-[22px] text-center font-bold text-black mb-4">Digital dokumentation og
                                 elevstyring</h3>
-                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 17.306px; font-style: normal; font-weight: 400; line-height: 26.625px;"
-                                class="space-y-3">
+                            <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
+                                class="space-y-3 font-manrope-regular">
                                 <li class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
@@ -290,35 +290,39 @@
                 <!-- Full Width Row - Kommunikation og påmindelser -->
                 <div class="mx-auto">
                     <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5">
-                        <h3 class="text-lg text-center font-bold text-black mb-6">Kommunikation og påmindelser</h3>
+                        <h3 class="text-[22px] text-center font-bold text-black mb-6">Kommunikation og påmindelser</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Left Column -->
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-[17.306px] font-manrope-regular">
                                 <div class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span class="text-sm text-black">SMS- og e-mailnotifikationer til elev og
+                                    <span class="text-sm text-black text-[17.306px]">SMS- og e-mailnotifikationer til
+                                        elev og
                                         kørelærer</span>
                                 </div>
                                 <div class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span class="text-sm text-black">Opret egne e-mail-skabeloner til tilmelding og
+                                    <span class="text-sm text-black text-[17.306px]">Opret egne e-mail-skabeloner til
+                                        tilmelding og
                                         påmindelser</span>
                                 </div>
                             </div>
                             <!-- Right Column -->
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-[17.306px] font-manrope-regular">
                                 <div class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span class="text-sm text-black">Automatisk besked ved ændringer, aflysninger og
+                                    <span class="text-sm text-black text-[17.306px]">Automatisk besked ved ændringer,
+                                        aflysninger og
                                         betaling</span>
                                 </div>
                                 <div class="flex items-start gap-2">
                                     <img src="{{ asset('images/simplicitet.png') }}"
                                         class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
-                                    <span class="text-sm text-black">Automatisk påmindelse om betalinger og
+                                    <span class="text-sm text-black text-[17.306px]">Automatisk påmindelse om betalinger
+                                        og
                                         bookinger</span>
                                 </div>
                             </div>
@@ -332,12 +336,12 @@
             <div style="border:3px solid rgba(43, 112, 216, 0.50); ;"
                 class="w-[90vw] md:max-w-[1280px] rounded-[40px] bg-[#e2ebf4] p-[50px] text-center relative mx-auto">
                 <!-- Title -->
-                <h4 style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 44px; font-style: normal; font-weight: 700; line-height: normal; text-transform: capitalize;"
-                    class="relative z-10">
+                <h4 style="color: var(--Black, #171717); text-align: center; font-size: 44px; line-height: normal; text-transform: capitalize;"
+                    class="relative z-10 font-product-sans-bold">
                     Én pris — alle funktioner inkluderet
                 </h4>
-                <p style="color: #181433; text-align: center; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 24px; font-style: normal; font-weight: 400; line-height: 32px;"
-                    class="w-full md:w-[80vw] mx-auto py-5">
+                <p style="text-align: center; font-feature-settings: 'dlig' on; font-size: 24px; line-height: 32px;"
+                    class="w-full md:w-[80vw] mx-auto py-5 font-product-sans-regular text-[#666680]">
                     Just Driving giver dig adgang til Danmarks mest komplette platform til køreskoler. <br> Alt
                     administration, undervisning, booking og betaling samlet ét sted.
                 </p>
@@ -359,8 +363,8 @@
             </h4>
 
             <!-- Subtitle -->
-            <p style="color: var(--Grey, #747474); text-align: center; font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 400; line-height: 41.6px;"
-                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative z-10">
+            <p style="color: var(--Grey, #858599); text-align: center; font-size: 24px; line-height: 41.6px;"
+                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative z-10 font-product-sans-regular text-[#858599]">
                 Tag ikke bare vores ord for det. Hør fra teams, der har <br /> forbedret deres produktivitet med os.
             </p>
 
@@ -376,48 +380,48 @@
 
                 <!-- Row 1 (left to right) -->
                 <div class="flex animate-scroll-left space-x-2 w-max">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                 </div>
 
                 <!-- Row 2 (right to left) -->
-                <div class="flex animate-scroll-right space-x-2 w-max mt-8">
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                <div class="flex animate-scroll-right space-x-2 w-max mt-4">
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                     <!-- duplicate for loop -->
-                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
-                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
+                    <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-48 object-contain" />
+                    <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-48 object-contain" />
                 </div>
             </div>
         </section>
@@ -436,8 +440,8 @@
             </h1>
 
             <!-- Subtitle -->
-            <p style="color: var(--Grey, #747474); text-align: center; font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 400; line-height: 41.6px;"
-                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative">
+            <p style="color: var(--Grey, #858599); text-align: center; font-size: 24px; line-height: 41.6px;"
+                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative font-product-sans-regular text-[#858599]">
                 Find hurtige svar på nogle af de mest almindelige <br /> spørgsmål om Just Driving.
             </p>
 
@@ -457,9 +461,10 @@
                     <div class="bg-transparent p-2">
                         <button id="faq-{{ $index }}"
                             style="border: 4px solid rgba(255, 255, 255, 0.40); box-shadow: 0 3px 8px 0 rgba(20, 27, 52, 0.04);"
-                            class="faq-question rounded-[24px] px-6 py-4 flex justify-between items-center w-full text-left focus:outline-none"
+                            class="faq-question rounded-[24px] px-6 py-4 flex justify-between items-center w-full text-left focus:outline-none bg-gradient-to-t from-[#F5F5F5] to-[#FFFFFF]"
                             data-index="{{ $index }}">
-                            <span style="color: var(--Black, #171717); font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;">{{ $faq['question'] }}</span>
+                            <span
+                                style="color: var(--Black, #171717); font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;">{{ $faq['question'] }}</span>
                             <div
                                 class="icon w-6 h-6 flex items-center p-1 justify-center bg-[#3384FF] rounded-full text-white transition-all duration-300">
                                 <i class="faq-icon" data-lucide="plus"></i>

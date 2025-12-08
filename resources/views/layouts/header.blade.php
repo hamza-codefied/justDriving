@@ -17,7 +17,8 @@
 
     <!-- Navigation (desktop) -->
     <nav class="hidden lg:flex items-center space-x-6 text-sm">
-        <a href="{{ route('home') }}" class="hover:text-[#3384FF] font-semibold text-[16px] transition">Forside</a>
+        <a href="{{ route('home') }}"
+            class="hover:text-[#3384FF] font-manrope-semibold text-[16px] transition">Forside</a>
 
         <!-- Dropdown (click-based) -->
         <div class="relative">
@@ -26,7 +27,7 @@
 
             <!-- Trigger -->
             <label for="funktioner-toggle"
-                class="flex items-center font-semibold space-x-1 hover:text-[#3384FF] transition focus:outline-none text-[16px] cursor-pointer relative">
+                class="flex items-center font-manrope-semibold space-x-1 hover:text-[#3384FF] transition focus:outline-none text-[16px] cursor-pointer relative">
                 <span>Funktioner</span>
                 <span class="relative inline-block w-4 h-4 mt-0.5">
                     <!-- Arrow Down (shown when closed) -->
@@ -48,7 +49,7 @@
         peer-checked:opacity-100 peer-checked:translate-y-0 peer-checked:pointer-events-auto peer-checked:scale-100">
 
                 <!-- Menu content -->
-                <div class="bg-white text-black border-t border-gray-400 rounded-xl shadow-2xl mt-[20px] ml-1">
+                <div class="bg-white text-black border-t border-gray-400 rounded-xl shadow-2xl mt-[25px] ml-1">
                     <div class="grid grid-cols-2 gap-8 px-10 py-8">
 
                         <!-- Column 1 -->
@@ -120,11 +121,11 @@
         </div>
 
 
-        <a href="{{ route('omJustDriving') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Om
+        <a href="{{ route('omJustDriving') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Om
             Os</a>
-        <a href="{{ route('priser') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Priser</a>
+        <a href="{{ route('priser') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Priser</a>
 
-        <a href="{{ route('kontakt') }}" class="hover:text-[#3384FF] font-semibold transition text-[16px]">Kontakt</a>
+        <a href="{{ route('kontakt') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Kontakt</a>
 
     </nav>
 

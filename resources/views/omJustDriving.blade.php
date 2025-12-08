@@ -40,14 +40,14 @@
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
             <!-- Title -->
-            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-normal text-black relative z-10 capitalize"
-                style="letter-spacing: -2px; word-spacing: -2px;">
+            <h1
+                class="font-product-sans-bold text-[28px] md:text-[59px] leading-[65px] text-black relative z-10 capitalize">
                 Om <span class="text-[#3384FF]"> os</span>– Skabt til køreskoler.<br /> Udviklet i Danmark
             </h1>
 
             <!-- Subtitle -->
-            <p style="letter-spacing: -1px; color: var(--Body-text, #666680); text-align: center; font-feature-settings: 'dlig' on; font-family: Manrope; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;"
-                class="w-full sm:max-w-6xl px-6 md:px-0 mx-auto mt-[16px] z-10">
+            <p style="letter-spacing: -1px; color: var(--Body-text, #858599); text-align: center; font-size: 24px; line-height: normal;"
+                class="w-full sm:max-w-6xl px-6 md:px-0 mx-auto mt-[16px] z-10 font-manrope-bold">
                 Just Driving er udviklet af Nuvia ApS, et dansk team af IT-udviklere og erfarne kørelærere. Vi bygger
                 digitale løsninger, der fungerer i den virkelige køreskolehverdag: stabile, enkle og nemme at bruge.
             </p>
@@ -79,7 +79,7 @@
                         Just Driving arbejder tæt sammen med:
                     </p>
                     <!-- Feature List -->
-                    <ul class="space-y-3 text-black font-product-sans-regular text-[18px] capitalize mt-5">
+                    <ul class="space-y-3 text-black font-product-sans-bold text-[16px] capitalize mt-5">
                         <li class="flex items-start gap-3 ">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-5 h-5 mt-0.5 flex-shrink-0">
@@ -133,12 +133,12 @@
 
                 <!-- Right: Text Content -->
                 <div class="w-full md:w-1/2 text-center md:text-left">
-                    <h2 style="color: #000; font-family: 'Product Sans'; font-size: 34px; font-style: normal; font-weight: 700; line-height: normal; text-transform: capitalize;"
-                        class="mb-4">
+                    <h2 style="color: #000; font-size: 34px; line-height: normal; text-transform: capitalize;"
+                        class="mb-4 font-product-sans-bold">
                         Én platform til hele din køreskole
                     </h2>
-                    <p style="color: #181433; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 24px; font-style: normal; font-weight: 400; line-height: 32px;"
-                        class="w-full">
+                    <p style="color: #181433; font-size: 24px; line-height: 32px;"
+                        class="w-full font-product-sans-regular">
                         De fleste køreskoler bruger flere systemer – og <br /> mangler stadig noget. <br /> Just Driving
                         samler
                         det
@@ -155,12 +155,12 @@
                 class="w-[90vw] md:max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[30px] animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
                 <!-- Right: Text Content -->
                 <div class="w-full md:w-1/2 text-center md:text-left">
-                    <h4 style="color: #000; font-family: 'Product Sans'; font-size: 34px; font-style: normal; font-weight: 700; line-height: normal; text-transform: capitalize;"
-                        class="mb-4">
+                    <h4 style="color: #000; font-size: 34px; line-height: normal; text-transform: capitalize;"
+                        class="mb-4 font-product-sans-bold">
                         Hvorfor vælge os?
                     </h4>
-                    <p style="color: #181433; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal;"
-                        class="w-full">
+                    <p style="color: #181433; font-size: 24px; line-height: normal;"
+                        class="w-full font-product-sans-regular">
                         Udviklet i tæt samarbejde med kørelærere, er vores <br /> løsning skabt til at give dig færre
                         klik og
                         mindre bøvl i hverdagen. Vi opdaterer løbende med nye funktioner, <br /> og vi lytter altid til
@@ -187,8 +187,8 @@
                     class="relative z-10">
                     Vi hjælper dig med at gøre <br /> hverdagen enklere
                 </h4>
-                <p style="color: #181433; text-align: center; font-feature-settings: 'dlig' on; font-family: Inter; font-size: 24px; font-style: normal; font-weight: 400; line-height: 32px;"
-                    class="w-full md:w-[80vw] mx-auto py-5">
+                <p style="color: #181433; text-align: center; font-size: 24px; line-height: 32px;"
+                    class="w-full md:w-[80vw] mx-auto py-5 font-product-sans-regular">
                     Just Driving giver dig tid til det vigtigste: eleverne og undervisningen.
                 </p>
             </div>

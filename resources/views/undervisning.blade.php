@@ -41,7 +41,7 @@
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
             <!-- Title -->
-            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[95px] text-black relative z-10"
+            <h1 class="font-product-sans-bold text-[28px] md:text-[59px] md:leading-[65px] text-black relative z-10 capitalize"
                 style="letter-spacing: -2px; word-spacing: -2px;">
                 Online <span class="text-[#3384FF]"> undervisning</span> – Effektiv,<br /> fleksibel og altid opdateret
             </h1>
@@ -128,8 +128,8 @@
                         <div
                             class="bg-[#EAEFF4] py-10 flex items-center justify-center rounded-t-[32px] transition-all duration-300 hover:bg-[#DCE8F5] h-[222px]">
                             <div
-                                class="mx-auto rounded-[24px] flex items-center bg-white justify-center transform transition-transform duration-300 hover:scale-110 p-6">
-                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                                class="mx-auto rounded-[24px] flex items-center bg-white/40 justify-center transform transition-transform duration-300 hover:scale-110 px-6 py-[35px]">
+                                <img src="{{ $feature['icon'] }}" alt="Icon" class="" />
                             </div>
                         </div>
 
@@ -145,7 +145,7 @@
         </section>
 
         <!-- Info Section -->
-        <section id="digitale-lektionsplaner" class="w-full bg-white pt-[288px]">
+        <section id="digitale-lektionsplaner" class="w-full bg-white pt-[262px]">
             <div
                 class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-start justify-center gap-10 z-10">
                 <!-- Left Column (Image) -->
@@ -160,8 +160,7 @@
                     <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
                         Digitale lektionsplaner – Struktur og dokumentation gjort nemt
                     </h2>
-                    <p
-                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] leading-normal capitalize">
                         Med Just Driving har du altid opdaterede lektionsplaner lige ved hånden. Brug de færdige planer
                         i
                         systemet eller opret dine egne – alt kan eksporteres og printes efter behov.
@@ -176,28 +175,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Adgang
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Adgang
                                 for elev, kørelærer og køreskole døgnet rundt</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Digital
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Digital
                                 underskrift – 100 % papirfri dokumentation</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Én
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Én
                                 klik PDF-eksport til print eller arkiv</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatisk
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] font-normal leading-normal capitalize">Automatisk
                                 synkronisering med elevens status</span>
                         </li>
                     </ul>
@@ -244,24 +243,26 @@
                 @endphp
 
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 xl:px-0 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 xl:px-0 gap-4">
                     @foreach ($features as $index => $feature)
-                        <div class="relative bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-5 flex flex-col items-start 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                        <div class="relative bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-5 flex flex-col items-start
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
-                            <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
-                                class="w-16 h-16 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                            <h4 class="font-manrope-extrabold text-[#1B1C31] text-[24px] font-extrabold leading-[33px] text-start mb-2 relative z-10 group-hover:text-[#248ec1] transition-colors duration-300"
+                            <div class="flex justify-center items-center p-4 mb-2 rounded-[20px] bg-[#f3f8fd]">
+                                <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
+                                    class="w-12 h-12 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                            </div>
+                            <h4 class="font-manrope-extrabold text-[#1B1C31] text-[24px] font-extrabold leading-[33px] text-start mb-2 relative z-10 group-hover:text-[#3384ff] transition-colors duration-300"
                                 style="letter-spacing: -0.72px;">
                                 {{ $feature['title'] }}
                             </h4>
-                            <p class="font-manrope-semibold text-[#747474] text-start text-[16px] font-semibold leading-normal relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300"
+                            <p class="font-manrope-semibold text-[#858599] text-start text-[16px] font-semibold leading-normal relative z-10 group-hover:text-[#4a4a5e] transition-colors duration-300"
                                 style="letter-spacing: -0.32px;">
                                 {{ $feature['desc'] }}
                             </p>
@@ -272,8 +273,8 @@
         </section>
 
         <!-- Info Section2 -->
-        <section id=" undervisning-tilpasset" class="bg-[#f3f8fd] text-black w-full xl:p-[76px]">
-            <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
+        <section id=" undervisning-tilpasset" class="bg-[#f3f8fd] text-black w-full xl:px-[91px] xl:py-[132px]">
+            <div class="max-w-[1280px] mx-auto px-6 md:px-0 flex flex-col md:flex-row items-center gap-10 z-10">
                 <!-- Left Column (Text) -->
                 <div
                     class="w-full md:w-1/2 space-y-4 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
@@ -298,31 +299,34 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Undervisning
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Undervisning
                                 til bil, MC, trailer m.m.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Direkte
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Direkte
                                 adgang til teori og fjernundervisning</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Flere
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Flere
                                 lektionsplaner pr. kategori</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Undervisning
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Undervisning
                                 med tekst, video, billeder og quizzer</span>
                         </li>
                     </ul>
+                    <p class="font-product-sans-regular text-[#858599] text-[16px] leading-normal capitalize">
+                        Med Just Driving bliver undervisningen mere tilgængelig, fleksibel og effektiv.
+                    </p>
                 </div>
                 <!-- Right Column (Image) -->
                 <div
@@ -335,7 +339,7 @@
 
         <!-- Info Section3 -->
         <section id="online-teoriprøver"
-            class="w-full mt-[128px] bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] pb-[100px]">
+            class="w-full pt-[128px] bg-gradient-to-b from-[#ffffff]/70 via-[#ffffff]/90 to-[#ffffff] pb-[100px]">
             <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-[64px] z-10">
 
                 <!-- Right Column (Image) -->
@@ -361,33 +365,33 @@
                         Du får:
                     </p>
 
-                    <ul class="space-y-4 mt-4">
+                    <ul class="space-y-2 mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Ét
                                 samlet system med fuld integration</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">25+
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">25+
                                 prøver til bil og motorcykel</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Realtidsvisning
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Realtidsvisning
                                 af elevens resultater</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Målrettet
+                                class="font-product-sans-regular text-[#3384ff] text-[16px] leading-normal capitalize">Målrettet
                                 undervisning baseret på elevens niveau</span>
                         </li>
                     </ul>
