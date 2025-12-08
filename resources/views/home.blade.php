@@ -41,27 +41,26 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[140px] text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[140px] bg-[#ffffff]/20 text-center relative overflow-hidden">
             <div class="testimoniol1 hidden lg:block"></div>
-
-
             <!-- Tag -->
-            <div
-                class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
-                #1 System for køreskole
+            <div style="color: var(--Black, #171717); text-align: center; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
+                class="inline-block font-product-sans-regular bg-gray-50 px-4 py-1 rounded-full shadow-sm mb-4 border border-gray-100 relative">
+                #1 Productivity Software
             </div>
 
             <!-- Title -->
-            <h1
-                class="max-w-6xl mx-auto text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-black relative z-10">
-                <span class="text-[#3384FF]">Just Driving</span> – Dit komplette digitale system til din køreskole
+            <h1 style="color: #000; font-family: 'Product Sans'; font-size: 59px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -1.77px;"
+                class="max-w-6xl mx-auto relative z-10">
+                <span class="text-[#3384FF]">Just Driving</span> – Dit komplette digitale <br /> system til din
+                køreskole
             </h1>
 
             <!-- Subtitle -->
-            <p class="max-w-3xl mx-auto px-3 sm:px-0 mt-6 text-[#858599] font-medium text-[24px] relative z-10">
+            <p style="color: var(--Body-text, #666680); text-align: center; font-family: Manrope; font-size: 24px; font-style: normal; font-weight: 700; line-height: 38px; letter-spacing: -0.48px;"
+                class="mt-6 relative z-10">
                 Danmarks mest intuitive alt-i-én platform til køreskoler.
-                Undervisning, booking, betaling og administration – på web og app
-
+                Undervisning, <br /> booking, betaling og administration – på web og app
             </p>
 
             <div class="testimoniol2 hidden lg:block"></div>
@@ -71,7 +70,8 @@
             <div class="mt-8 relative z-10">
                 <a href="#"
                     class="inline-flex items-center bg-[#3384FF] text-[16px] text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-[#2563EB] transition">
-                    <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Prøve gratis nu
+                    <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Try 14 days
+                    free
                 </a>
             </div>
 
@@ -95,10 +95,8 @@
                 class="w-[500px] sm:w-[700px] md:w-[1000px] mx-auto mt-10">
         </section>
 
-
-
         <!-- Client Section -->
-        <section class="w-full mx-auto text-center relative bg-transparent py-1 sm:py-5">
+        <section class="w-full mx-auto text-center relative bg-[#ffffff]/70 py-1 sm:py-5">
             <div class="relative py-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/clientBackground.png') }}'); background-size: cover; background-position: center;">
                 <div id="clientSlider" class="splide w-full" aria-label="Client Logos">
@@ -158,77 +156,90 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto px-6 py-0 sm:py-5 text-center relative overflow-hidden">
-            <!-- Tag -->
-            <div
-                class="inline-block uppercase bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
-                Nøglefunktioner
-            </div>
+        <section class="w-full bg-gradient-to-b from-[#ffffff]/60 via-[#ffffff]/70 to-[#ffffff] pt-[165px] pb-[70px]">
+            <div class="w-[90vw] lg:max-w-[1280px] mx-auto text-center relative">
+                <!-- Tag -->
+                <div style="color: var(--Black, #171717); text-align: center; font-family: Manrope; font-size: 20px; font-style: normal; font-weight: 500; line-height: 30px; letter-spacing: -0.4px; text-transform: uppercase;"
+                    class="inline-block font-manrope-medium bg-gray-50 px-4 py-1 rounded-full shadow-sm mb-4 border border-gray-100 relative">
+                    Nøglefunktioner
+                </div>
 
-            <!-- Title -->
-            <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-black relative z-10">
-                Alt din køreskole <span class="text-[#3384FF]"> behøver</span> , samlet ét sted
-            </p>
+                <!-- Title -->
+                <p style="color: #171717; text-align: center; font-size: 64px; line-height: 60px; letter-spacing: -1.92px;"
+                    class="relative font-product-sans-bold z-10">
+                    Alt din køreskole <span class="text-[#3384FF]"> behøver</span> , samlet ét sted
+                </p>
 
-            <!-- Subtitle -->
-            <p class="max-w-4xl mx-auto mt-4 text-[#858599] font-medium text-[22px] relative z-10">
-                Med just driving får du et moderne, driftssikkert system, som giver
-                overblik og sparer tid. Alt er
-                digitalt, automatisk og bygget til danske køreskolers behov. <span class="text-black font-bold">Du får
-                    bl.a.:
-                </span></p>
+                <!-- Subtitle -->
+                <p style="color: var(--Grey, #858599); text-align: center; line-height: 30px; letter-spacing: -0.48px;"
+                    class="w-[80%] mx-auto mt-4 text-[24px] font-manrope-medium relative z-10">
+                    Med just driving får du et moderne, driftssikkert system, som giver
+                    overblik og sparer tid. Alt er
+                    digitalt, automatisk og bygget til danske køreskolers behov. <span class="text-black font-bold">Du
+                        får
+                        bl.a.:
+                    </span></p>
 
-            <!-- Cards Grid -->
-            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                @foreach ($features as $feature)
-                    <div
-                        class="bg-[#F8F8F8] p-1 rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
-                        <!-- Icon Section -->
-                        <div
-                            class="bg-[#EAEFF4] py-4 flex items-center justify-center rounded-t-2xl transition-all duration-300 hover:bg-[#DCE8F5]">
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[64px]">
+                    @foreach ($features as $feature)
+                        <div style="border: 4px solid rgba(255, 255, 255, 0.40)"
+                            class="bg-[#F8F8F8] p-1 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+                            <!-- Icon Section -->
                             <div
-                                class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-                                <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                                class="bg-[#EAEFF4] py-11 px-[135px] flex items-center justify-center rounded-t-[40px] transition-all duration-300 hover:bg-[#DCE8F5]">
+                                <div
+                                    class="mx-auto rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                                    <img src="{{ $feature['icon'] }}" alt="Icon" class="w-20 h-20" />
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- Text Section -->
-                        <div class="flex flex-col my-3 pl-5 items-start transition-all duration-300">
-                            <h3 class="text-lg text-start font-semibold text-black">{{ $feature['title'] }}</h3>
-                            <p class="text-[#858599] text-start w-[90%] text-[16px] font-medium">
-                                {{ $feature['description'] }}
-                            </p>
-                            <div
-                                class="flex items-center justify-center cursor-pointer gap-2 hover:translate-x-1 transition-transform duration-300">
-                                <p class="inline-block text-[#3384FF] text-sm font-normal hover:underline">
-                                    Læs mere
+                            <!-- Text Section -->
+                            <div class="flex flex-col my-3 pl-3 space-y-6 items-start transition-all duration-300">
+                                <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
+                                    class="text-start font-manrope-bold text-[24px] leading-[33px] tracking-[-0.72px]">
+                                    {{ $feature['title'] }}
+                                </h4>
+
+                                <p style="color: var(--Grey, #858599);"
+                                    class="text-start w-[96%] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px]">
+                                    {{ $feature['description'] }}
                                 </p>
-                                <img src="{{ asset('images/arrow-right.png') }}" alt="Arrow" class="inline-block mt-1" />
+
+                                <div
+                                    class="flex items-center justify-center cursor-pointer gap-2 hover:translate-x-1 transition-transform duration-300">
+                                    <p class="inline-block text-[#3384FF] text-[16px] font-normal hover:underline">
+                                        Læs mere
+                                    </p>
+                                    <img src="{{ asset('images/arrow-right.png') }}" alt="Arrow"
+                                        class="inline-block mt-1" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
-
         </section>
 
         <!-- Section 3 -->
-        <section class="w-full bg-[#f3f8fd] mx-auto mt-16 py-10 text-center relative overflow-hidden">
+        <section class="w-full bg-[#f3f8fd] mx-auto px-[73px] py-[125px] text-center relative overflow-hidden">
             <!-- Title -->
-            <p
-                class="max-w-6xl mx-auto text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-black relative z-10">
-                Med <span class="text-[#3384FF]">Just Driving</span> får du ro i maven og tid til det vigtigste: at
+            <p style="color: var(--Black, #171717);"
+                class="text-center font-manrope-bold text-[50px] leading-[60px] tracking-[-1.5px] relative z-10">
+                Med <span class="text-[#3384FF]">Just Driving</span> får du ro i maven og tid til det vigtigste: <br />
+                at
                 undervise dine elever og drive din
                 forretning.
             </p>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-4 text-[#858599] text-[22px] font-medium relative z-10">
+            <p style="color: var(--Grey, #858599);"
+                class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-6 text-center font-manrope text-[24px] font-medium leading-[30px] tracking-[-0.48px] relative z-10">
                 Klar til at tage din køreskole til næste niveau?
             </p>
 
             <!-- CTA Button -->
-            <div class="mt-4 relative z-10">
+            <div class="mt-8 relative z-10">
                 <a href="#"
                     class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
                     Prøv Just Driving gratis
@@ -237,212 +248,233 @@
         </section>
 
         <!-- Container for three sections to prevent layout shifts -->
-        <div class="w-full 2xl:max-w-7xl mx-auto relative">
+        <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px]">
 
-            <section id=""
-                class="text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-10 gap-3 z-50">
+            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
                 <!-- Left Column (Image) -->
                 <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                    <img src="{{ asset('images/newhome.png') }}" alt="Administration System"
-                        class="w-full max-w-[500px]">
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
+                    <img src="{{ asset('images/screen1.png') }}" alt="Administration System" class="">
                 </div>
 
                 <!-- Right Column (Text Content) -->
                 <div
-                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <p class="text-2xl sm:text-[36px] font-bold text-black">
-                        Opsæt din køreskole
+                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
+                        Online administrationssystem – Ét system, fuldt overblik
                     </p>
-                    <p class="text-[#858599] text-base font-medium">
-                        Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
-                        undervisning
-                        enkel og overskuelig.
+                    <p style="color: var(--Grey, #858599);"
+                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                        Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og fremdrift.
                     </p>
 
-                    <p class="text-black font-semibold text-base">
-                        Du får:
-                    </p>
-                    <ul class="space-y-2 text-[#3384FF] text-[16px] font-normal mt-4">
+                    <ul
+                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer og
                                 online tilmelding via hjemmeside eller findkoreskole.dk.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og
                                 elevforløb.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
-                            <span>Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og
-                                elevforløb.</span>
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
+                            <span>Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
+                                fremdrift.</span>
                         </li>
                     </ul>
+                    <p style="color: var(--Grey, #858599);"
+                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                        Mere struktur. Færre manuelle opgaver. Mere tid til undervisning.
+                    </p>
                     <!-- CTA Button -->
-                    <div class="mt-8 relative z-10">
+                    <div class="mt-2 relative z-10">
                         <a href="#"
-                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                            Tag det første skridt
+                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                            Læs mere
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section id=""
-                class="text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-start mt-20 gap-3 z-50">
-
+            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
                 <!-- Right Column (Text Content) -->
                 <div
-                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="text-2xl sm:text-[26px] font-bold text-black">
-                        Online undervisningssystem – Fremtidssikret<br /> læring
-                    </h2>
-                    <p class="text-[#858599] text-base">
+                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
+                        Online undervisningssystem – Fremtidssikret læring
+                    </p>
+                    <p style="color: var(--Grey, #858599);"
+                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
                         Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
-                        undervisning
-                        enkel og overskuelig.
+                        undervisning enkel og overskuelig.
                     </p>
 
-                    <p class="text-black font-semibold text-base">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
                         Du får:
                     </p>
-                    <ul class="space-y-3 text-[#3384FF] text-base font-normal mt-4">
+
+                    <ul
+                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til deling
-                                og
-                                udskrivning.</span>
+                                og udskrivning.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Online teoriprøver med fuld visning af elevens fremdrift og direkte integration til
                                 elevens profil.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Undervisning tilgængelig på dansk, engelsk og arabisk.</span>
                         </li>
                     </ul>
-                </div>
 
+                    <!-- CTA Button -->
+                    <div class="mt-2 relative z-10">
+                        <a href="#"
+                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                            Læs mere
+                        </a>
+                    </div>
+                </div>
                 <!-- Left Column (Image) -->
                 <div
-                    class="w-full md:w-1/2 flex justify-center translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                    <img src="{{ asset('images/home1.png') }}" alt="Administration System" class="w-full max-w-[500px]">
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
+                    <img src="{{ asset('images/screen2.png') }}" alt="Administration System" class="">
                 </div>
             </section>
 
-            <section id=""
-                class="text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center mt-10 gap-3 z-50">
+            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
                 <!-- Left Column (Image) -->
                 <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                    <img src="{{ asset('images/home2.png') }}" alt="Administration System" class="w-full max-w-[500px]">
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
+                    <img src="{{ asset('images/screen3.png') }}" alt="Administration System" class="">
                 </div>
+
                 <!-- Right Column (Text Content) -->
                 <div
-                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="text-2xl sm:text-[26px] font-bold capitalize text-black">
+                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
                         Online bookingsystem – Mere struktur, mindre spildtid
-                    </h2>
-                    <p class="text-[#858599] text-base">
+                    </p>
+                    <p style="color: var(--Grey, #858599);"
+                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
                         Giv eleverne en nem bookingoplevelse – og få fuld kontrol over kalenderen.
                     </p>
 
-                    <p class="text-black font-semibold text-base">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
                         Fordele:
                     </p>
-                    <ul class="space-y-3 text-[#3384FF] text-base font-normal mt-4">
+
+                    <ul
+                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Realtidsopdateret kalender med automatiske påmindelser til elever.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Automatisk fakturering ved ekstra lektioner samt fuld synkronisering med lektionsplan
-                                og
-                                betaling.</span>
+                                og betaling</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Fleksibel løsning, der passer til både enkeltlærere og større køreskoler.</span>
                         </li>
                     </ul>
-                </div>
 
+                    <!-- CTA Button -->
+                    <div class="mt-2 relative z-10">
+                        <a href="#"
+                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                            Læs mere
+                        </a>
+                    </div>
+                </div>
             </section>
 
-            <section id=""
-                class="text-black py-5 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between mt-10 gap-3 z-50">
-
+            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
                 <!-- Right Column (Text Content) -->
                 <div
-                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <h2 class="text-2xl sm:text-[26px] font-bold text-black">
+                    class="w-full md:w-1/2 space-y-5 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-product-sans-bold text-[28px] leading-normal capitalize">
                         Digitalt økonomisystem – Overblik uden bøvl
-                    </h2>
-                    <p class="text-[#858599] text-base">
+                    </p>
+                    <p style="color: var(--Grey, #858599);" class="font-product-sans-regular text-[16px] capitalize">
                         Et moderne økonomisystem, der håndterer hele elevens betalingsforløb automatisk.
                     </p>
 
-                    <p class="text-black font-semibold text-base">
+                    <p style="color: var(--Black, #171717);"
+                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
                         Funktioner:
                     </p>
-                    <ul class="space-y-3 text-[#3384FF] text-base font-normal mt-4">
+
+                    <ul
+                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Kun betalende elever kan booke, så du undgår restancer.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                                class="w-4 h-4 mt-1 text-[#2B70D8]">
                             <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
                         </li>
                     </ul>
+
+                    <!-- CTA Button -->
+                    <div class="mt-2 relative z-10">
+                        <a href="#"
+                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                            Læs mere
+                        </a>
+                    </div>
                 </div>
                 <!-- Left Column (Image) -->
                 <div
-                    class="w-full md:w-1/2 flex justify-center translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                    <img src="{{ asset('images/home3.png') }}" alt="Administration System" class="w-full max-w-[500px]">
+                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
+                    <img src="{{ asset('images/screen4.png') }}" alt="Administration System" class="">
                 </div>
-
-
             </section>
         </div>
 
         <!-- Section -->
         <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
-
-            <!-- Subtitle -->
-            <p class="w-[90vw] mx-auto mt-4 text-[#858599] text-[22px] font-normal relative z-10">
-                Slip for manuelle fejl, rykkere og regneark – Just Driving gør økonomien digital og professionel.
-            </p>
-
             <!-- CTA Button -->
-            <div class="mt-10 flex items-center justify-center gap-2 sm:gap-4 z-10">
+            <div class="mt-[60px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
-                    prøv gratis nu
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                    Prøv gratis nu
                 </a>
                 <a href="#"
-                    class="bg-transparent hover:bg-[#3384FF] text-sm text-[#3384FF] hover:text-white border border-[#3384FF] px-6 py-3 rounded-xl font-semibold shadow-md transition">
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[276px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[#377DFF] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
                     Læs mere
                 </a>
             </div>
@@ -549,26 +581,27 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full bg-white mx-auto pt-[236px] text-center relative overflow-hidden">
             <!-- Tag -->
-            <div
-                class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
+            <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
+                class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[28px] relative">
                 Tillid fra førende skoler
             </div>
 
             <!-- Title -->
-            <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
+            <h4 style="color: var(--Black, #171717); text-align: center; font-size: 50px; font-style: normal; font-weight: 900; line-height: 52.5px;"
+                class="relative z-10 font-product-sans-bold">
                 Betroet af køreskoler over hele Danmark
-            </h1>
+            </h4>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[50vw] mx-auto mt-4 text-[#858599] text-[22px] font-normal relative z-10">
-                Tag ikke bare vores ord for det. Hør fra teams, der har forbedret deres produktivitet med os.
+            <p style="color: var(--Grey, #747474); text-align: center; font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 400; line-height: 41.6px;"
+                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative z-10">
+                Tag ikke bare vores ord for det. Hør fra teams, der har <br /> forbedret deres produktivitet med os.
             </p>
 
             <!-- Logo Carousel Wrapper -->
-            <div class="mt-5 w-full overflow-hidden relative">
+            <div class="mt-[55px] w-full relative">
                 <!-- Fading edges -->
                 <div
                     class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20">
@@ -578,7 +611,7 @@
                 </div>
 
                 <!-- Row 1 (left to right) -->
-                <div class="flex animate-scroll-left space-x-8 w-max">
+                <div class="flex animate-scroll-left space-x-2 w-max">
                     <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
                     <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
                     <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
@@ -601,7 +634,7 @@
                 </div>
 
                 <!-- Row 2 (right to left) -->
-                <div class="flex animate-scroll-right space-x-8 w-max mt-8">
+                <div class="flex animate-scroll-right space-x-2 w-max mt-8">
                     <img src="{{ asset('images/review1.png') }}" alt="Client 1" class="h-16 sm:h-32 object-contain" />
                     <img src="{{ asset('images/review2.png') }}" alt="Client 2" class="h-16 sm:h-32 object-contain" />
                     <img src="{{ asset('images/review3.png') }}" alt="Client 3" class="h-16 sm:h-32 object-contain" />
@@ -626,21 +659,22 @@
         </section>
 
         <!-- Section 6 -->
-        <section class="w-full mx-auto mt-16 text-center mb-10 relative overflow-hidden">
-
-            <div
-                class="inline-block bg-gray-50 text-black font-medium px-4 py-1 rounded-full text-[20px] shadow-sm mb-4 border border-gray-100 relative">
+        <section class="w-full bg-white pt-[160px] mx-auto text-center pb-10 relative">
+            <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
+                class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[50px] relative">
                 Spørgsmål? Vi har svarene
             </div>
 
             <!-- Title -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative">
+            <h1 style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 50px; font-style: normal; font-weight: 700; line-height: 103.2px; letter-spacing: -1px;"
+                class="relative">
                 Ofte stillede <span class="text-[#3384FF]">spørgsmål</span>
             </h1>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[50vw] mx-auto mt-4 text-[#858599] text-[22px] font-normal relative">
-                Find hurtige svar på nogle af de mest almindelige spørgsmål om Just Driving.
+            <p style="color: var(--Grey, #747474); text-align: center; font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 400; line-height: 41.6px;"
+                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative">
+                Find hurtige svar på nogle af de mest almindelige <br /> spørgsmål om Just Driving.
             </p>
 
             <!-- FAQ Section -->
@@ -658,9 +692,11 @@
                 @foreach ($faqs as $index => $faq)
                     <div class="bg-transparent p-2">
                         <button id="faq-{{ $index }}"
-                            class="bg-white shadow-sm faq-question rounded-xl px-4 py-3 flex justify-between items-center w-full text-left focus:outline-none"
+                            style="border: 4px solid rgba(255, 255, 255, 0.40); box-shadow: 0 3px 8px 0 rgba(20, 27, 52, 0.04);"
+                            class="faq-question rounded-[24px] px-6 py-4 flex justify-between items-center w-full text-left focus:outline-none"
                             data-index="{{ $index }}">
-                            <span class="text-xs sm:text-[22px] font-semibold text-black">{{ $faq['question'] }}</span>
+                            <span
+                                style="color: var(--Black, #171717); font-family: 'Product Sans'; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;">{{ $faq['question'] }}</span>
                             <div
                                 class="icon w-6 h-6 flex items-center p-1 justify-center bg-[#3384FF] rounded-full text-white transition-all duration-300">
                                 <i class="faq-icon" data-lucide="plus"></i>

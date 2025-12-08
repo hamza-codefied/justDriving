@@ -93,7 +93,8 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto mt-[100px] md:mt-[160px] px-6 text-center relative">
+        <section
+            class="w-full mx-auto mt-[100px] md:mt-[160px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
             <!-- Title -->
             <h4 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -127,59 +128,63 @@
 
         <!-- Info Section -->
         <section id="betalinger"
-            class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center mt-[180px] gap-10 z-10">
-
-            <!-- Left Column (Image) -->
+            class="w-full bg-gradient-to-b from-[#ffffff]/80 via-[#ffffff]/90 to-transparent pt-[180px]">
             <div
-                class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/undervising1.png') }}" alt="Administration System" class="">
-            </div>
+                class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center gap-10 z-10">
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/undervising1.png') }}" alt="Administration System" class="">
+                </div>
 
-            <!-- Right Column (Text Content) -->
-            <div
-                class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal text-[#000]">
-                    Slut med manuelle afstemninger – betalingen matcher automatisk
-                </h2>
-                <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
-                    Når en elev køber en lektion, et forløb eller et tilkøb, matcher systemet automatisk betalingen. Du
-                    slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
-                </p>
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-4 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal text-[#000]">
+                        Slut med manuelle afstemninger – betalingen matcher automatisk
+                    </h2>
+                    <p
+                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                        Når en elev køber en lektion, et forløb eller et tilkøb, matcher systemet automatisk betalingen.
+                        Du
+                        slipper for manuel kontrol og får i stedet et fuldt opdateret økonomisk overblik.
+                    </p>
 
-                <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
-                    Automatiseret og sikker betalingskontrol:
-                </p>
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                        Automatiseret og sikker betalingskontrol:
+                    </p>
 
-                <ul class="space-y-4 mt-4">
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Elever
-                            kan kun booke lektioner, når betalingen er gennemført.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Systemet
-                            håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Alle
-                            opkrævninger og transaktioner er samlet i et klart overblik.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
-                            behandles sikkert via Stripe med høj datasikkerhed.</span>
-                    </li>
-                </ul>
+                    <ul class="space-y-4 mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Elever
+                                kan kun booke lektioner, når betalingen er gennemført.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Systemet
+                                håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Alle
+                                opkrævninger og transaktioner er samlet i et klart overblik.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
+                                behandles sikkert via Stripe med høj datasikkerhed.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -214,7 +219,8 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto mt-[100px] md:mt-[214px] px-6 text-center relative">
+        <section
+            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]/70  mx-auto mt-[100px] md:mt-[214px] pb-[160px] px-6 text-center relative">
             <!-- Title -->
             <h4 class="font-product-sans-bold text-[50px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -252,7 +258,7 @@
         </section>
 
         <!-- Info Section2 -->
-        <section id="rapporter" class="bg-[#f3f8fd] text-black w-full xl:p-[76px] mt-[160px] mb-[100px]">
+        <section id="rapporter" class="bg-[#f3f8fd] text-black w-full xl:p-[76px]">
             <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
                 <!-- Left Column (Text) -->
                 <div

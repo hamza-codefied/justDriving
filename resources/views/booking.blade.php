@@ -94,7 +94,8 @@
          @endphp
 
         <!-- Section 2 -->
-        <section class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative overflow-hidden">
+        <section
+            class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -128,65 +129,69 @@
 
         <!-- Info Section -->
         <section id="overview"
-            class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center mt-[180px] gap-10 z-10">
-
-            <!-- Left Column (Image) -->
+            class="w-full bg-gradient-to-b from-[#ffffff]/80 via-[#ffffff]/90 to-transparent pt-[180px]">
             <div
-                class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
-                <img src="{{ asset('images/undervising1.png') }}" alt="Administration System" class="">
-            </div>
+                class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center gap-10 z-10">
+                <!-- Left Column (Image) -->
+                <div
+                    class="w-full md:w-1/2 flex justify-center md:justify-start  translate-y-10 transition-all duration-700 ease-out animate-on-scroll">
+                    <img src="{{ asset('images/undervising1.png') }}" alt="Administration System" class="">
+                </div>
 
-            <!-- Right Column (Text Content) -->
-            <div
-                class="w-full md:w-1/2 space-y-6 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
-                    Booking, aftaler og betaling – samlet ét sted
-                </h2>
-                <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
-                    Hvor mange systemer vil du logge ind i hver dag? De fleste kørelærere svarede: Ét. Derfor har vi
-                    samlet booking, kalender og betaling i ét strømlinet system.
-                </p>
+                <!-- Right Column (Text Content) -->
+                <div
+                    class="w-full md:w-1/2 space-y-6 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
+                    <h2 class="font-product-sans-bold text-[28px] font-bold leading-normal capitalize text-[#000]">
+                        Booking, aftaler og betaling – samlet ét sted
+                    </h2>
+                    <p
+                        class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal capitalize">
+                        Hvor mange systemer vil du logge ind i hver dag? De fleste kørelærere svarede: Ét. Derfor har vi
+                        samlet booking, kalender og betaling i ét strømlinet system.
+                    </p>
 
-                <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
-                    Du får blandt andet:
-                </p>
+                    <p class="font-product-sans-bold text-[#000] text-[20px] font-bold leading-normal capitalize">
+                        Du får blandt andet:
+                    </p>
 
-                <ul class="space-y-6 mt-4">
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Fælles
-                            kalenderoverblik for elev, kørelærer og køreskole</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Direkte
-                            booking og betaling i samme flow</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Hurtig
-                            oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                            class="w-4 h-4 mt-1 text-[#3384FF]">
-                        <span
-                            class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Klar
-                            visning af alle kommende lektioner og aftaler</span>
-                    </li>
-                </ul>
+                    <ul class="space-y-6 mt-4">
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Fælles
+                                kalenderoverblik for elev, kørelærer og køreskole</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Direkte
+                                booking og betaling i samme flow</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Hurtig
+                                oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                class="w-4 h-4 mt-1 text-[#3384FF]">
+                            <span
+                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Klar
+                                visning af alle kommende lektioner og aftaler</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Dynamiske Formularer Section -->
-        <section id="features-section4" class="max-w-[1280px] mx-auto px-6 mt-[133px] mb-[100px]">
-            <div class="">
+        <section id="features-section4"
+            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[133px] pb-[100px]">
+            <div class="max-w-[1280px] mx-auto px-6">
                 @php
                     $features = [
                         [
