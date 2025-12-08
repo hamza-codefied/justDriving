@@ -428,7 +428,7 @@
                 </section>
 
                 <section id=""
-                    class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
+                    class="scroll-section text-black flex flex-col md:flex-row items-center mt-10 gap-[48px] z-50">
                     <!-- Right Column (Text Content) -->
                     <div class="scroll-text-left w-full md:w-1/2 space-y-4">
                         <p style="color: var(--Black, #171717);"
@@ -697,12 +697,6 @@
                 class="relative">
                 Ofte stillede <span class="text-[#3384FF]">spørgsmål</span>
             </h1>
-
-            <!-- Subtitle -->
-            <p style="color: var(--Grey, #858599); text-align: center; font-size: 24px; line-height: 41.6px;"
-                class="w-[90vw] md:w-[50vw] mx-auto mt-4 relative font-product-sans-regular text-[#858599]">
-                Find hurtige svar på nogle af de mest almindelige <br /> spørgsmål om Just Driving.
-            </p>
 
             <!-- FAQ Section -->
             <div class="w-[90vw] md:w-[60vw] mx-auto mt-10 text-left">
