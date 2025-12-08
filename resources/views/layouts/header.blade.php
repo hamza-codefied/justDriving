@@ -47,8 +47,6 @@
         opacity-0 translate-y-2 pointer-events-none scale-95 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]
         peer-checked:opacity-100 peer-checked:translate-y-0 peer-checked:pointer-events-auto peer-checked:scale-100">
 
-
-
                 <!-- Menu content -->
                 <div class="bg-white text-black border-t border-gray-400 rounded-xl shadow-2xl mt-[20px] ml-1">
                     <div class="grid grid-cols-2 gap-8 px-10 py-8">

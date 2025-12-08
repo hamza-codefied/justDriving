@@ -50,15 +50,15 @@
             </div>
 
             <!-- Title -->
-            <h1 style="color: #000; font-family: 'Product Sans'; font-size: 59px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -1.77px;"
-                class="max-w-6xl mx-auto relative z-10">
+            <h1 style="color: #000; line-height: normal; letter-spacing: -1.77px;"
+                class="max-w-6xl mx-auto font-product-sans-bold text-[59px] relative z-10">
                 <span class="text-[#3384FF]">Just Driving</span> – Dit komplette digitale <br /> system til din
                 køreskole
             </h1>
 
             <!-- Subtitle -->
-            <p style="color: var(--Body-text, #666680); text-align: center; font-family: Manrope; font-size: 24px; font-style: normal; font-weight: 700; line-height: 38px; letter-spacing: -0.48px;"
-                class="mt-6 relative z-10">
+            <p style="color: var(--Body-text, #666680); text-align: center; line-height: 38px; letter-spacing: -0.48px;"
+                class="mt-6 relative z-10 font-manrope-bold text-[24px]">
                 Danmarks mest intuitive alt-i-én platform til køreskoler.
                 Undervisning, <br /> booking, betaling og administration – på web og app
             </p>
@@ -159,8 +159,8 @@
         <section class="w-full bg-gradient-to-b from-[#ffffff]/60 via-[#ffffff]/70 to-[#ffffff] pt-[165px] pb-[70px]">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto text-center relative">
                 <!-- Tag -->
-                <div style="color: var(--Black, #171717); text-align: center; font-family: Manrope; font-size: 20px; font-style: normal; font-weight: 500; line-height: 30px; letter-spacing: -0.4px; text-transform: uppercase;"
-                    class="inline-block font-manrope-medium bg-gray-50 px-4 py-1 rounded-full shadow-sm mb-4 border border-gray-100 relative">
+                <div style="color: var(--Black, #171717); text-align: center; line-height: 30px; letter-spacing: -0.4px; text-transform: uppercase;"
+                    class="inline-block font-manrope-medium text-[20px] bg-gray-50 px-4 py-1 rounded-full shadow-sm mb-4 border border-gray-100 relative">
                     Nøglefunktioner
                 </div>
 
@@ -181,7 +181,7 @@
                     </span></p>
 
                 <!-- Cards Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[64px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-[64px]">
                     @foreach ($features as $feature)
                         <div style="border: 4px solid rgba(255, 255, 255, 0.40)"
                             class="bg-[#F8F8F8] p-1 rounded-[40px] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:bg-white">
@@ -234,7 +234,7 @@
 
             <!-- Subtitle -->
             <p style="color: var(--Grey, #858599);"
-                class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-6 text-center font-manrope text-[24px] font-medium leading-[30px] tracking-[-0.48px] relative z-10">
+                class="w-[90vw] md:w-[40vw] max-w-xl mx-auto mt-6 text-center leading-[30px] tracking-[-0.48px] relative z-10 font-manrope-medium text-[24px]">
                 Klar til at tage din køreskole til næste niveau?
             </p>
 
@@ -248,225 +248,228 @@
         </section>
 
         <!-- Container for three sections to prevent layout shifts -->
-        <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px]">
-
-            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
-                <!-- Left Column (Image) -->
-                <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
-                    <img src="{{ asset('images/screen1.png') }}" alt="Administration System" class="">
-                </div>
-
-                <!-- Right Column (Text Content) -->
-                <div
-                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
-                        Online administrationssystem – Ét system, fuldt overblik
-                    </p>
-                    <p style="color: var(--Grey, #858599);"
-                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og fremdrift.
-                    </p>
-
-                    <ul
-                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer og
-                                online tilmelding via hjemmeside eller findkoreskole.dk.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og
-                                elevforløb.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
-                                fremdrift.</span>
-                        </li>
-                    </ul>
-                    <p style="color: var(--Grey, #858599);"
-                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Mere struktur. Færre manuelle opgaver. Mere tid til undervisning.
-                    </p>
-                    <!-- CTA Button -->
-                    <div class="mt-2 relative z-10">
-                        <a href="#"
-                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                            Læs mere
-                        </a>
+        <div class="w-full bg-[#ffffff]/70">
+            <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px] mb-[50px]">
+                <section id=""
+                    class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
+                    <!-- Left Column (Image) -->
+                    <div class="scroll-image-left w-full md:w-1/2 flex justify-start rounded-[px]">
+                        <img src="{{ asset('images/screen1.png') }}" alt="Administration System" class="">
                     </div>
-                </div>
-            </section>
 
-            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
-                <!-- Right Column (Text Content) -->
-                <div
-                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
-                        Online undervisningssystem – Fremtidssikret læring
-                    </p>
-                    <p style="color: var(--Grey, #858599);"
-                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
-                        undervisning enkel og overskuelig.
-                    </p>
+                    <!-- Right Column (Text Content) -->
+                    <div class="scroll-text-right w-full md:w-1/2 space-y-2">
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
+                            Online administrationssystem – Ét system, fuldt overblik
+                        </p>
+                        <p style="color: var(--Grey, #858599);"
+                            class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
+                            fremdrift.
+                        </p>
 
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Du får:
-                    </p>
-
-                    <ul
-                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til deling
-                                og udskrivning.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Online teoriprøver med fuld visning af elevens fremdrift og direkte integration til
-                                elevens profil.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Undervisning tilgængelig på dansk, engelsk og arabisk.</span>
-                        </li>
-                    </ul>
-
-                    <!-- CTA Button -->
-                    <div class="mt-2 relative z-10">
-                        <a href="#"
-                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                            Læs mere
-                        </a>
+                        <ul
+                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer
+                                    og
+                                    online tilmelding via hjemmeside eller findkoreskole.dk.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og
+                                    elevforløb.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
+                                    fremdrift.</span>
+                            </li>
+                        </ul>
+                        <p style="color: var(--Grey, #858599);"
+                            class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Mere struktur. Færre manuelle opgaver. Mere tid til undervisning.
+                        </p>
+                        <!-- CTA Button -->
+                        <div class="mt-2 relative z-10">
+                            <a href="#"
+                                class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                                Læs mere
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- Left Column (Image) -->
-                <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
-                    <img src="{{ asset('images/screen2.png') }}" alt="Administration System" class="">
-                </div>
-            </section>
+                </section>
 
-            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
-                <!-- Left Column (Image) -->
-                <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
-                    <img src="{{ asset('images/screen3.png') }}" alt="Administration System" class="">
-                </div>
+                <section id=""
+                    class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
+                    <!-- Right Column (Text Content) -->
+                    <div class="scroll-text-left w-full md:w-1/2 space-y-2">
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
+                            Online undervisningssystem – Fremtidssikret læring
+                        </p>
+                        <p style="color: var(--Grey, #858599);"
+                            class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Med Just Driving får du ét samlet undervisningssystem, der gør både fysisk og digital
+                            undervisning enkel og overskuelig.
+                        </p>
 
-                <!-- Right Column (Text Content) -->
-                <div
-                    class="w-full md:w-1/2 space-y-2 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
-                        Online bookingsystem – Mere struktur, mindre spildtid
-                    </p>
-                    <p style="color: var(--Grey, #858599);"
-                        class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Giv eleverne en nem bookingoplevelse – og få fuld kontrol over kalenderen.
-                    </p>
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Du får:
+                        </p>
 
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Fordele:
-                    </p>
+                        <ul
+                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til
+                                    deling
+                                    og udskrivning.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Online teoriprøver med fuld visning af elevens fremdrift og direkte integration
+                                    til
+                                    elevens profil.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Undervisning tilgængelig på dansk, engelsk og arabisk.</span>
+                            </li>
+                        </ul>
 
-                    <ul
-                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Realtidsopdateret kalender med automatiske påmindelser til elever.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Automatisk fakturering ved ekstra lektioner samt fuld synkronisering med lektionsplan
-                                og betaling</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Fleksibel løsning, der passer til både enkeltlærere og større køreskoler.</span>
-                        </li>
-                    </ul>
-
-                    <!-- CTA Button -->
-                    <div class="mt-2 relative z-10">
-                        <a href="#"
-                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                            Læs mere
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="mt-2 relative z-10">
+                            <a href="#"
+                                class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                                Læs mere
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="" class="text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
-                <!-- Right Column (Text Content) -->
-                <div
-                    class="w-full md:w-1/2 space-y-5 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
-                    <p style="color: var(--Black, #171717);"
-                        class="font-product-sans-bold text-[28px] leading-normal capitalize">
-                        Digitalt økonomisystem – Overblik uden bøvl
-                    </p>
-                    <p style="color: var(--Grey, #858599);" class="font-product-sans-regular text-[16px] capitalize">
-                        Et moderne økonomisystem, der håndterer hele elevens betalingsforløb automatisk.
-                    </p>
-
-                    <p style="color: var(--Black, #171717);"
-                        class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
-                        Funktioner:
-                    </p>
-
-                    <ul
-                        class="space-y-2 text-[#2B70D8] font-manrope text-[16px] font-medium leading-[30px] tracking-[-0.32px] lowercase mt-2">
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Kun betalende elever kan booke, så du undgår restancer.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                class="w-4 h-4 mt-1 text-[#2B70D8]">
-                            <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
-                        </li>
-                    </ul>
-
-                    <!-- CTA Button -->
-                    <div class="mt-2 relative z-10">
-                        <a href="#"
-                            class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                            Læs mere
-                        </a>
+                    <!-- Left Column (Image) -->
+                    <div class="scroll-image-right w-full md:w-1/2 flex justify-start rounded-[px]">
+                        <img src="{{ asset('images/screen2.png') }}" alt="Administration System" class="">
                     </div>
-                </div>
-                <!-- Left Column (Image) -->
-                <div
-                    class="w-full md:w-1/2 flex justify-start translate-y-10 transition-all duration-700 ease-out animate-on-scroll rounded-[px]">
-                    <img src="{{ asset('images/screen4.png') }}" alt="Administration System" class="">
-                </div>
-            </section>
+                </section>
+
+                <section id=""
+                    class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
+                    <!-- Left Column (Image) -->
+                    <div class="scroll-image-left w-full md:w-1/2 flex justify-start rounded-[px]">
+                        <img src="{{ asset('images/screen3.png') }}" alt="Administration System" class="">
+                    </div>
+
+                    <!-- Right Column (Text Content) -->
+                    <div class="scroll-text-right w-full md:w-1/2 space-y-2">
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-bold text-[34px] leading-normal tracking-[-1.02px]">
+                            Online bookingsystem – Mere struktur, mindre spildtid
+                        </p>
+                        <p style="color: var(--Grey, #858599);"
+                            class="font-manrope-medium text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Giv eleverne en nem bookingoplevelse – og få fuld kontrol over kalenderen.
+                        </p>
+
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Fordele:
+                        </p>
+
+                        <ul
+                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Realtidsopdateret kalender med automatiske påmindelser til elever.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Automatisk fakturering ved ekstra lektioner samt fuld synkronisering med
+                                    lektionsplan
+                                    og betaling</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Fleksibel løsning, der passer til både enkeltlærere og større køreskoler.</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <div class="mt-2 relative z-10">
+                            <a href="#"
+                                class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                                Læs mere
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id=""
+                    class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
+                    <!-- Right Column (Text Content) -->
+                    <div class="scroll-text-left w-full md:w-1/2 space-y-4">
+                        <p style="color: var(--Black, #171717);"
+                            class="font-product-sans-bold text-[28px] leading-normal capitalize">
+                            Digitalt økonomisystem – Overblik uden bøvl
+                        </p>
+                        <p style="color: var(--Grey, #858599);"
+                            class="font-product-sans-regular text-[16px] capitalize">
+                            Et moderne økonomisystem, der håndterer hele elevens betalingsforløb automatisk.
+                        </p>
+
+                        <p style="color: var(--Black, #171717);"
+                            class="font-manrope-semibold text-[16px] leading-[24px] tracking-[-0.32px]">
+                            Funktioner:
+                        </p>
+
+                        <ul
+                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Kun betalende elever kan booke, så du undgår restancer.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
+                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA Button -->
+                        <div class="mt-2 relative z-10">
+                            <a href="#"
+                                class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-9 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                                Læs mere
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Left Column (Image) -->
+                    <div class="scroll-image-right w-full md:w-1/2 flex justify-start">
+                        <img src="{{ asset('images/screen4.png') }}" alt="Administration System" class="">
+                    </div>
+                </section>
+            </div>
         </div>
 
         <!-- Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[138px] text-center relative">
             <!-- CTA Button -->
             <div class="mt-[60px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
@@ -481,98 +484,107 @@
         </section>
 
         <!-- Section  -->
-        <section class="w-full bg-[#f3f8fd] py-10 mx-auto mt-10 text-center relative overflow-hidden">
+        <section class="w-full bg-[#f3f8fd] mx-auto px-[73px] py-[100px] text-center relativeF">
             <!-- Title -->
-            <p
-                class="max-w-6xl mx-auto text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black relative z-10">
+            <p style="color: var(--Black, #171717);"
+                class="text-center font-manrope-bold text-[50px] leading-[60px] tracking-[-1.5px] relative z-10">
                 Tag din køreskole til næste niveau
             </p>
 
             <!-- Subtitle -->
-            <p class="w-[90vw] md:w-[80vw] mx-auto mt-4 text-[#858599] text-[22px] font-medium relative z-10">
-                Gør administrationen enkel med én samlet løsning. Just Driving håndterer alle daglige opgaver for dig,
+            <p style="color: var(--Grey, #858599);"
+                class="w-[90vw] font-manrope-medium text-[24px] mt-6 text-center leading-[30px] tracking-[-0.48px] relative z-10">
+                Gør administrationen enkel med én samlet løsning. Just Driving håndterer alle daglige opgaver for
+                dig,<br />
                 minimerer fejl og sparer tid, så du kan fokusere på undervisningen. Systemet er udviklet med danske
-                køreskoler og bygger på moderne teknologi, der kan skalere i takt med din forretning.
+                køreskoler<br /> og bygger på moderne teknologi, der kan skalere i takt med din forretning.
             </p>
 
             <!-- CTA Button -->
-            <div class="mt-4 relative z-10">
+            <div class="mt-8 relative z-10">
                 <a href="#"
-                    class="inline-flex items-center bg-[#3384FF] text-[16px] text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-[#2563EB] transition">
+                    class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
                     Prøv Just Driving gratis
                 </a>
             </div>
         </section>
 
         <!-- Payment Flow Section -->
-        <section class="w-full mx-auto mt-16 text-center relative overflow-hidden">
-            <div class="max-w-full 2xl:max-w-7xl mx-auto px-6 md:px-10 lg:px-20">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pt-16 text-center relative">
+            <div class="w-[90vw] lg:max-w-[1280px] mx-auto px-6">
                 <!-- Main Heading -->
-                <h1 class="text-2xl sm:text-[28px] font-bold leading-tight text-black relative z-10">
+                <h4 style="color: #000;"
+                    class="text-center font-product-sans-bold text-[28px] leading-normal capitalize relative z-10">
                     Betalingsflow – Sikkert, Enkelt Og 100% Automatiseret
-                </h1>
+                </h4>
 
                 <!-- Subheading -->
-                <p class="text-[20px] font-semibold text-[#858599] mt-4 relative z-10">
-                    Slut Med Manuelt Betalingsarbejde
-                </p>
-
-                <!-- Description -->
-                <p class="w-[90vw] md:w-[60vw] mx-auto mt-4 text-[#858599] text-sm sm:text-base relative z-10">
-                    Eleven Betaler Direkte I Systemet, Hvorefter Adgang Tildeles Automatisk.
-                </p>
-
-                <!-- Fordele Heading -->
-                <p class="text-black font-semibold text-lg mt-6 mb-6 relative z-10">
-                    Fordele:
+                <p style="color: #858599;"
+                    class="text-center font-product-sans-bold text-[16px] leading-normal capitalize mt-4 relative z-10">
+                    Med Just Driving slipper du for manuelle afstemninger og jagt på betalinger. Systemet håndterer
+                    alt<br />
+                    automatisk – fra adgang til betaling, booking og kvittering.
                 </p>
 
                 <!-- Three Feature Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6 mt-10">
                     <!-- Card 1 -->
-                    <div
-                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
+                    <div style="border: 4px solid #F0F2F5"
+                        class="group bg-white rounded-[40px] p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
                             <div
-                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 p-4 bg-[#f3f8fd] rounded-[20px]">
+                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="h-10 w-10">
                             </div>
-                            <p
-                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
-                                Ingen betaling, ingen booking
+                            <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
+                                class="font-manrope-bold text-[24px] leading-[33px] tracking-[-0.72px]">Slut med
+                                spildtid</h4>
+                            <p style="color: var(--Grey, #858599);"
+                                class="font-manrope-bold text-[16px] leading-normal tracking-[-0.32px] text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                                Eleven køber adgang direkte i systemet – enten til hold, lektioner eller pakker. Når
+                                betalingen er gennemført, gives der automatisk adgang.
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
-                    <div
-                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
+                    <div style="border: 4px solid #F0F2F5"
+                        class="group bg-white rounded-[40px] p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
                             <div
-                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 bg-[#f3f8fd] rounded-[20px]">
+                                <img src="{{ asset('images/clock2.png') }}" alt="Icon" class="">
                             </div>
-                            <p
-                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
-                                Automatisk kvittering
+                            <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
+                                class="font-manrope-bold text-[24px] leading-[33px] text-start tracking-[-0.72px]">Slut
+                                Betaling
+                                med det samme</h4>
+                            <p style="color: var(--Grey, #858599);"
+                                class="font-manrope-bold text-[16px] leading-normal tracking-[-0.32px] text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                                Ingen betaling = ingen booking. Elever kan kun booke lektioner, når de har betalt – det
+                                sikrer likviditet og sparer dig for administration.
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div
-                        class="group bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
+                    <div style="border: 4px solid #F0F2F5"
+                        class="group bg-white rounded-[40px] p-6 shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-[#3384FF]/30 transition-all duration-300 ease-out cursor-pointer">
                         <div class="flex flex-col items-start gap-4">
                             <!-- Clock Icon -->
                             <div
-                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                                <img src="{{ asset('images/clock.png') }}" alt="Icon" class="w-12 h-12">
+                                class="transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 bg-[#f3f8fd] rounded-[20px]">
+                                <img src="{{ asset('images/clock3.png') }}" alt="Icon" class="">
                             </div>
-                            <p
-                                class="text-[#444] text-sm font-semibold text-left group-hover:text-[#3384FF] transition-colors duration-300">
-                                Driftssikker dansk betalingsinfrastruktur
+                            <h4 style="color: var(--Pallet-1-Dark, #1B1C31);"
+                                class="font-manrope-bold text-[24px] leading-[33px] tracking-[-0.72px]">Høj sikkerhed
+                            </h4>
+                            <p style="color: var(--Grey, #858599);"
+                                class="font-manrope-bold text-[16px] leading-normal tracking-[-0.32px] text-left group-hover:text-[#3384FF] transition-colors duration-300">
+                                Alle betalinger behandles via vores danske betalingspartner Bambora, som lever op til de
+                                højeste standarder for datasikkerhed og betalingsinfrastruktur.
                             </p>
                         </div>
                     </div>
@@ -581,7 +593,7 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="w-full bg-white mx-auto pt-[236px] text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[180px] text-center relative overflow-hidden">
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[28px] relative">
@@ -659,7 +671,7 @@
         </section>
 
         <!-- Section 6 -->
-        <section class="w-full bg-white pt-[160px] mx-auto text-center pb-10 relative">
+        <section class="w-full bg-[#ffffff] pt-[160px] mx-auto text-center pb-10 relative">
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[50px] relative">
                 Spørgsmål? Vi har svarene
@@ -747,6 +759,88 @@
                         }
                     }
                 );
+            });
+
+            // Smooth scroll animations for sections (250-473)
+            gsap.utils.toArray(".scroll-section").forEach((section, index) => {
+                const imageLeft = section.querySelector(".scroll-image-left");
+                const imageRight = section.querySelector(".scroll-image-right");
+                const textLeft = section.querySelector(".scroll-text-left");
+                const textRight = section.querySelector(".scroll-text-right");
+
+                // Animate images from left
+                if (imageLeft) {
+                    gsap.fromTo(imageLeft,
+                        { x: -150, opacity: 0 },
+                        {
+                            x: 0,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top 80%",
+                                toggleActions: "play none none reverse",
+                            }
+                        }
+                    );
+                }
+
+                // Animate images from right
+                if (imageRight) {
+                    gsap.fromTo(imageRight,
+                        { x: 150, opacity: 0 },
+                        {
+                            x: 0,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top 80%",
+                                toggleActions: "play none none reverse",
+                            }
+                        }
+                    );
+                }
+
+                // Animate text from right
+                if (textRight) {
+                    gsap.fromTo(textRight,
+                        { x: 100, opacity: 0 },
+                        {
+                            x: 0,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "power3.out",
+                            delay: 0.2,
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top 80%",
+                                toggleActions: "play none none reverse",
+                            }
+                        }
+                    );
+                }
+
+                // Animate text from left
+                if (textLeft) {
+                    gsap.fromTo(textLeft,
+                        { x: -100, opacity: 0 },
+                        {
+                            x: 0,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "power3.out",
+                            delay: 0.2,
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top 80%",
+                                toggleActions: "play none none reverse",
+                            }
+                        }
+                    );
+                }
             });
         });
     </script>
