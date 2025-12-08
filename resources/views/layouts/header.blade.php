@@ -88,19 +88,6 @@
                             </ul>
                         </div>
 
-                        <!-- Column 3 -->
-                        <div>
-                            <h3
-                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
-                                <img src="{{ asset('images/mega3.png') }}" alt="Icon" class="w-6 h-6">
-                                <a href="{{ route('booking') }}">Online Bookingsystem</a>
-                            </h3>
-                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
-                                <li><a href="{{ route('booking') }}#overview"
-                                        class="block hover:text-[#3384FF] transition">Booking Oversigt</a></li>
-                            </ul>
-                        </div>
-
                         <!-- Column 4 -->
                         <div>
                             <h3
@@ -115,17 +102,35 @@
                                         class="block hover:text-[#3384FF] transition">Rapporter</a></li>
                             </ul>
                         </div>
+
+                        <!-- Column 3 -->
+                        <div>
+                            <h3
+                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
+                                <img src="{{ asset('images/mega3.png') }}" alt="Icon" class="w-6 h-6">
+                                <a href="{{ route('booking') }}">Online Bookingsystem</a>
+                            </h3>
+                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
+                                <li><a href="{{ route('booking') }}#overview"
+                                        class="block hover:text-[#3384FF] transition">Booking Oversigt</a></li>
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <a href="{{ route('omJustDriving') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Om
+        <a href="{{ route('omJustDriving') }}"
+            class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Om
             Os</a>
-        <a href="{{ route('priser') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Priser</a>
+        <a href="{{ route('priser') }}"
+            class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Priser</a>
 
-        <a href="{{ route('kontakt') }}" class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Kontakt</a>
+        <a href="{{ route('kontakt') }}"
+            class="hover:text-[#3384FF] font-manrope-semibold transition text-[16px]">Kontakt</a>
 
     </nav>
 

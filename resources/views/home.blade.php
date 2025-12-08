@@ -687,14 +687,14 @@
 
         <!-- Section 6 -->
         <section class="w-full bg-white pt-[190px] mx-auto text-center pb-10 relative">
-            <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
-                class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[50px] relative">
+            <div style="color: var(--Black, #171717); text-align: center; font-size: 18px; line-height: normal;"
+                class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[30px] font-product-sans-regular relative">
                 Spørgsmål? Vi har svarene
             </div>
 
             <!-- Title -->
-            <h1 style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 50px; font-style: normal; font-weight: 700; line-height: 103.2px; letter-spacing: -1px;"
-                class="relative">
+            <h1 style="color: var(--Black, #171717); text-align: center; font-size: 50px; line-height: 103.2px; letter-spacing: -1px;"
+                class="relative font-product-sans-bold">
                 Ofte stillede <span class="text-[#3384FF]">spørgsmål</span>
             </h1>
 
