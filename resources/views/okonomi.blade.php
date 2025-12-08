@@ -159,28 +159,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Elever
                                 kan kun booke lektioner, når betalingen er gennemført.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Systemet
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Systemet
                                 håndterer betalingsstatus automatisk og viser restancer tydeligt.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Alle
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Alle
                                 opkrævninger og transaktioner er samlet i et klart overblik.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalinger
                                 behandles sikkert via Stripe med høj datasikkerhed.</span>
                         </li>
                     </ul>
@@ -281,7 +281,7 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Fuldt
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Fuldt
                                 overblik over indtjening, restancer, transaktioner og alle betalingstyper ét
                                 sted.</span>
                         </li>
@@ -289,21 +289,21 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Automatiske
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatiske
                                 betalingspåmindelser, så du undgår udeblivelser.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Elever
                                 har eget betalingsoverblik og adgang til kvitteringer via deres login.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Kortbetaling,
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Kortbetaling,
                                 MobilePay, PDF-fakturaer og integration til eksternt økonomisystem.</span>
                         </li>
                     </ul>

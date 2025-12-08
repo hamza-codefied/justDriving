@@ -53,10 +53,12 @@
 
                         <!-- Column 1 -->
                         <div>
-                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] transition mb-3 border-b pb-1">
+                            <h3
+                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-3">
+                                <img src="{{ asset('images/mega1.png') }}" alt="Icon" class="w-6 h-6">
                                 <a href="{{ route('administration') }}">Online administrationssystem</a>
                             </h3>
-                            <ul class="space-y-2 text-sm">
+                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('administration') }}#holdadministration"
                                         class="block hover:text-[#3384FF] transition">Holdadministration</a></li>
                                 <li><a href="{{ route('administration') }}#afdelinger"
@@ -70,10 +72,12 @@
 
                         <!-- Column 2 -->
                         <div>
-                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                            <h3
+                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-3">
+                                <img src="{{ asset('images/mega2.png') }}" alt="Icon" class="w-6 h-6">
                                 <a href="{{ route('undervisning') }}">Online undervisningsystem</a>
                             </h3>
-                            <ul class="space-y-2 text-sm">
+                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('undervisning') }}#digitale-lektionsplaner"
                                         class="block hover:text-[#3384FF] transition">Digitale Lektionsplaner</a></li>
                                 <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
@@ -85,10 +89,12 @@
 
                         <!-- Column 3 -->
                         <div>
-                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                            <h3
+                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
+                                <img src="{{ asset('images/mega3.png') }}" alt="Icon" class="w-6 h-6">
                                 <a href="{{ route('booking') }}">Online Bookingsystem</a>
                             </h3>
-                            <ul class="space-y-2 text-sm">
+                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('booking') }}#overview"
                                         class="block hover:text-[#3384FF] transition">Booking Oversigt</a></li>
                             </ul>
@@ -96,10 +102,12 @@
 
                         <!-- Column 4 -->
                         <div>
-                            <h3 class="font-bold text-[#3384FF] hover:text-[#248ec1] mb-3 border-b pb-1">
+                            <h3
+                                class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
+                                <img src="{{ asset('images/mega4.png') }}" alt="Icon" class="w-6 h-6">
                                 <a href="{{ route('okonomi') }}">Online Økonomisystem</a>
                             </h3>
-                            <ul class="space-y-2 text-sm">
+                            <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('okonomi') }}#betalinger"
                                         class="block hover:text-[#3384FF] transition">Automatiske betalinger</a></li>
                                 <li><a href="{{ route('okonomi') }}#rapporter"

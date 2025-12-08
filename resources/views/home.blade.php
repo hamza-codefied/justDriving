@@ -270,23 +270,23 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Automatisk aflønning, timesporing og digital håndtering af betalinger, restancer
                                     og
                                     online tilmelding via hjemmeside eller findkoreskole.dk.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Et samlet system, der giver fuldt overblik over alle afdelinger, aktiviteter og
                                     elevforløb.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Oprettelse og styring af elever, kørelærere og hold – med fuld lektionsoversigt og
                                     fremdrift.</span>
                             </li>
@@ -325,24 +325,24 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Digitale lektionsplaner og alt undervisningsmateriale samlet ét sted – klar til
                                     deling
                                     og udskrivning.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Online teoriprøver med fuld visning af elevens fremdrift og direkte integration
                                     til
                                     elevens profil.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Undervisning tilgængelig på dansk, engelsk og arabisk.</span>
                             </li>
                         </ul>
@@ -385,22 +385,22 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Realtidsopdateret kalender med automatiske påmindelser til elever.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Automatisk fakturering ved ekstra lektioner samt fuld synkronisering med
                                     lektionsplan
                                     og betaling</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Fleksibel løsning, der passer til både enkeltlærere og større køreskoler.</span>
                             </li>
                         </ul>
@@ -434,20 +434,20 @@
                         </p>
 
                         <ul
-                            class="space-y-2 text-[#2B70D8] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
+                            class="space-y-2 text-[#3384ff] font-manrope-medium text-[16px] leading-[30px] tracking-[-0.32px] lowercase mt-2">
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Kun betalende elever kan booke, så du undgår restancer.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Kortbetaling, MobilePay og automatisk fakturering i ét system.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
-                                    class="w-4 h-4 mt-1 text-[#2B70D8]">
+                                    class="w-4 h-4 mt-1 text-[#3384ff]">
                                 <span>Fuld transaktionsoversigt og bogholderi-integration for nem økonomistyring.</span>
                             </li>
                         </ul>

@@ -159,28 +159,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Fælles
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Fælles
                                 kalenderoverblik for elev, kørelærer og køreskole</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Direkte
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Direkte
                                 booking og betaling i samme flow</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Hurtig
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Hurtig
                                 oprettelse af aftaler – enkeltvis eller flere ad gangen</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Klar
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Klar
                                 visning af alle kommende lektioner og aftaler</span>
                         </li>
                     </ul>

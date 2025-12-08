@@ -181,28 +181,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Fuld
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Fuld
                                 oversigt over alle aktive, kommende og afsluttede hold.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Automatisk
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatisk
                                 betaling ved tilmelding og færre administrative fejl.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">API-integration
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">API-integration
                                 til din hjemmeside og digital lektionsplan for hvert hold.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Alt
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Alt
                                 synkroniseres automatisk med elevens profil og logbog for et nemt workflow.</span>
                         </li>
                     </ul>
@@ -311,28 +311,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Opret
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Opret
                                 ubegrænsede afdelinger og administrér dem samlet ét sted.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Kørelærere
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Kørelærere
                                 tilknyttes automatisk de rette afdelinger og kan arbejde på tværs.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Ét
                                 login giver fuldt centralt overblik over struktur, elever og aktiviteter.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Klar
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Klar
                                 økonomioversigt pr. afdeling for nem styring og kontrol.</span>
                         </li>
                     </ul>
@@ -368,7 +368,7 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Afdelinger
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Afdelinger
                                 : Opret ubegrænsede afdelinger og få et klart overblik over elever, hold og
                                 kørelærere.</span>
                         </li>
@@ -376,7 +376,7 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Kørelærere
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Kørelærere
                                 : Tildel kørelærere til afdelinger med få klik – perfekt også for
                                 selvstændige, der arbejder flere steder.</span>
                         </li>
@@ -384,7 +384,7 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Elever
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Elever
                                 & hold : Elever tilknyttes automatisk korrekt afdeling gennem kørelæreren. Hold
                                 organiseres pr. afdeling.</span>
                         </li>
@@ -392,7 +392,7 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Ledelsesoverblik
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Ledelsesoverblik
                                 : Følg elevstatus, økonomi og aktiviteter på tværs af alle lokationer
                                 fra ét login.</span>
                         </li>
@@ -425,28 +425,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Ændringer,
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Ændringer,
                                 aflysninger og nye lektioner</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Reservationer
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Reservationer
                                 og tilmeldinger</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalingspåmindelser
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalingspåmindelser
                                 og frister</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Udeblivelser
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Udeblivelser
                                 og annulleringer</span>
                         </li>
                     </ul>
@@ -487,28 +487,28 @@
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektioner
+                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Lektioner
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Betalinger
+                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Betalinger
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Lektionsplan
+                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Lektionsplan
                                     : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                     class="w-4 h-4 mt-1 text-[#3384FF]">
                                 <span
-                                    class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal">Automatisk
+                                    class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal">Automatisk
                                     og intelligent : Besked ved nye bookinger, ændringer og aflysninger.</span>
                             </li>
                         </ul>
@@ -549,28 +549,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Realtidsopdatering
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Realtidsopdatering
                                 på tværs af hele systemet</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">GDPR-sikker
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">GDPR-sikker
                                 datalagring.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Ét
                                 Adgangsstyring – kun de rigtige ser data</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Digital
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Digital
                                 elevmappe – alt samlet ét sted</span>
                         </li>
                     </ul>
@@ -661,27 +661,27 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Lektioner
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Lektioner
                                 ændret/aflyst</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Bekræftelser
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Bekræftelser
                                 på reservationer</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Betalingspåmindelser</span>
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Betalingspåmindelser</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal lowercase">Vigtige
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal lowercase">Vigtige
                                 beskeder fra køreskolen</span>
                         </li>
                     </ul>

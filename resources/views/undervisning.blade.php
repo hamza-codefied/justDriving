@@ -176,28 +176,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Adgang
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Adgang
                                 for elev, kørelærer og køreskole døgnet rundt</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Digital
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Digital
                                 underskrift – 100 % papirfri dokumentation</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Én
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Én
                                 klik PDF-eksport til print eller arkiv</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Automatisk
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Automatisk
                                 synkronisering med elevens status</span>
                         </li>
                     </ul>
@@ -298,28 +298,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Undervisning
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Undervisning
                                 til bil, MC, trailer m.m.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Direkte
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Direkte
                                 adgang til teori og fjernundervisning</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Flere
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Flere
                                 lektionsplaner pr. kategori</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Undervisning
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Undervisning
                                 med tekst, video, billeder og quizzer</span>
                         </li>
                     </ul>
@@ -366,28 +366,28 @@
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Ét
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Ét
                                 samlet system med fuld integration</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">25+
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">25+
                                 prøver til bil og motorcykel</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Realtidsvisning
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Realtidsvisning
                                 af elevens resultater</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <img src="{{ asset('images/arrowNew.png') }}" alt="Arrow Right"
                                 class="w-4 h-4 mt-1 text-[#3384FF]">
                             <span
-                                class="font-product-sans-regular text-[#2B70D8] text-[18px] font-normal leading-normal capitalize">Målrettet
+                                class="font-product-sans-regular text-[#3384ff] text-[18px] font-normal leading-normal capitalize">Målrettet
                                 undervisning baseret på elevens niveau</span>
                         </li>
                     </ul>
