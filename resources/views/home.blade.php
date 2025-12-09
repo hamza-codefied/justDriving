@@ -46,7 +46,7 @@
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block font-product-sans-regular bg-gray-50 px-4 py-1 rounded-full shadow-sm mb-4 border border-gray-100 relative">
-                #1 Productivity Software
+                #1 System for køreskole
             </div>
 
             <!-- Title -->
@@ -70,8 +70,7 @@
             <div class="mt-8 relative z-10">
                 <a href="#"
                     class="inline-flex items-center bg-[#3384FF] text-[16px] text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-[#2563EB] transition">
-                    <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Try 14 days
-                    free
+                    <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Prove gratis nu
                 </a>
             </div>
 
@@ -486,12 +485,14 @@
 
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
-                    Prøv gratis nu
+                    style="background: var(--blue-light, #3384FF); box-shadow: 0 20px 35px 0 rgba(51, 132, 255, 0.20); padding: 16px 36px;"
+                    class="flex flex-col justify-center items-center gap-2 w-[206px] h-[70px] rounded-2xl border border-[rgba(255,255,255,0.40)] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                    Start gratis
                 </a>
-                <a href="#"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[#377DFF] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
-                    Læs mere
+                <a href="{{ route('priser') }}"
+                    style="padding: 19.765px 44.471px; border: 1.235px solid #377DFF; box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[206px] h-[70px] rounded-[19.765px] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
+                    Se priser
                 </a>
             </div>
         </section>

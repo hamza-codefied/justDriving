@@ -58,7 +58,7 @@
                 <a href="#"
                     class="flex flex-col justify-center items-center gap-[9.882px] w-[309px] h-[74px] py-[19.765px] px-[10px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
                     style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
-                    Prøve Undervisningssystem
+                    Prøv Just Driving
                 </a>
 
             </div>
@@ -246,13 +246,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 xl:px-0 gap-4">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-5 flex flex-col items-start
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition-all duration-500 opacity-0 translate-y-10 animate-on-scroll group"
                             style="transition-delay: {{ $index * 100 }}ms;">
                             <!-- Glow effect -->
                             <div
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400/10 to-transparent 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    opacity-0 group-hover:opacity-100 blur-lg transition duration-500">
                             </div>
                             <div class="flex justify-center items-center p-4 mb-2 rounded-[20px] bg-[#f3f8fd]">
                                 <img src="{{ asset('images/' . $feature['img']) }}" alt="{{ $feature['title'] }}"
@@ -398,7 +398,22 @@
                 </div>
 
             </div>
+            <!-- CTA Button -->
+            <div class="mt-[71px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+                <a href="#"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[246px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
+                    style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
+                    Opret konto
+                </a>
+                <a href="{{ route('priser') }}"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[276px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[#377DFF] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition"
+                    style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
+                    Se priser
+                </a>
+            </div>
         </section>
+
+
 
         @include('layouts.footer')
 

@@ -54,12 +54,20 @@
                     platform
                     til hele din køreskole.
                 </p>
+
+                <div class="mt-[40px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+                    <a href="{{ route('kontakt') }}"
+                        class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
+                        style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
+                        Kontakt Os
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Features Included Section -->
         <section id="pricing"
-            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[150px] relative">
+            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[114px] relative">
             <div class="w-[90vw] md:max-w-[1280px] mx-auto">
                 <!-- Main Heading -->
                 <h4 style="color: var(--Black, #171717); text-align: center; font-size: 40px; font-style: normal; font-weight: 900; line-height: 52.5px;"
@@ -345,6 +353,19 @@
                     Just Driving giver dig adgang til Danmarks mest komplette platform til køreskoler. <br> Alt
                     administration, undervisning, booking og betaling samlet ét sted.
                 </p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+                    <a href="#"
+                        style="background: var(--blue-light, #3384FF); box-shadow: 0 20px 35px 0 rgba(51, 132, 255, 0.20); padding: 16px 36px;"
+                        class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] rounded-[19.765px] py-[19.765px] px-[40.471px] border border-[rgba(255,255,255,0.40)] text-white text-[19.76px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                        Prøv Just Driving
+                    </a>
+                    <a href="{{ route('kontakt') }}"
+                        style="padding: 19.765px 44.471px; border: 1.235px solid #377DFF; box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);"
+                        class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] bg-[#E8F2FF] text-[#3384FF] text-[19.76px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
+                        Kontakt Os
+                    </a>
+                </div>
             </div>
         </section>
 
