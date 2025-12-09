@@ -56,10 +56,10 @@
                 </p>
 
                 <div class="mt-[40px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
-                    <a href="{{ route('kontakt') }}"
-                        class="flex flex-col justify-center items-center gap-[9.882px] w-[230px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
+                    <a href="#"
+                        class="flex flex-col justify-center items-center gap-[9.882px] w-[274px] h-[74px] py-[19.765px] px-[44.471px] rounded-[19.765px] border-[1.235px] border-[rgba(255,255,255,0.40)] bg-[#3384FF] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition"
                         style="box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);">
-                        Kontakt Os
+                        Opret gratis konto
                     </a>
                 </div>
             </div>

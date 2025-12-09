@@ -482,17 +482,16 @@
 
         <!-- Section -->
         <section class="w-full bg-[#ffffff]/70 mx-auto pb-[118px] text-center relative overflow-hidden">
-
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
                     style="background: var(--blue-light, #3384FF); box-shadow: 0 20px 35px 0 rgba(51, 132, 255, 0.20); padding: 16px 36px;"
-                    class="flex flex-col justify-center items-center gap-2 w-[206px] h-[70px] rounded-2xl border border-[rgba(255,255,255,0.40)] text-white text-[20px] font-product-sans-bold hover:bg-[#2563EB] transition">
-                    Start gratis
+                    class="flex flex-col justify-center items-center gap-2 w-[230px] h-[74px] rounded-[19.765px] py-[19.765px] px-[44.471px] border border-[rgba(255,255,255,0.40)] text-white text-[19.765px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                    Prøv gratis nu
                 </a>
-                <a href="{{ route('priser') }}"
+                <a href="#"
                     style="padding: 19.765px 44.471px; border: 1.235px solid #377DFF; box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);"
-                    class="flex flex-col justify-center items-center gap-[9.882px] w-[206px] h-[70px] rounded-[19.765px] bg-[#E8F2FF] text-[#3384FF] text-[20px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
-                    Se priser
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[233px] h-[74px] rounded-[19.765px] bg-[#E8F2FF] text-[#3384FF] text-[19.765px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
+                    Læs mere
                 </a>
             </div>
         </section>
@@ -515,10 +514,16 @@
             </p>
 
             <!-- CTA Button -->
-            <div class="mt-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative mt-5 z-10">
                 <a href="#"
-                    class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
-                    Prøv Just Driving gratis
+                    style="background: var(--blue-light, #3384FF); box-shadow: 0 20px 35px 0 rgba(51, 132, 255, 0.20); padding: 16px 36px;"
+                    class="flex flex-col justify-center items-center gap-2 w-[206px] h-[70px] rounded-[19.765px] py-[19.765px] px-[44.471px] border border-[rgba(255,255,255,0.40)] text-white text-[19.765px] font-product-sans-bold hover:bg-[#2563EB] transition">
+                    Start gratis
+                </a>
+                <a href="{{ route('priser') }}"
+                    style="padding: 19.765px 44.471px; border: 1.235px solid #377DFF; box-shadow: 0 24.706px 43.235px 0 rgba(51, 132, 255, 0.20);"
+                    class="flex flex-col justify-center items-center gap-[9.882px] w-[206px] h-[70px] rounded-[19.765px] py-[19.765px] px-[44.471px] bg-[#E8F2FF] text-[#3384FF] text-[19.765px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
+                    Se priser
                 </a>
             </div>
         </section>
