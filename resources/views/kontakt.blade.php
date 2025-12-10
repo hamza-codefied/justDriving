@@ -40,12 +40,14 @@
         <!-- Hero Section -->
         <section class="w-full mx-auto mt-[140px] text-center relative overflow-hidden">
             <!-- Title -->
-            <h1 class="text-xl md:text-5xl capitalize font-bold text-gray-900 relative z-10">
-                Kontakt<span class="text-[#3384FF]"> Os</span>
-            </h1>
+            <h4 style="color: #181B32; text-align: center; line-height: normal; letter-spacing: -2px; text-transform: capitalize;"
+                class="relative z-10 mb-3 font-product-sans-bold text-[59px]">
+                Kontakt <span class="text-[#3384FF]">Os</span>
+            </h4>
 
             <!-- Subtitle -->
-            <p class="w-full sm:max-w-4xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] text-sm sm:text-xl relative z-10">
+            <p
+                class="w-full sm:max-w-5xl mx-auto px-3 sm:px-0 mt-4 text-[#858599] font-manrope-bold text-[24px] relative z-10">
                 Just Driving er den perfekte kombination af erfarne it-folk, med fokus på at skabe systemer, der er
                 nemme at bruge og giver overblik – og erfarne kørelærere og køreskoler, som har skubbet på for at få et
                 system, der kan det hele.

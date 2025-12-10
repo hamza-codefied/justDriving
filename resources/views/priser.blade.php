@@ -42,14 +42,14 @@
         <section class="w-[90vw] md:max-w-[1280px] mx-auto mt-[140px] text-center relative">
             <div class="px-6">
                 <!-- Main Heading -->
-                <h4 style="color: #181B32; text-align: center; font-feature-settings: 'dlig' on; font-family: 'Product Sans'; font-size: 59px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -2px; text-transform: capitalize;"
-                    class="relative z-10 mb-3">
+                <h4 style="color: #181B32; text-align: center; line-height: normal; letter-spacing: -2px; text-transform: capitalize;"
+                    class="relative z-10 mb-3 font-product-sans-bold text-[59px]">
                     Fra Kun <span class="text-[#3384FF]">149 Kr.</span>/Måned Pr. Elev
                 </h4>
 
                 <!-- First Descriptive Paragraph -->
-                <p style="color: var(--Body-text, #666680); text-align: center; font-feature-settings: 'dlig' on; font-family: Manrope; font-size: 24px; font-style: normal; font-weight: 700; line-height: 24px;"
-                    class="relative z-10">
+                <p style="color: var(--Body-text, #666680); text-align: center; line-height: 24px;"
+                    class="relative z-10 font-manrope-bold text-[24px]">
                     En enkel, gennemsigtig pris — med alt inkluderet. <br /> Ingen skjulte gebyrer. Ingen moduler. Én
                     platform
                     til hele din køreskole.
