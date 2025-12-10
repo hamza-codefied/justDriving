@@ -273,7 +273,7 @@
         </section>
 
         <!-- Info Section2 -->
-        <section id=" undervisning-tilpasset" class="bg-[#f3f8fd] text-black w-full xl:px-[91px] xl:py-[132px]">
+        <section id="undervisning-tilpasset" class="bg-[#f3f8fd] text-black w-full xl:px-[91px] xl:py-[132px]">
             <div class="max-w-[1280px] mx-auto px-6 md:px-0 flex flex-col md:flex-row items-center gap-10 z-10">
                 <!-- Left Column (Text) -->
                 <div

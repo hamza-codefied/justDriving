@@ -188,7 +188,6 @@
             </div>
         </section>
 
-
         @php
             $features = [
                 [
@@ -217,7 +216,6 @@
 
             ];
          @endphp
-
         <!-- Section 2 -->
         <section
             class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]/70  mx-auto mt-[100px] md:mt-[214px] pb-[160px] px-6 text-center relative">

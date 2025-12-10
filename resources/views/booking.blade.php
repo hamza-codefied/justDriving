@@ -94,7 +94,7 @@
          @endphp
 
         <!-- Section 2 -->
-        <section
+        <section id="overview"
             class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
@@ -128,7 +128,7 @@
         </section>
 
         <!-- Info Section -->
-        <section id="overview"
+        <section id="booking-betaling"
             class="w-full bg-gradient-to-b from-[#ffffff]/80 via-[#ffffff]/90 to-transparent pt-[180px]">
             <div
                 class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center gap-10 z-10">
@@ -186,7 +186,7 @@
         </section>
 
         <!-- Dynamiske Formularer Section -->
-        <section id="features-section4"
+        <section id=""
             class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[133px] pb-[100px]">
             <div class="max-w-[1280px] mx-auto px-6">
                 @php

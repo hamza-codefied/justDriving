@@ -63,11 +63,12 @@
                                 <li><a href="{{ route('administration') }}#holdadministration"
                                         class="block hover:text-[#3384FF] transition">Holdadministration</a></li>
                                 <li><a href="{{ route('administration') }}#afdelinger"
-                                        class="block hover:text-[#3384FF] transition">Afdelinger</a></li>
-                                <li><a href="{{ route('administration') }}#Gå-aldrig"
-                                        class="block hover:text-[#3384FF] transition">Gå Aldrig</a></li>
+                                        class="block hover:text-[#3384FF] transition">Afdelingsstyring</a></li>
                                 <li><a href="{{ route('administration') }}#SMS-Notificationer"
-                                        class="block hover:text-[#3384FF] transition">SMS Notifikationer</a></li>
+                                        class="block hover:text-[#3384FF] transition">Notifikationer</a></li>
+                                <li><a href="{{ route('administration') }}#synkroniseret-data"
+                                        class="block hover:text-[#3384FF] transition">Datasynkronisering</a></li>
+
                             </ul>
                         </div>
 
@@ -79,16 +80,18 @@
                                 <a href="{{ route('undervisning') }}">Online undervisningsystem</a>
                             </h3>
                             <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
+                                <li><a href="{{ route('undervisning') }}"
+                                        class="block hover:text-[#3384FF] transition">Digital teoriundervisning</a></li>
                                 <li><a href="{{ route('undervisning') }}#digitale-lektionsplaner"
-                                        class="block hover:text-[#3384FF] transition">Digitale Lektionsplaner</a></li>
+                                        class="block hover:text-[#3384FF] transition">Digitale lektionsplaner</a></li>
                                 <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
-                                        class="block hover:text-[#3384FF] transition">Digital Undervisning</a></li>
+                                        class="block hover:text-[#3384FF] transition">Eget undervisningsindhold</a></li>
                                 <li><a href="{{ route('undervisning') }}#online-teoriprøver"
                                         class="block hover:text-[#3384FF] transition">Online teoriprøver</a></li>
                             </ul>
                         </div>
 
-                        <!-- Column 4 -->
+                        <!-- Column 3 -->
                         <div>
                             <h3
                                 class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
@@ -97,13 +100,13 @@
                             </h3>
                             <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('okonomi') }}#betalinger"
-                                        class="block hover:text-[#3384FF] transition">Automatiske betalinger</a></li>
+                                        class="block hover:text-[#3384FF] transition">Betalingsflow</a></li>
                                 <li><a href="{{ route('okonomi') }}#rapporter"
-                                        class="block hover:text-[#3384FF] transition">Rapporter</a></li>
+                                        class="block hover:text-[#3384FF] transition">Elevens betalingsoversigt</a></li>
                             </ul>
                         </div>
 
-                        <!-- Column 3 -->
+                        <!-- Column 4 -->
                         <div>
                             <h3
                                 class="flex items-center gap-2 text-[#3384FF] hover:text-[#3384FF] font-product-sans-bold text-[16px] transition mb-2">
@@ -112,7 +115,9 @@
                             </h3>
                             <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
                                 <li><a href="{{ route('booking') }}#overview"
-                                        class="block hover:text-[#3384FF] transition">Booking Oversigt</a></li>
+                                        class="block hover:text-[#3384FF] transition">Bookings funktioner</a></li>
+                                <li><a href="{{ route('booking') }}#booking-betaling"
+                                        class="block hover:text-[#3384FF] transition">Booking & betaling</a></li>
                             </ul>
                         </div>
 

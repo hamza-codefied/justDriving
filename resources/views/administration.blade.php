@@ -531,7 +531,7 @@
             </div>
         </section>
 
-        <section id="" class="w-full bg-[#f3f8fd] md:p-[76px] text-black">
+        <section id="synkroniseret-data" class="w-full bg-[#f3f8fd] md:p-[76px] text-black">
             <div
                 class="max-w-[1280px] px-6 mx-auto flex flex-col md:flex-row items-start justify-center gap-[40px] z-10">
                 <!-- Right Column (Image) -->
