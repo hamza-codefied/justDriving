@@ -80,12 +80,12 @@
                                 <a href="{{ route('undervisning') }}">Online undervisningsystem</a>
                             </h3>
                             <ul class="space-y-2 text-[14px] pl-[34px] text-[#677489] font-product-sans-regular">
-                                <li><a href="{{ route('undervisning') }}"
+                                <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
                                         class="block hover:text-[#3384FF] transition">Digital teoriundervisning</a></li>
                                 <li><a href="{{ route('undervisning') }}#digitale-lektionsplaner"
                                         class="block hover:text-[#3384FF] transition">Digitale lektionsplaner</a></li>
-                                <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
-                                        class="block hover:text-[#3384FF] transition">Eget undervisningsindhold</a></li>
+                                <!-- <li><a href="{{ route('undervisning') }}#undervisning-tilpasset"
+                                        class="block hover:text-[#3384FF] transition">Eget undervisningsindhold</a></li> -->
                                 <li><a href="{{ route('undervisning') }}#online-teoriprøver"
                                         class="block hover:text-[#3384FF] transition">Online teoriprøver</a></li>
                             </ul>
