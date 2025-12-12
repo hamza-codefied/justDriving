@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div>
         <div class="hidden md:block hero-bg-left"></div> -->
@@ -33,9 +33,9 @@
 
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+        <!-- <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
             style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
@@ -123,7 +123,7 @@
         </section>
 
         <!-- About Video Section -->
-        <section class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[165px]">
+        <section class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/30 to-[#ffffff] mt-[165px]">
             <div
                 class="w-[90vw] md:max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-10 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 ease-out">
                 <!-- Left: Video -->

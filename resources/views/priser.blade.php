@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
 
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div>
@@ -33,10 +33,10 @@
         </div>
 
         @include('layouts.header')
-
+<!-- 
         <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
             style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="w-[90vw] md:max-w-[1280px] mx-auto mt-[140px] text-center relative">
@@ -67,7 +67,7 @@
 
         <!-- Features Included Section -->
         <section id="pricing"
-            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff] mt-[114px] relative">
+            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/30 to-[#ffffff] mt-[114px] relative">
             <div class="w-[90vw] md:max-w-[1280px] mx-auto">
                 <!-- Main Heading -->
                 <h4 style="color: var(--Black, #171717); text-align: center; font-size: 40px; font-style: normal; font-weight: 900; line-height: 52.5px;"

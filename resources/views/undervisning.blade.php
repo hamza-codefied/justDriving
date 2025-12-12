@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
 
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div>
@@ -34,9 +34,9 @@
 
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+        <!-- <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
             style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
@@ -112,7 +112,7 @@
 
         <!-- Section 2 -->
         <section
-            class="w-full mx-auto mt-[100px] md:mt-[193px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
+            class="w-full mx-auto mt-[100px] md:mt-[193px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/50 to-[#ffffff]">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -243,7 +243,7 @@
                 @endphp
 
                 <!-- Card Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 xl:px-0 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 gap-4">
                     @foreach ($features as $index => $feature)
                         <div class="relative bg-white rounded-[30px] border-[4px] border-[#f0f2f5] shadow-md p-5 flex flex-col items-start
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      hover:-translate-y-2 hover:bg-gradient-to-b from-[#f9f9ff] to-[#e8f2ff]
@@ -336,10 +336,9 @@
             </div>
         </section>
 
-
         <!-- Info Section3 -->
         <section id="online-teoriprøver"
-            class="w-full pt-[128px] bg-gradient-to-b from-[#ffffff]/70 via-[#ffffff]/90 to-[#ffffff] pb-[100px]">
+            class="w-full pt-[128px] pb-[100px]">
             <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center gap-[64px] z-10">
 
                 <!-- Right Column (Image) -->
@@ -412,8 +411,6 @@
                 </a>
             </div>
         </section>
-
-
 
         @include('layouts.footer')
 

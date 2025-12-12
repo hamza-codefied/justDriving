@@ -22,7 +22,7 @@
 
 <body>
 
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div> -->
         <!-- <div class="hidden md:block hero-bg-left"></div> -->
@@ -36,12 +36,10 @@
 
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
-            style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        {{-- Background grid is now applied to .content-container via inline style --}}
 
         <!-- Hero Section -->
-        <section class="w-full mx-auto mt-[140px] bg-[#ffffff]/20 text-center relative overflow-hidden">
+        <section class="w-full mx-auto mt-[140px] text-center relative overflow-hidden">
             <div class="testimoniol1 hidden lg:block"></div>
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
@@ -95,7 +93,7 @@
         </section>
 
         <!-- Client Section -->
-        <section class="w-full mx-auto text-center relative bg-[#ffffff]/70 py-1 sm:py-5 overflow-hidden">
+        <section class="w-full mx-auto text-center relative py-1 sm:py-5 overflow-hidden">
             <div class="relative py-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/clientBackground.png') }}'); background-size: cover; background-position: center;">
                 <!-- Left Fade -->
@@ -164,7 +162,7 @@
 
         <!-- Section 2 -->
         <section
-            class="w-full bg-gradient-to-b from-[#ffffff]/60 via-[#ffffff]/70 to-[#ffffff] pt-[165px] pb-[70px] overflow-hidden">
+            class="w-full bg-gradient-to-b from-[#ffffff]/20 via-[#ffffff]/50 to-[#ffffff] pt-[165px] pb-[70px] overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto text-center relative">
                 <!-- Tag -->
                 <div style="color: var(--Black, #171717); text-align: center; line-height: 30px; letter-spacing: -0.4px; text-transform: uppercase;"
@@ -257,7 +255,7 @@
         </section>
 
         <!-- Container for three sections to prevent layout shifts -->
-        <div class="w-full bg-[#ffffff]/70 overflow-hidden pt-[101px]">
+        <div class="w-full bg-[#ffffff]/40 overflow-hidden pt-[101px]">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto relative space-y-[80px] mb-[50px]">
                 <section id=""
                     class="scroll-section text-black flex flex-col md:flex-row items-start mt-10 gap-[48px] z-50">
@@ -481,8 +479,8 @@
         </div>
 
         <!-- Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pb-[118px] text-center relative overflow-hidden">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+        <section class="w-full bg-[#ffffff]/40 mx-auto pb-[118px] text-center relative overflow-hidden">
+            <!-- <div class="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
                 <a href="#"
                     style="background: var(--blue-light, #3384FF); box-shadow: 0 20px 35px 0 rgba(51, 132, 255, 0.20); padding: 16px 36px;"
                     class="flex flex-col justify-center items-center gap-2 w-[230px] h-[74px] rounded-[19.765px] py-[19.765px] px-[44.471px] border border-[rgba(255,255,255,0.40)] text-white text-[19.765px] font-product-sans-bold hover:bg-[#2563EB] transition">
@@ -493,7 +491,7 @@
                     class="flex flex-col justify-center items-center gap-[9.882px] w-[233px] h-[74px] rounded-[19.765px] bg-[#E8F2FF] text-[#3384FF] text-[19.765px] font-product-sans-bold hover:bg-[#3384FF] hover:text-white transition">
                     Læs mere
                 </a>
-            </div>
+            </div> -->
         </section>
 
         <!-- Section  -->
@@ -529,7 +527,7 @@
         </section>
 
         <!-- Payment Flow Section -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[133px] text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/40 mx-auto pt-[133px] text-center relative overflow-hidden">
             <div class="w-[90vw] lg:max-w-[1280px] mx-auto px-6">
                 <!-- Main Heading -->
                 <h4 style="color: #000;"
@@ -613,7 +611,7 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="w-full bg-[#ffffff]/70 mx-auto pt-[178px] text-center relative overflow-hidden">
+        <section class="w-full bg-[#ffffff]/40 mx-auto pt-[178px] text-center relative overflow-hidden">
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[28px] relative">

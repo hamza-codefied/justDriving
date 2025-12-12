@@ -20,33 +20,31 @@
         <a href="{{ route('home') }}"
             class="hover:text-[#3384FF] font-manrope-semibold text-[16px] transition">Forside</a>
 
-        <!-- Dropdown (click-based) -->
-        <div class="relative">
-            <!-- Hidden checkbox for toggle state -->
-            <input type="checkbox" id="funktioner-toggle" class="peer hidden">
+        <!-- Dropdown (hover-based) -->
+        <div class="relative group" id="funktioner-dropdown">
 
             <!-- Trigger -->
-            <label for="funktioner-toggle"
+            <div
                 class="flex items-center font-manrope-semibold space-x-1 hover:text-[#3384FF] transition focus:outline-none text-[16px] cursor-pointer relative">
                 <span>Funktioner</span>
                 <span class="relative inline-block w-4 h-4 mt-0.5">
                     <!-- Arrow Down (shown when closed) -->
-                    <svg id="arrow-down" class="absolute inset-0 w-4 h-4 transition-opacity duration-300" fill="none"
+                    <svg id="arrow-down" class="absolute inset-0 w-4 h-4 transition-opacity duration-300 group-hover:opacity-0" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                     <!-- Arrow Up (shown when open) -->
-                    <svg id="arrow-up" class="absolute inset-0 w-4 h-4 opacity-0 transition-opacity duration-300"
+                    <svg id="arrow-up" class="absolute inset-0 w-4 h-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
                     </svg>
                 </span>
-            </label>
+            </div>
 
             <!-- Full-width mega menu -->
             <div id="mega-menu" class="mega-menu absolute top-full w-[90vw] md:w-[80vw] xl:max-w-[900px] z-40
         opacity-0 translate-y-2 pointer-events-none scale-95 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]
-        peer-checked:opacity-100 peer-checked:translate-y-0 peer-checked:pointer-events-auto peer-checked:scale-100">
+        group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-hover:scale-100">
 
                 <!-- Menu content -->
                 <div class="bg-white text-black border-t border-gray-400 rounded-xl shadow-2xl mt-[25px] ml-1">
@@ -177,34 +175,11 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const toggle = document.getElementById('funktioner-toggle');
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-
-        if (!toggle || !arrowDown || !arrowUp) return;
-
-        // Function to update arrow visibility
-        function updateArrows() {
-            if (toggle.checked) {
-                arrowDown.style.opacity = '0';
-                arrowUp.style.opacity = '1';
-            } else {
-                arrowDown.style.opacity = '1';
-                arrowUp.style.opacity = '0';
-            }
-        }
-
-        // Update arrows on toggle change
-        toggle.addEventListener('change', updateArrows);
-
-        // Initial state
-        updateArrows();
-
         // Position mega menu to align with header
         function positionMegaMenu() {
             const header = document.querySelector('header');
             const megaMenu = document.getElementById('mega-menu');
-            const dropdown = megaMenu ? megaMenu.closest('.relative') : null;
+            const dropdown = document.getElementById('funktioner-dropdown');
 
             if (!header || !megaMenu || !dropdown) return;
 
@@ -222,32 +197,12 @@
         positionMegaMenu();
         window.addEventListener('resize', positionMegaMenu);
 
-        // Also position when menu opens
-        toggle.addEventListener('change', function () {
-            if (this.checked) {
+        // Position when hovering over the dropdown
+        const dropdown = document.getElementById('funktioner-dropdown');
+        if (dropdown) {
+            dropdown.addEventListener('mouseenter', function () {
                 setTimeout(positionMegaMenu, 10);
-            }
-        });
-    });
-
-    // Close mega menu when clicking outside
-    document.addEventListener('click', function (event) {
-        const toggle = document.getElementById('funktioner-toggle');
-        if (!toggle) return;
-
-        const dropdown = toggle.closest('.relative');
-        if (!dropdown) return;
-
-        // Check if click is outside the dropdown container
-        if (!dropdown.contains(event.target)) {
-            toggle.checked = false;
-            // Update arrows when closing
-            const arrowDown = document.getElementById('arrow-down');
-            const arrowUp = document.getElementById('arrow-up');
-            if (arrowDown && arrowUp) {
-                arrowDown.style.opacity = '1';
-                arrowUp.style.opacity = '0';
-            }
+            });
         }
     });
 </script>

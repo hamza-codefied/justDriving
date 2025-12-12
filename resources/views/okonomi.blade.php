@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div>
         <div class="hidden md:block hero-bg-left"></div> -->
@@ -33,9 +33,9 @@
 
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+        <!-- <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
             style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
@@ -95,7 +95,7 @@
 
         <!-- Section 2 -->
         <section
-            class="w-full mx-auto mt-[100px] md:mt-[160px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
+            class="w-full mx-auto mt-[100px] md:mt-[160px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/30 to-[#ffffff]">
             <!-- Title -->
             <h4 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -129,7 +129,7 @@
 
         <!-- Info Section -->
         <section id="betalinger"
-            class="w-full bg-gradient-to-b from-[#ffffff]/80 via-[#ffffff]/90 to-transparent pt-[180px]">
+            class="w-full bg-gradient-to-b from-[#ffffff]/30 via-[#ffffff]/40 to-transparent pt-[180px]">
             <div
                 class="max-w-[1280px] mx-auto text-black px-6 flex flex-col md:flex-row items-center justify-center gap-10 z-10">
                 <!-- Left Column (Image) -->
@@ -218,7 +218,7 @@
          @endphp
         <!-- Section 2 -->
         <section
-            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]/70  mx-auto mt-[100px] md:mt-[214px] pb-[160px] px-6 text-center relative">
+            class="w-full bg-gradient-to-b from-transparent via-[#ffffff]/30 to-[#ffffff]/30  mx-auto mt-[100px] md:mt-[214px] pb-[160px] px-6 text-center relative">
             <!-- Title -->
             <h4 class="font-product-sans-bold text-[50px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">

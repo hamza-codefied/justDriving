@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="content-container">
+    <div class="content-container" style="background-image: url('{{ asset('images/Background.svg') }}'); background-attachment: scroll; background-repeat: repeat; background-position: center top; background-size: auto;">
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div>
         <div class="hidden md:block hero-bg-left"></div> -->
@@ -32,9 +32,9 @@
         </div>
         @include('layouts.header')
 
-        <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
+        <!-- <div class="hidden lg:block fixed inset-0 -z-10 bg-no-repeat bg-center bg-cover"
             style="background-image: url('{{ asset('images/Background.svg') }}');">
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="max-w-[1280px] mx-auto mt-[80px] md:mt-[140px] text-center relative">
@@ -114,7 +114,7 @@
 
         <!-- Section 2 -->
         <section
-            class="w-full mx-auto mt-[100px] md:mt-[166px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/90 to-[#ffffff]">
+            class="w-full mx-auto mt-[100px] md:mt-[166px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff]">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
@@ -469,7 +469,7 @@
                 </div>
             </div>
 
-            <div class="w-full bg-gradient-to-t from-[#ffffff] via-[#ffffff]/80 to-[#ffffff]/30">
+            <div class="w-full bg-gradient-to-t from-[#ffffff] via-[#ffffff]/40 to-[#ffffff]/20">
                 <div
                     class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start justify-center gap-[64px] z-10 mt-[150px]  pb-[220px]">
                     <!-- Left Column (image) -->

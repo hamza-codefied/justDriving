@@ -1,7 +1,7 @@
 <!-- Scroll to Top Button - Above Footer with 85px gap -->
 <div class="w-full bg-white flex justify-center items-center z-10 pb-[55px]">
     <div id="scroll-to-top" class="cursor-pointer opacity-0 invisible transition-all duration-300 hover:scale-110">
-        <img src="{{ asset('images/mouse.png') }}" alt="Scroll to top" class="w-12 h-12 md:w-16 md:h-16">
+        <img src="{{ asset('images/mouse.png') }}" alt="Scroll to top" class="w-8 h-8 md:w-12 md:h-12">
     </div>
 </div>
 
@@ -138,4 +138,17 @@
             });
         });
     });
+    
+    /* */
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            // reset position to top first (avoid initial hard jump)
+            window.scrollTo(0, 0);
+            // then smooth scroll to the target
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 50);
+        }
+    }
 </script>
