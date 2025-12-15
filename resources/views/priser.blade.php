@@ -24,12 +24,14 @@
         <!-- <div class="hidden md:block hero-bg-right"></div>
         <div class="hidden md:block hero-bg-left"></div> -->
 
-        <div class="absolute top-0 left-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top left, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Left Gradient (Figma Design) -->
+        <div class="absolute left-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(-45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
-        <div class="absolute top-0 right-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top right, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Right Gradient (Figma Design) -->
+        <div class="absolute right-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
         @include('layouts.header')
@@ -76,65 +78,65 @@
                 </h4>
 
                 <!-- Two Columns Grid -->
-                <div class="flex flex-col lg:flex-row gap-3 max-w-7xl mx-auto mb-8 items-stretch">
+                <div class="flex flex-col lg:flex-row gap-[16px] max-w-7xl mx-auto mb-[16px] items-stretch">
                     <!-- Left Column - 2 rows -->
-                    <div class="flex flex-col gap-3 flex-1">
+                    <div class="flex flex-col gap-[16px] flex-1">
                         <!-- System og administration -->
-                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
+                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] px-[33px] py-[40px] flex-1 flex flex-col">
                             <h4 class="text-[22px] text-center font-bold text-black mb-4">System og administration</h3>
                                 <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
                                     class="space-y-3 font-manrope-regular">
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Online administrationssystem</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Medarbejder-, elev- og
                                             holdadministration</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Adgang til alle elevers oplysninger</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Ubegrænset antal elever, kørelærere og
                                             hold</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Kørelærer- og elevnotater</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Mobil-app til elever og kørelærere</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>E-mail og support tickets</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Flere afdelinger med central styring</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>GDPR-sikker databehandling og fuld
                                             adgangsstyring</span>
                                     </li>
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-[15.97px]">
                                         <img src="{{ asset('images/simplicitet.png') }}"
-                                            class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                            class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                         <span>Hosting i Danmark med backup hver time, dag,
                                             uge og
                                             måned</span>
@@ -143,39 +145,39 @@
                         </div>
 
                         <!-- Undervisning og læring -->
-                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
-                            <h3 class="text-[22px] text-center font-bold text-black mb-4">Undervisning og læring</h3>
+                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] px-[33px] py-[47px] flex-1 flex flex-col">
+                            <h3 class="text-[22px] text-center font-bold text-black mb-[27px]">Undervisning og læring</h3>
                             <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; font-style: normal; line-height: 26.625px;"
                                 class="space-y-3 font-manrope-regular">
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Online teoriundervisning med tekst, billeder og
                                         video</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Undervisning med automatisk afvikling</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Test elever direkte i klassen</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Materiale på dansk, engelsk og arabisk</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Integration med <span class="font-product-sans-bold">e-teori.dk</span></span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Elevdokumentbank og digital opgaveaflevering</span>
                                 </li>
                             </ul>
@@ -183,40 +185,40 @@
                     </div>
 
                     <!-- Right Column - 3 rows -->
-                    <div class="flex flex-col gap-3 flex-1">
+                    <div class="flex flex-col gap-[16px] flex-1">
                         <!-- Økonomi og betaling -->
-                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
+                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] px-[33px] py-[19px] flex-1 flex flex-col">
                             <h3 class="text-[22px] text-center font-bold text-black mb-4">Økonomi og betaling</h3>
                             <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
                                 class="space-y-3 font-manrope-regular">
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Online betaling direkte i systemet</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Integration med <span class="font-product-sans-bold">Just-pay.dk</span></span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Fuld betalingshistorik og oversigt</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Automatisk fakturering og kvittering</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Online faktura og restancestyring</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Automatisk adgangsbegrænsning ved manglende
                                         betaling</span>
                                 </li>
@@ -224,69 +226,69 @@
                         </div>
 
                         <!-- Booking og tilmelding -->
-                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
+                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] px-[33px] py-[33px] flex-1 flex flex-col">
                             <h3 class="text-[22px] text-center font-bold text-black mb-4">Booking og tilmelding</h3>
                             <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
                                 class="space-y-3 font-manrope-regular">
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Online bookingsystem</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Tilmeldingsformular Integreret på din hjemmeside
                                         (API)</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Digital lektionsplan og elevtilknytning</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Opret og tilknyt egne lektionsplaner</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Automatisk elevtilmelding og lektionsflow</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Kalenderbooking for både elev og kørelærer</span>
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Digital dokumentation og elevstyring -->
-                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] p-5 flex-1 flex flex-col">
+                        <div class="bg-[#f7fafc] rounded-xl shadow-sm border border-[#cfdee8] px-[33px] py-[19px] flex-1 flex flex-col">
                             <h3 class="text-[22px] text-center font-bold text-black mb-4">Digital dokumentation og
                                 elevstyring</h3>
                             <ul style="color: #0D171C; font-feature-settings: 'dlig' on; font-size: 17.306px; line-height: 26.625px;"
                                 class="space-y-3 font-manrope-regular">
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Digital underskrift lektionsplan</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Digital samtykkeerklæring og GDPR-samtykke</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Automatisk synkronisering af elevdata og
                                         status</span>
                                 </li>
-                                <li class="flex items-start gap-2">
+                                <li class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span>Elevlogin med personlig oversigt og
                                         kommunikation</span>
                                 </li>
@@ -302,16 +304,16 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Left Column -->
                             <div class="space-y-3 text-[17.306px] font-manrope-regular">
-                                <div class="flex items-start gap-2">
+                                <div class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span class="text-sm text-black text-[17.306px]">SMS- og e-mailnotifikationer til
                                         elev og
                                         kørelærer</span>
                                 </div>
-                                <div class="flex items-start gap-2">
+                                <div class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span class="text-sm text-black text-[17.306px]">Opret egne e-mail-skabeloner til
                                         tilmelding og
                                         påmindelser</span>
@@ -319,16 +321,16 @@
                             </div>
                             <!-- Right Column -->
                             <div class="space-y-3 text-[17.306px] font-manrope-regular">
-                                <div class="flex items-start gap-2">
+                                <div class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span class="text-sm text-black text-[17.306px]">Automatisk besked ved ændringer,
                                         aflysninger og
                                         betaling</span>
                                 </div>
-                                <div class="flex items-start gap-2">
+                                <div class="flex items-center gap-[15.97px]">
                                     <img src="{{ asset('images/simplicitet.png') }}"
-                                        class="w-5 h-5 mt-0.5 flex-shrink-0" alt="Checkmark">
+                                        class="w-[26.62px] h-[26.62px] mt-0.5 flex-shrink-0" alt="Checkmark">
                                     <span class="text-sm text-black text-[17.306px]">Automatisk påmindelse om betalinger
                                         og
                                         bookinger</span>

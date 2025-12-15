@@ -26,12 +26,14 @@
         <!-- Hero Backgrounds -->
         <!-- <div class="hidden md:block hero-bg-right"></div> -->
         <!-- <div class="hidden md:block hero-bg-left"></div> -->
-        <div class="absolute top-0 left-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top left, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Left Gradient (Figma Design) -->
+        <div class="absolute left-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(-45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
-        <div class="absolute top-0 right-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top right, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Right Gradient (Figma Design) -->
+        <div class="absolute right-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
         @include('layouts.header')
@@ -67,7 +69,7 @@
             <!-- CTA Button -->
             <div class="mt-8 relative z-10">
                 <a href="#"
-                    class="inline-flex items-center bg-[#3384FF] text-[16px] text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-[#2563EB] transition">
+                    class="inline-flex items-center justify-center w-[216px] bg-[#3384FF] text-[16px] text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-[#2563EB] transition">
                     <img src="{{ asset('images/energy.png') }}" alt="Apple Logo" class="w-4 h-4 mr-2" /> Prove gratis nu
                 </a>
             </div>
@@ -93,24 +95,17 @@
         </section>
 
         <!-- Client Section -->
-        <section class="w-full mx-auto text-center relative py-1 sm:py-5 overflow-hidden">
-            <div class="relative py-10 flex flex-col items-center justify-center"
+        <section class="w-full mx-auto text-center relative py-1 sm:py-5 md:pb-[15px] overflow-hidden">
+            <div class="relative pt-10 flex flex-col items-center justify-center"
                 style="background-image: url('{{ asset('images/clientBackground.png') }}'); background-size: cover; background-position: center;">
-                <!-- Left Fade -->
-                <div
-                    class="pointer-events-none absolute inset-y-0 left-0 w-96 bg-gradient-to-r from-[#ffffff]/90 to-transparent z-20">
-                </div>
-                <!-- Right Fade -->
-                <div
-                    class="pointer-events-none absolute inset-y-0 right-0 w-96 bg-gradient-to-l from-[#ffffff]/70 to-transparent z-20">
-                </div>
                 <div id="clientSlider" class="splide w-full" aria-label="Client Logos">
-                    <div class="splide__track">
+                    <div class="splide__track"
+                        style="mask-image: linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%);">
                         <ul class="splide__list opacity-50 grayscale">
                             @for ($i = 0; $i < 10; $i++)
                                 <li class="splide__slide flex justify-center items-center">
                                     <img src="{{ asset('images/client.png') }}" alt="Client"
-                                        class="h-10 w-[170px] object-contain" />
+                                        class="h-10 w-[228px] object-contain" />
                                 </li>
                             @endfor
                         </ul>
@@ -248,7 +243,7 @@
             <!-- CTA Button -->
             <div class="mt-8 relative z-10">
                 <a href="#"
-                    class="inline-flex items-center bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
+                    class="inline-flex items-center justify-center w-[244px] bg-[#3384FF] text-[16px] font-bold text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#2563EB] transition">
                     Prøv Just Driving gratis
                 </a>
             </div>

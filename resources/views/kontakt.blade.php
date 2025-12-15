@@ -23,12 +23,14 @@
         <!-- <div class="hidden md:block hero-bg-right"></div>
         <div class="hidden md:block hero-bg-left"></div> -->
 
-        <div class="absolute top-0 left-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top left, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Left Gradient (Figma Design) -->
+        <div class="absolute left-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(-45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
-        <div class="absolute top-0 right-0 w-[200px] h-[200px]"
-            style="background: radial-gradient(circle at top right, #3384FF99 0%, #3384FF4D 30%, #93b7ed1a 60%, transparent 70%)">
+        <!-- Right Gradient (Figma Design) -->
+        <div class="absolute right-0 pointer-events-none"
+            style="top: -150px; width: 103.782px; height: 425.071px; transform: rotate(45deg); background: linear-gradient(180deg, rgba(51, 132, 255, 0.60) 1.66%, rgba(51, 132, 255, 0.30) 100%); filter: blur(50px);">
         </div>
 
         @include('layouts.header')
