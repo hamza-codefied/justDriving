@@ -372,7 +372,7 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="w-full bg-white mx-auto pt-[236px] text-center relative overflow-hidden">
+        <section class="w-full bg-white mx-auto pt-[87px] text-center relative overflow-hidden">
             <!-- Tag -->
             <div style="color: var(--Black, #171717); text-align: center; font-family: 'Product Sans'; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;"
                 class="inline-block bg-white px-4 py-1 rounded-full shadow-md mb-[28px] relative">

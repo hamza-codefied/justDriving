@@ -97,7 +97,7 @@
 
         <!-- Section 2 -->
         <section id="overview"
-            class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative bg-gradient-to-b from-transparent via-[#ffffff]/30 to-[#ffffff]">
+            class="w-full mx-auto mt-[100px] md:mt-[177px] px-6 text-center relative">
             <!-- Title -->
             <h1 class="font-product-sans-bold text-[40px] font-bold leading-[60px] text-center text-[#171717] relative z-10"
                 style="letter-spacing: -1.2px;">
