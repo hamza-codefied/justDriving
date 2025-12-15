@@ -295,7 +295,7 @@
                 <div
                     class="w-full md:w-1/2 space-y-7 opacity-0 translate-y-10 transition-all duration-700 ease-out animate-on-scroll delay-200">
                     <h2 class="font-product-sans-bold text-[#000] text-[28px] font-bold leading-normal">
-                        Afdelingsstyring – Én platform til alle dine lokationer
+                        Afdelingsstyring – én platform til alle dine lokationer
                     </h2>
                     <p class="font-product-sans-regular text-[#858599] text-[16px] font-normal leading-normal">
                         Vil du udvide din køreskole uden ekstra administrativt kaos?<br />med Just Driving kan du
